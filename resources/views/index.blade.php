@@ -9,7 +9,7 @@
     </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
   </head>
   <body>
@@ -79,69 +79,23 @@
         </div>
         <div class="col-12">
             <div class="levels">
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-n" role="progressbar" aria-valuenow="20" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                            نوآموز: N
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-a" role="progressbar" aria-valuenow="35" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                            مقدماتی: A
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b1" role="progressbar" aria-valuenow="50" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                            پیش میانی: B1
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b2" role="progressbar" aria-valuenow="60" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            میانی: B2
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b3" role="progressbar" aria-valuenow="75" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            فوق میانی: B3
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-c1" role="progressbar" aria-valuenow="90" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                            پیشرفته: C1
-                        </div>
-                    </a>
-                </div>
-                <div class="mb-1">
-                    <a class="progress" href="elementary-level.html">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-c2" role="progressbar" aria-valuenow="100" 
-                        aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            ماهر: C2
-                        </div>
-                    </a>
-                </div>
+                @foreach ($levels as $level)
+                    <div class="mb-1">
+                        <a class="progress" href="{{route('level', $level)}}">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
+                            aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                                {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
+                            </div>
+                        </a>
+                    </div> 
+                @endforeach
             </div>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-12">
             <h2 class="mb-4 mt-4">
-             جدول طبقه‌بندی کتاب‌های بنیاد سعدی
+             {{ __('جدول کتاب‌های بنیاد سعدی') }}
             </h2>
         </div>
         <div class="col-12">
@@ -149,272 +103,36 @@
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                        <th scope="col">
-                            سطح
-                        </th>
-                        <th scope="col">
-                            کتاب اصلی
-                        </th>
-                        <th scope="col">
-                            واژه
-                        </th>
-                        <th scope="col">
-                            خواندن
-                        </th>
-                        <th scope="col">
-                            دستور
-                        </th>
-                        <th scope="col">
-                            نگارش و گفتگو
-                        </th>
+                            <th scope="col">
+                                {{ __('سطح') }}
+                            </th>
+                            <th scope="col">
+                                {{ __('کتاب‌ها') }}
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-n" role="progressbar" aria-valuenow="20" 
-                                        aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        N
-                                        </div>
-                                    </a>
-                                    <p>
-                                        نوآموز
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina1.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina3.jpg" class="w-50 mb-2">
-                                </a>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/first-step.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina1.jpg" class="w-50">
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-a" role="progressbar" aria-valuenow="35" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                                    A
+                        @foreach($levels as $level)
+                            <tr>
+                                <th scope="row">
+                                    <div class="mb-1">
+                                        <a class="progress" href="{{route('level', $level)}}">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
+                                            aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                                            {{ strtoupper($level->title_abbr)}}
+                                            </div>
+                                        </a>
+                                        <p>
+                                            {{ __($level->title) }}
+                                        </p>
                                     </div>
+                                </th>
+                                <td>
+                                    <a href="mina2.html">
                                     </a>
-                                    <p>
-                                        مقدماتی
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina3.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina1.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/first-step.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b1" role="progressbar" aria-valuenow="50" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                    B1
-                                    </div>
-                                    </a>
-                                    <p>
-                                        پیش‌میانی
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina1.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b2" role="progressbar" aria-valuenow="60" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    B2
-                                    </div>
-                                    </a>
-                                    <p>
-                                        میانی
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina2.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/first-step.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-b3" role="progressbar" aria-valuenow="75" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                                    B3
-                                    </div>
-                                    </a>
-                                    <p>
-                                        فوق میانی
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina3.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-c1" role="progressbar" aria-valuenow="90" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                    C1
-                                    </div>
-                                    </a>
-                                    <p>
-                                        پیشرفته
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <div class="mb-1">
-                                    <a class="progress" href="elementary-level.html">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-c2" role="progressbar" aria-valuenow="100" 
-                                    aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                    C2
-                                    </div>
-                                    </a>
-                                    <p>
-                                        ماهر
-                                    </p>
-                                </div>
-                            </th>
-                            <td>
-                                <a href="mina2.html">
-                                    <img src="img/mina1.jpg" class="w-50">
-                                </a>
-                            </td>
-                            <td>
-                                
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
