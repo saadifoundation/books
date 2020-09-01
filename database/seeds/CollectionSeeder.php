@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Illuminate\Support\Facades\DB;
+
 class CollectionSeeder extends Seeder
 {
     /**
@@ -11,6 +13,10 @@ class CollectionSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('collection')->insert([
+            'title' => '',
+            'title_abbr' => '',
+            'intro' => '',
+        ]);
     }
 }
