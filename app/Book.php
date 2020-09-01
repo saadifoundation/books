@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
+    public function getRouteKeyName()
+    {
+        return 'title_abbr';
+    }
+    
     public function levels()
     {
         return $this->belongsToMany('App\Level')->withTimestamps();

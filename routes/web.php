@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/levels/{level}', 'LevelController@show')->name('level');
+
+Route::resource('books', 'BookController');
