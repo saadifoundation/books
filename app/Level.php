@@ -13,6 +13,6 @@ class Level extends Model
     
     public function books()
     {
-        return $this->belongsToMany('App\Book');
+        return $this->belongsToMany('App\Book')->withTimestamps();
     }
 }

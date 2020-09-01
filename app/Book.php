@@ -8,12 +8,12 @@ class Book extends Model
 {
     public function levels()
     {
-        return $this->belongsToMany('App\Level');
+        return $this->belongsToMany('App\Level')->withTimestamps();
     }
 
     public function audios()
     {
-        return $this->hasMany('App\Audio');
+        return $this->hasMany('App\Audio')->withTimestamps();
     }
 
     public function users()
@@ -21,11 +21,12 @@ class Book extends Model
         return $this->belongsToMany('App\User')
                     ->withPivot('role_id')
                     ->join('roles', 'role_id', '=', 'roles.id')
-                    ->select('roles.title as pivot_roles_title');
+                    ->select('roles.title as pivot_roles_title')
+                    ->withTimestamps();
     }
     
     public function collection()
     {
-        return $this->belongsTo('App\Collection');
+        return $this->belongsTo('App\Collection')->withTimestamps();
     }
 }

@@ -8,6 +8,6 @@ class Tag extends Model
 {
     public function collections()
     {
-        return $this->belongsToMany('App\Collection');
+        return $this->belongsToMany('App\Collection')->withTimestamps();
     }
 }

@@ -8,12 +8,11 @@ class Collection extends Model
 {
     public function books()
     {
-        return $this->hasMany('App\Book');
+        return $this->hasMany('App\Book')->withTimestamps();
     }
 
     public function tags()
     {
-        return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany('App\Tag')->withTimestamps();
     }
-
 }
