@@ -29,8 +29,8 @@ class BookSeeder extends Seeder
             INTRO;
         $book->intro_video = '';
         $book->teaching_video = '';
-        $book->elearning_link = '';
-        $book->bibliography_link = '';
+        $book->elearning_link = 'https://mina.saadifoundation.ir';
+        $book->bibliography_link = 'http://opac.nlai.ir/opac-prod/bibliographic/5759815';
         $book->index_file = 'indexes/mina1.pdf';
         $book->sample_file = 'samples/mina1.pdf';
         $book->buying_link = '';
