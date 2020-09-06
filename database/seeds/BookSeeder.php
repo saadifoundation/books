@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 use App\Book;
 use App\Collection;
 use App\Level;
+use App\User;
 
 class BookSeeder extends Seeder
 {
@@ -41,5 +42,8 @@ class BookSeeder extends Seeder
             Level::firstWhere('title_abbr', 'a'),
             Level::firstWhere('title_Abbr', 'b1'),
         ]);
+        // $book->users()->saveMany([
+        //     User::firstWhere('name', 'رضامراد صحرایی')->withPivot('role_id'),
+        // ]);
     }
 }
