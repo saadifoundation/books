@@ -6,6 +6,7 @@ use App\Book;
 use App\Collection;
 use App\Level;
 use App\User;
+use App\Role;
 
 class BookSeeder extends Seeder
 {
@@ -38,12 +39,23 @@ class BookSeeder extends Seeder
         $book->ebuying_link = '';
         $book->audios_link = 'audios_zip/mina1.zip';
         $book->save();
+        
         $book->levels()->saveMany([
             Level::firstWhere('title_abbr', 'a'),
             Level::firstWhere('title_abbr', 'b1'),
         ]);
-        // $book->users()->saveMany([
-        //     User::firstWhere('name', 'رضامراد صحرایی')->withPivot('role_id'),
-        // ]);
+
+        $users = [
+            User::firstWhere('name', 'رضامراد صحرایی'),
+            User::firstWhere('name', 'افسانه غریبی'),
+        ];
+        foreach ($users as $user) {
+            $book->users()->save(
+                $user,
+                [
+                'role_id' => Role::firstWhere('title_abbr', 'writer')->id,
+                ]
+            );
+        }
     }
 }
