@@ -40,7 +40,7 @@ class BookSeeder extends Seeder
         $book->save();
         $book->levels()->saveMany([
             Level::firstWhere('title_abbr', 'a'),
-            Level::firstWhere('title_Abbr', 'b1'),
+            Level::firstWhere('title_abbr', 'b1'),
         ]);
         // $book->users()->saveMany([
         //     User::firstWhere('name', 'رضامراد صحرایی')->withPivot('role_id'),
