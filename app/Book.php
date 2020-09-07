@@ -25,9 +25,9 @@ class Book extends Model
     {
         return $this->belongsToMany('App\User')
                     ->withPivot('role_id')
+                    ->withTimestamps()
                     ->join('roles', 'role_id', '=', 'roles.id')
-                    ->select('roles.title as pivot_roles_title')
-                    ->withTimestamps();
+                    ->select('*');
     }
     
     public function collection()
