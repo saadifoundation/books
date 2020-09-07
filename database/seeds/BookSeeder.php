@@ -45,11 +45,11 @@ class BookSeeder extends Seeder
             Level::firstWhere('title_abbr', 'b1'),
         ]);
 
-        $users = [
+        $writer_users = [
             User::firstWhere('name', 'رضامراد صحرایی'),
             User::firstWhere('name', 'افسانه غریبی'),
         ];
-        foreach ($users as $user) {
+        foreach ($writer_users as $user) {
             $book->users()->save(
                 $user,
                 [
