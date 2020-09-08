@@ -16,9 +16,9 @@ class Book extends Model
         return $this->belongsToMany('App\Level')->withTimestamps();
     }
 
-    public function audios()
+    public function audio()
     {
-        return $this->hasMany('App\Audio')->withTimestamps();
+        return $this->hasMany('App\Audio');
     }
 
     public function users()
@@ -32,6 +32,6 @@ class Book extends Model
     
     public function collection()
     {
-        return $this->belongsTo('App\Collection')->withTimestamps();
+        return $this->belongsTo('App\Collection');
     }
 }
