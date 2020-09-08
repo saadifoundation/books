@@ -129,7 +129,9 @@
                                 </th>
                                 <td>
                                   @foreach ($level->books as $book)
-                                    <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-25">
+                                    <a href="{{ route('books.show', $book->title_abbr) }}">
+                                      <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-25">
+                                    </a>
                                   @endforeach
                                 </td>
                             </tr>
