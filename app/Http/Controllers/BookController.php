@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use Illuminate\Http\Request;
+use App\Level;
 
 class BookController extends Controller
 {
@@ -46,10 +47,25 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
+        return $book->users()->where('title_abbr', 'writer')->get();
+        return count($book->users->where('title_abbr', 'writer'));
+        $levels = Level::all();
+        foreach ($levels as $level) {
+            $level->width = ($level->order * 15) > 100 ? 100 : $level->order * 15;
+        }
+        
+        //create an array for book's levels' title_abbr
+        $book_levels_title_abbrs = [];
+        foreach ($book->levels as $book_level) {
+            array_push($book_levels_title_abbrs, $book_level->title_abbr);
+        }
+        
         return view(
             'books.show',
             [
             'book' => $book,
+            'levels' => $levels,
+            'book_levels_title_abbrs' => $book_levels_title_abbrs,
             ]
         );
     }

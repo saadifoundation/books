@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>
-        مینا 1
+        {{ $book->title }}
     </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,7 +15,7 @@
   <body>
     <div class="navbar navbar-expand-sm fixed-top navbar-dark bg-info justify-content-center">
         <h5 class="my-0 ml-md-auto font-weight-normal">
-            مینا 1
+          {{ $book->title }}
         </h5>
         <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-dark" href="books.html">
@@ -34,7 +34,7 @@
         <div class="col-12">
           <div class="book-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4 mt-5">
-              مینا 1
+              {{ $book->title }}
             </h1>
           </div>
         </div>
@@ -46,188 +46,133 @@
               <li class="breadcrumb-item"><a href="/">
                 کتاب‌های بنیاد سعدی
               </a></li>
-              <li class="breadcrumb-item"><a href="mina-series.html">
-                مجموعۀ مینا
+              <li class="breadcrumb-item"><a href="{{ route('collection', $book->collection->title_abbr) }}">
+                {{ $book->collection->title }}
               </a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                مینا 1
+                {{ $book->title }}
               </li>
             </ol>
           </nav>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-md-4">
           <a href="img/mina1.jpg" target="_blank" download="mina1.jpg" class="cover">
             <img src="{{ Storage::url($book->cover) }}" alt="" class="w-100">
           </a>
-        </div>
-        <div class="col-md-8">
-          <div class="video my-3">
-            <video src="https://mina.saadifoundation.ir/video/motion.mp4" width="100%" controls="controls" preload="metadata">
-              <source type="video/mp4">
-            </video>
-            <p class="caption">
-              ویدئوی معرفی کتاب
-              <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
-                ویدئوی روش تدریس
-              </button>
-            </p>
+
+          <div class="border-md-1 text-center">
+            <div class="buttons mt-3">
+              <a href="https://mina.saadifoundation.ir" target="_blank">
+                <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
+              </a>  
+              <a href="http://opac.nlai.ir/opac-prod/bibliographic/5759815" target="_blank">
+                <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
+              </a>
+              <a href="contents/mina1.pdf" target="_blank">
+                <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
+              </a>
+              <a href="contents/mina1.pdf" target="_blank">
+                <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
+              </a>
+              <a href="https://www.ketabcity.com/BookView.aspx?bookid=2308464" target="_blank">
+                <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="" class="w-75">
+              </a>
+              <a href="https://taaghche.com/book/56277" target="_blank">
+                <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
+              </a>
+              <a href="sounds/mina1/mina1.zip" target="_blank">
+                <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
+              </a>
+            </div>
           </div>
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
+        </div>
+        <div class="col-md-8">
+
+          @if($book->intro_video !== '')
+            <div class="video my-3">
+              <video src="{{ Storage::url($book->intro_video) }}" width="100%" controls="controls" preload="metadata">
+                <source type="video/mp4">
+              </video>
+              <p class="caption">
+                ویدئوی معرفی کتاب
+
+                @if($book->teaching_video !== '')
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
                     ویدئوی روش تدریس
-                  </h5>
-                </div>
-                <div class="modal-body">
-                  <video src="https://mina.saadifoundation.ir/video/motion.mp4" width="100%" controls="controls" preload="metadata">
-                    <source type="video/mp4">
-                  </video>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    بازگشت
                   </button>
+                @endif
+
+              </p>
+            </div>
+
+            @if($book->teaching_video !== '')
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        ویدئوی روش تدریس
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <video src="https://mina.saadifoundation.ir/video/motion.mp4" width="100%" controls="controls" preload="metadata">
+                        <source type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        بازگشت
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
+            @endif
+
+          @endif
+
+          @if ( !empty($book->collection->tags->toArray()) )
+            <div class="labels mb-3 text-right mb-4">
+              @foreach($book->collection->tags as $tag)
+                <a class="badge badge-success" href="{{ route('tag', $tag->title_abbr) }}">
+                  {{ $tag->title }}
+                </a>
+              @endforeach
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-4">
-        <div class="col-md-8 order-md-2">
-          <div class="labels mb-3 text-right">
-            <a class="badge badge-success" href="label-reading.html">
-              خواندن
-            </a>
-            <a class="badge badge-success" href="label-reading.html">
-              شنیدن
-            </a>
-            <a class="badge badge-success" href="label-reading.html">
-              نوشتن
-            </a>
-            <a class="badge badge-success" href="label-reading.html">
-              صحبت کردن
-            </a>
-            <a class="badge badge-success" href="label-reading.html">
-              تلفظ
-            </a>
-            <a class="badge badge-secondary" href="label-reading.html">
-              واژه
-            </a>
-          </div>
-          <div class="badges mb-3 text-right">
+          @endif
+
+          <div class="badges mb-3 text-right mb-4">
             <a href="#sounds-row" class="btn btn-primary btn-sm mb-2">
-              فایل‌های صوتی کتاب <span class="badge badge-light">42</span>
+              فایل‌های صوتی کتاب <span class="badge badge-light">{{ count($book->audio) }}</span>
             </a>
             <a href="#writers-row" class="btn btn-primary btn-sm mb-2">
-              مؤلفان کتاب <span class="badge badge-light">5</span>
+              مؤلفان کتاب <span class="badge badge-light">{{ count($book->users) }}</span>
             </a>
             <a href="#other-persons-button-row" class="btn btn-primary btn-sm mb-2">
-             دیگر همکاران کتاب <span class="badge badge-light">16</span>
+             دیگر همکاران کتاب <span class="badge badge-light">{{ count($book->users) }}</span>
             </a>
           </div>
-          <div class="description text-right font-weight-light">
-              <p>
-                  اگر می‌خواهید زبانِ فارسیِ معیار را به شیوه‌ای لذّت‌بخش فرابگیرید، مینا بهترین انتخاب است. طرّاحیِ جذّاب مینا و محتوای کاربردی و حساب‌شده آن، به شما کمک می‌کند واژه‌ها، کارکردها و ساخت‌های دستوریِ مهّمِ زبانِ فارسی را، به‌سادگی و به‌سرعت، بیاموزید. درس‌های مینا، به گونه‌ای طرّاحی شده‌اند که هم فارسیِ گفتاری را به شما می‌آموزند و هم فارسیِ نوشتاری را. با مینا می‌توانید خیلی زود، به زبانِ فارسی صحبت کنید و بنویسید.
-              </p>
-              <p>
-                  مجموعه مینا در چارچوب الگوهای نوینِ آموزشِ زبانِ دوّم/خارجی تدوین شده‌است. در این مجموعه، همه مهارت‌ها و مؤلفه‌های زبان فارسی مورد توّجه بوده‌اند. مینا در زبان و ادبیات فارسی به معنای مرغِ سخنگو است؛ یعنی با خواندنِ مینا شما می‌توانید در آسمانِ آبیِ زبانِ فارسی پروازی شوق‌انگیز داشته‌باشید!
-              </p>
-              <p>
-                  مینا یک مجموعه 4 جلدی است و هر جلد آن هشت درس دارد. درس‌های مینا ساختارِ مشابهی دارند و هم‌زمان همه مهارت‌های زبانی را مورد توجّه قرار داده‌اند. محتوای هر درس، شامل دو ‌مکالمه کاربردی، دو کارکرد ارتباطی، دو ساختِ دستوریِ مرتبط و دامنه حساب‌شده‌ای از واژه‌های مهم است. به‌علاوه، در هر درس، بخشی به مهارتِ خواندن اختصاص یافته و در همه تمرین‌ها به مهارتِ نوشتن نیز توجّه‌شده‌است. مینا، به نقشِ بازی و تکلیف‌های خلّاق توجّه داشته و صفحه پایانیِ همه درس را به این گونه فعّالیت‌ها اختصاص‌داده‌است.
-              </p>
-              <p>
-                  مینا مجموعه‌ای است چند‌رسانه‌ای، که امکان می‌دهد حجم قابل‌توجّهی از گفتارِ روزمره فارسی‌زبانان را در بافت‌ها و موقعیت‌های گوناگون بشنوید.
-              </p>
+
+          <div class="description font-weight-light mb-4 text-justify">
+              {!! nl2br($book->intro) !!}
           </div>
-          <div class="levels">
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="20" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                نوآموز: N
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-a" role="progressbar" aria-valuenow="35" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                مقدماتی: A
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="50" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                پیش میانی: B1
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="60" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                میانی: B2
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="75" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                فوق میانی: B3
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="90" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                پیشرفته: C1
-                </div>
-              </a>
-            </div>
-            <div class="mb-1">
-              <a class="progress" href="elementary-level.html">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="100" 
-                aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                ماهر: C2
-                </div>
-              </a>
-            </div>
+
+          <div class="levels mb-4">
+            @foreach ($levels as $each_level)
+              <div class="mb-1">
+                  <a class="progress" href="{{route('level', $each_level)}}">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated @if(in_array($each_level->title_abbr, $book_levels_title_abbrs)) bg-level-{{$each_level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$each_level->width}}" 
+                      aria-valuemin="0" aria-valuemax="100" style="width: {{$each_level->width}}%">
+                          {{ __("$each_level->title") }}: {{ strtoupper($each_level->title_abbr) }}
+                      </div>
+                  </a>
+              </div> 
+            @endforeach
           </div>
-        </div>
-        <div class="col-md-4 order-md-1 text-center">
-          <div class="buttons mt-3">
-            <a href="https://mina.saadifoundation.ir" target="_blank">
-              <img src="img/buttons/01_elearning2.png" alt="" class="w-75">
-            </a>  
-            <a href="http://opac.nlai.ir/opac-prod/bibliographic/5759815" target="_blank">
-              <img src="img/buttons/02_Bibliography2.png" alt="" class="w-75">
-            </a>
-            <a href="contents/mina1.pdf" target="_blank">
-              <img src="img/buttons/03_Index2.png" alt="" class="w-75">
-            </a>
-            <a href="contents/mina1.pdf" target="_blank" class="mb-2">
-              <img src="img/buttons/04_Sample2.png" alt="" class="w-75">
-            </a>
-            <a href="https://www.ketabcity.com/BookView.aspx?bookid=2308464" target="_blank">
-              <img src="img/buttons/05_Buy-Book2.png" alt="" class="w-75">
-            </a>
-            <a href="https://taaghche.com/book/56277" target="_blank">
-              <img src="img/buttons/06_Buy-eBook2.png" alt="" class="w-75">
-            </a>
-            <a href="sounds/mina1/mina1.zip" target="_blank">
-              <img src="img/buttons/07_Audio-Book2.png" alt="" class="w-75">
-            </a>
-          </div>
+
         </div>
       </div>
       <div class="row text-center border-top mb-4 border-level-a" id="sounds-row">
