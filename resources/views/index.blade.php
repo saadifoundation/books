@@ -53,7 +53,7 @@
                 سطوح <span class="badge badge-light">7</span>
             </a>
             <a href="#books-row" class="btn btn-primary btn-sm mb-3">
-              کتاب‌ها <span class="badge badge-light">45</span>
+              کتاب‌ها <span class="badge badge-light">{{ count($books) }}</span>
             </a>
             <a href="persons.html" class="btn btn-primary btn-sm mb-3">
               مؤلفان <span class="badge badge-light">40</span>
@@ -128,8 +128,9 @@
                                     </div>
                                 </th>
                                 <td>
-                                    <a href="mina2.html">
-                                    </a>
+                                  @foreach ($level->books as $book)
+                                    <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-25">
+                                  @endforeach
                                 </td>
                             </tr>
                         @endforeach
@@ -141,57 +142,30 @@
       <div class="row text-center d-flex justify-content-center border-top mb-4" id="books-row">
         <div class="col-12">
           <h2 class="mb-4 mt-4">
-            آخرین کتاب‌های بنیاد سعدی
+             بعضی از کتاب‌های بنیاد سعدی
           </h2>
         </div>
-        <div class="col-6 col-md-3 mb-2">
-          <a href="mina2.html">
-            <div class="card book-card">
-              <img src="img/mina1.jpg" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">
-                  مینا 1
-                  <span class="badge badge-primary">
-                    مقدماتی
-                  </span>
-                  <span class="badge badge-primary">
-                    پیش‌میانی
-                  </span>
-                </p>
-              </div>
+        @foreach ($books as $book)
+          @if ($loop->index < 3)
+            <div class="col-6 col-md-3 mb-2">
+              <a href="{{route('books.show', $book->title_abbr)}}">
+                <div class="card book-card">
+                  <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">
+                      {{ $book->title }}
+                      @foreach ($book->levels as $level)
+                        <span class="badge badge-primary">
+                          {{ $level->title }}
+                        </span>
+                      @endforeach
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3 mb-2">
-          <a href="mina2.html">
-            <div class="card book-card">
-              <img src="img/mina2.jpg" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">
-                  چارچوب 1
-                  <span class="badge badge-primary">
-                    پیش‌میانی
-                  </span>
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3 mb-2">
-          <a href="mina2.html">
-            <div class="card book-card">
-              <img src="img/mina3.jpg" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">
-                  گام اول
-                  <span class="badge badge-primary">
-                    نوآموز
-                  </span>
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
+          @endif
+        @endforeach
         <div class="col-12">
             <a class="btn btn-primary btn-block" href="books.html">
                 همۀ کتاب‌ها
@@ -203,7 +177,7 @@
     <footer class="container-fluid pt-4 my-md-4 border-top text-center mb-3">
       <div dir="ltr" class="row">
           <div class="col-12 col-md">
-              <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+              <img class="mb-2" src="{{ asset('/img/saadifoundation-logo.png') }}" alt="" width="24" height="24">
               <small class="d-block mb-3 text-muted">&copy; 2020 Saadi Foundation</small>
           </div>
       </div>
