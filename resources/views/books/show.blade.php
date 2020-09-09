@@ -64,27 +64,41 @@
 
           <div class="border-md-1 text-center">
             <div class="buttons mt-3">
-              <a href="https://mina.saadifoundation.ir" target="_blank">
-                <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
-              </a>  
-              <a href="http://opac.nlai.ir/opac-prod/bibliographic/5759815" target="_blank">
-                <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
-              </a>
-              <a href="contents/mina1.pdf" target="_blank">
-                <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
-              </a>
-              <a href="contents/mina1.pdf" target="_blank">
-                <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
-              </a>
-              <a href="https://www.ketabcity.com/BookView.aspx?bookid=2308464" target="_blank">
-                <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="" class="w-75">
-              </a>
-              <a href="https://taaghche.com/book/56277" target="_blank">
-                <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
-              </a>
-              <a href="sounds/mina1/mina1.zip" target="_blank">
-                <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
-              </a>
+              @if($book->elearning_link !== '')
+                <a href="{{ $book->elearning_link }}" target="_blank">
+                  <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->bibliography_link !== '')
+                <a href="{{ $book->bibliography_link }}" target="_blank">
+                  <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->index_file !== '' && Storage::exists('$book->index_file'))
+                <a href="{{ $book->index_file }}" target="_blank">
+                  <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->sample_file !== '' && Storage::exists('$book->sample_file'))
+                <a href="{{ $book->sample_file }}" target="_blank">
+                  <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->buying_link !== '')
+                <a href="{{ $book->buying_link }}" target="_blank">
+                  <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->ebuying_link !== '')
+                <a href="{{ $book->ebuying_link }}" target="_blank">
+                  <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
+                </a>
+              @endif
+              @if($book->audio_link !== '' && Storage::exists('$book->audio_link'))
+                <a href="{{ $book->audio_link  }}" target="_blank">
+                  <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
+                </a>
+              @endif
             </div>
           </div>
 
@@ -180,12 +194,14 @@
           <h2 class="text-center mt-4">
             فایل‌های صوتی
           </h2>
-          <a href="sounds/mina1/mina1.zip">
-            دریافت تمام فایل‌های صوتی (zip)
-          </a>
+          @if($book->audio_link !== '' && Storage::exists('$book->audio_link'))
+            <a href="{{ $book->audio_link }}">
+              دریافت تمام فایل‌های صوتی (zip)
+            </a>
+          @endif
         </div>
         <div class="col-12">
-            <div class="accordion" id="accordionLessons">
+            <div class="accordion" id="accordionLessons">)
                 <div class="card">
                   <div class="card-header" id="heading0">
                     <h2 class="mb-0">
