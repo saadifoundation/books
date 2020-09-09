@@ -13,81 +13,82 @@ class LevelSeeder extends Seeder
      */
     public function run()
     {
-        //n
-        $level = new Level;
-        $level->title = 'نوآموز';
-        $level->title_abbr = 'n';
-        $level->order = 1;
-        $level->intro = 'این سطح اولین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'fed09e';
-        $level->color = 'f7941d';
-        $level->high_color = 'f16621';
-        $level->save();
+        $levels_data = [
+            [
+                'title' => 'نوآموز',
+                'title_abbr' => 'n',
+                'order' => 1,
+                'intro' => 'این سطح اولین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'fed09e',
+                'color' => 'f7941d',
+                'high_color' => 'f16621',
+            ],
+            [
+                'title' => 'مقدماتی',
+                'title_abbr' => 'a',
+                'order' => 2,
+                'intro' => 'این سطح دومین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'fbbea9',
+                'color' => 'ee1c25',
+                'high_color' => 'ba131a',
+            ],
+            [
+                'title' => 'پیش‌میانی',
+                'title_abbr' => 'b1',
+                'order' => 3,
+                'intro' => 'این سطح سومین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'c6e9fc',
+                'color' => '8dd8f8',
+                'high_color' => '3daed6',
+            ],
+            [
+                'title' => 'میانی',
+                'title_abbr' => 'b2',
+                'order' => 4,
+                'intro' => 'این سطح چهارمین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'bad2ee',
+                'color' => '2d93d1',
+                'high_color' => '2270a0',
+            ],
+            [
+                'title' => 'فوق‌میانی',
+                'title_abbr' => 'b3',
+                'order' => 5,
+                'intro' => 'این سطح پنجمین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => '80a0d3',
+                'color' => '0065b3',
+                'high_color' => '004c88',
+            ],
+            [
+                'title' => 'پیشرفته',
+                'title_abbr' => 'c1',
+                'order' => 6,
+                'intro' => 'این سطح ششمین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'c0e2ca',
+                'color' => '00a650',
+                'high_color' => '017337',
+            ],
+            [
+                'title' => 'فوق‌پیشرفته',
+                'title_abbr' => 'c2',
+                'order' => 7,
+                'intro' => 'این سطح هفتمین سطح آموزشی بنیاد سعدی است.',
+                'low_color' => 'bbafd5',
+                'color' => '63409a',
+                'high_color' => '422367',
+            ],
+        ];
 
-        //a
-        $level = new Level;
-        $level->title = 'مقدماتی';
-        $level->title_abbr = 'a';
-        $level->order = 2;
-        $level->intro = 'این سطح دومین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'fbbea9';
-        $level->color = 'ee1c25';
-        $level->high_color = 'ba131a';
-        $level->save();
-
-        //b1
-        $level = new Level;
-        $level->title = 'پیش‌میانی';
-        $level->title_abbr = 'b1';
-        $level->order = 3;
-        $level->intro = 'این سطح سومین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'c6e9fc';
-        $level->color = '8dd8f8';
-        $level->high_color = '3daed6';
-        $level->save();
-
-        //b2
-        $level = new Level;
-        $level->title = 'میانی';
-        $level->title_abbr = 'b2';
-        $level->order = 4;
-        $level->intro = 'این سطح چهارمین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'bad2ee';
-        $level->color = '2d93d1';
-        $level->high_color = '2270a0';
-        $level->save();
-
-        //b3
-        $level = new Level;
-        $level->title = 'فوق‌میانی';
-        $level->title_abbr = 'b3';
-        $level->order = 5;
-        $level->intro = 'این سطح پنجمین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = '80a0d3';
-        $level->color = '0065b3';
-        $level->high_color = '004c88';
-        $level->save();
-
-        //c1
-        $level = new Level;
-        $level->title = 'پیشرفته';
-        $level->title_abbr = 'c1';
-        $level->order = 6;
-        $level->intro = 'این سطح ششمین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'c0e2ca';
-        $level->color = '00a650';
-        $level->high_color = '017337';
-        $level->save();
-
-        //c2
-        $level = new Level;
-        $level->title = 'فوق‌پیشرفته';
-        $level->title_abbr = 'c2';
-        $level->order = 7;
-        $level->intro = 'این سطح هفتمین سطح آموزشی بنیاد سعدی است.';
-        $level->low_color = 'bbafd5';
-        $level->color = '63409a';
-        $level->high_color = '422367';
-        $level->save();
+        foreach ($levels_data as $level_data) {
+            $level = new Level;
+            $level->title = $level_data['title'];
+            $level->title_abbr = $level_data['title_abbr'];
+            $level->order = $level_data['order'];
+            $level->intro = $level_data['intro'];
+            $level->low_color = $level_data['low_color'];
+            $level->color = $level_data['color'];
+            $level->high_color = $level_data['high_color'];
+            $level->save();
+        }
     }
 }
