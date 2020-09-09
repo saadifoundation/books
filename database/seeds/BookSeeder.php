@@ -37,7 +37,7 @@ class BookSeeder extends Seeder
         $book->sample_file = 'samples/mina1.pdf';
         $book->buying_link = '';
         $book->ebuying_link = '';
-        $book->audios_link = 'audios_zip/mina1.zip';
+        $book->audio_link = 'audio_zip/mina1.zip';
         $book->save();
         
         $book->levels()->saveMany([

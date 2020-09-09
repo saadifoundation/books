@@ -28,7 +28,7 @@ class CreateBooksTable extends Migration
             $table->string('sample_file');
             $table->string('buying_link');
             $table->string('ebuying_link');
-            $table->string('audios_link');
+            $table->string('audio_link');
             $table->timestamps();
         });
     }
