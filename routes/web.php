@@ -28,3 +28,5 @@ Route::get('/tags/{tag}', 'TagController@show')->name('tag');
 Route::resource('books', 'BookController');
 
 Route::redirect('/{book}', '/books/{book}');
+
+Route::resource('users', 'UserController');
