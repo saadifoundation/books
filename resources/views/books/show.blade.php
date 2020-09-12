@@ -22,8 +22,8 @@
   </div>
   <div class="row mb-4">
     <div class="col-md-4">
-      <a href="img/mina1.jpg" target="_blank" download="mina1.jpg" class="cover">
-        <img src="{{ Storage::url($book->cover) }}" alt="" class="w-100">
+      <a href="{{ Storage::url($book->cover) }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover">
+        <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-100">
       </a>
 
       <div class="border-md-1 text-center">
@@ -39,12 +39,12 @@
             </a>
           @endif
           @if($book->index_file !== NULL)
-            <a href="{{ $book->index_file }}" target="_blank">
+            <a href="{{ Storage::url($book->index_file) }}" target="_blank">
               <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
             </a>
           @endif
           @if($book->sample_file !== NULL)
-            <a href="{{ $book->sample_file }}" target="_blank">
+            <a href="{{ Storage::url($book->sample_file) }}" target="_blank">
               <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
             </a>
           @endif
@@ -59,7 +59,7 @@
             </a>
           @endif
           @if($book->audio_link !== NULL)
-            <a href="{{ $book->audio_link  }}" target="_blank">
+            <a href="{{ Storage::url($book->audio_link) }}" target="_blank">
               <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
             </a>
           @endif
@@ -162,7 +162,7 @@
         فایل‌های صوتی
       </h2>
       @if($book->audio_link !== '')
-        <a href="{{ $book->audio_link }}">
+        <a href="{{ Storage::url($book->audio_link) }}">
           دریافت تمام فایل‌های صوتی (zip)
         </a>
       @endif
@@ -170,11 +170,11 @@
     <div class="col-12">
         <div class="accordion" id="accordionLessons">
           @foreach ($book->audio->groupBy('group_name')->sortBy('group_order') as $audio_group)
-          <div class="card">
+            <div class="card">
               <div class="card-header" id="heading{{$loop->index}}">
                 <h2 class="mb-0">
                   <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse{{$loop->index}}" aria-controls="collapse{{$loop->index}}">
-                    {{ $audio_group["$loop->index"]->group_name }}
+                    {{ $audio_group[0]->group_name }}
                   </button>
                 </h2>
               </div>
@@ -182,7 +182,7 @@
                 <div class="card-body">
                   @foreach ($audio_group as $audio)
                     <h5 class="mb-3">
-                      {{$audio_group["$loop->index"]->title}}
+                      {{$audio_group[$loop->index]->title}}
                     </h5>
                     <div class="row">
                         <div class="col-sm-10 mb-2">
