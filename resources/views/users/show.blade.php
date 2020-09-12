@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-md-4 text-center">
             <a href="{{ Storage::url($user->pic) }}" target="_blank" download="sahraei-reza.jpg" class="cover">
-            <img src="{{ Storage::url($user->pic) }}" alt="" class="w-100">
+            <img src="@if($user->pic !== null) {{ Storage::url($user->pic) }} @else {{ asset('/img/person.jpg') }} @endif" alt="" class="w-100">
             </a>
             <div class="buttons mt-3">
             @if ($user->resume !== NULL)
@@ -41,11 +41,13 @@
             @endif
             </div>
         </div>
-        <div class="col-md-8 order-md-2">
-            <div class="description text-right font-weight-light">
-                {{ $user->intro }}
+        @if ($user->intro !== NULL)
+            <div class="col-md-8 order-md-2">
+                <div class="description text-right font-weight-light">
+                    {{ $user->intro }}
+                </div>
             </div>
-        </div>
+        @endif
     </div>
     @if ($user->books->isNotEmpty())
         <div class="row text-center d-flex justify-content-center border-top mb-4">
