@@ -19,7 +19,7 @@
           @yield('title')
         </h5>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="{{ route('books.index') }}">
+            <a class="p-2 text-dark" href="{{ route('index') }}">
                 {{ __('فهرست کتاب‌ها') }}
             </a>
         </nav>
