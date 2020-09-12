@@ -115,7 +115,7 @@ class BookSeeder extends Seeder
                 'sample_file' => null,
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => 'audio_zip/mina2.zip',
+                'audio_link' => 'audio_zip/mina3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                     Level::firstWhere('title_abbr', 'b3'),
