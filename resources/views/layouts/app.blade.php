@@ -40,7 +40,9 @@
     <footer class="container-fluid pt-4 my-md-4 border-top text-center border-level-a">
       <div dir="ltr" class="row">
           <div class="col-12 col-md">
-              <img class="mb-2" src="{{ asset('/img/saadifoundation-logo.png') }}" alt="" width="24" height="24">
+              <a href="https://saadifoundation.ir" target="_blank">
+                <img class="mb-2" src="{{ asset('/img/saadifoundation-logo.png') }}" alt="" width="24" height="24">
+              </a>
               <small class="d-block mb-3 text-muted">&copy; {{ \Carbon\Carbon::now()->year }} Saadi Foundation</small>
           </div>
       </div>
