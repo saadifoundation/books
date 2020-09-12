@@ -47,7 +47,6 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //return count($book->users->where('title_abbr', 'writer'));
         $levels = Level::all();
         foreach ($levels as $level) {
             $level->width = ($level->order * 15) > 100 ? 100 : $level->order * 15;
