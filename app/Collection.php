@@ -8,7 +8,7 @@ class Collection extends Model
 {
     public function books()
     {
-        return $this->hasMany('App\Book')->withTimestamps();
+        return $this->hasMany('App\Book');
     }
 
     public function tags()
