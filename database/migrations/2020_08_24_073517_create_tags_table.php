@@ -17,7 +17,7 @@ class CreateTagsTable extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->string('title_abbr')->unique();
-            $table->text('intro');
+            $table->text('intro')->nullable();
             $table->timestamps();
         });
     }

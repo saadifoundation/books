@@ -18,7 +18,7 @@ class CreateLevelsTable extends Migration
             $table->string('title')->unique();
             $table->string('title_abbr')->unique();
             $table->integer('order');
-            $table->text('intro');
+            $table->text('intro')->nullable();
             $table->string('low_color');
             $table->string('color');
             $table->string('high_color');

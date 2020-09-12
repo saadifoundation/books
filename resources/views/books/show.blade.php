@@ -28,37 +28,37 @@
 
       <div class="border-md-1 text-center">
         <div class="buttons mt-3">
-          @if($book->elearning_link !== '')
+          @if($book->elearning_link !== NULL)
             <a href="{{ $book->elearning_link }}" target="_blank">
               <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->bibliography_link !== '')
+          @if($book->bibliography_link !== NULL)
             <a href="{{ $book->bibliography_link }}" target="_blank">
               <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->index_file !== '')
+          @if($book->index_file !== NULL)
             <a href="{{ $book->index_file }}" target="_blank">
               <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->sample_file !== '')
+          @if($book->sample_file !== NULL)
             <a href="{{ $book->sample_file }}" target="_blank">
               <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->buying_link !== '')
+          @if($book->buying_link !== NULL)
             <a href="{{ $book->buying_link }}" target="_blank">
               <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->ebuying_link !== '')
+          @if($book->ebuying_link !== NULL)
             <a href="{{ $book->ebuying_link }}" target="_blank">
               <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->audio_link !== '')
+          @if($book->audio_link !== NULL)
             <a href="{{ $book->audio_link  }}" target="_blank">
               <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
             </a>
@@ -69,7 +69,7 @@
     </div>
     <div class="col-md-8">
 
-      @if($book->intro_video !== '')
+      @if($book->intro_video !== NULL)
         <div class="video my-3">
           <video src="{{ Storage::url($book->intro_video) }}" width="100%" controls="controls" preload="metadata">
             <source type="video/mp4">
@@ -77,7 +77,7 @@
           <p class="caption">
             {{ __('ویدئوی معرفی کتاب') }}
 
-            @if($book->teaching_video !== '')
+            @if($book->teaching_video !== NULL)
               <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
                 {{ __('ویدئوی روش تدریس') }}
               </button>
@@ -86,7 +86,7 @@
           </p>
         </div>
 
-        @if($book->teaching_video !== '')
+        @if($book->teaching_video !== NULL)
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -133,10 +133,12 @@
           {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ count($book->users->whereNotIn('group', 'writing')) }}</span>
         </a>
       </div>
-
-      <div class="description font-weight-light mb-4 text-justify">
-          {!! nl2br($book->intro) !!}
-      </div>
+      
+      @if($book->intro !== NULL)
+        <div class="description font-weight-light mb-4 text-justify">
+            {!! nl2br($book->intro) !!}
+        </div>
+      @endif
 
       <div class="levels mb-4">
         @foreach ($levels as $each_level)

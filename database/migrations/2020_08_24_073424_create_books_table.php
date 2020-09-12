@@ -19,16 +19,16 @@ class CreateBooksTable extends Migration
             $table->string('title_abbr')->unique();
             $table->string('cover');
             $table->foreignId('collection_id')->constranied();
-            $table->text('intro');
-            $table->string('intro_video');
-            $table->string('teaching_video');
-            $table->string('elearning_link');
-            $table->string('bibliography_link');
-            $table->string('index_file');
-            $table->string('sample_file');
-            $table->string('buying_link');
-            $table->string('ebuying_link');
-            $table->string('audio_link');
+            $table->text('intro')->nullable();
+            $table->string('intro_video')->nullable();
+            $table->string('teaching_video')->nullable();
+            $table->string('elearning_link')->nullable();
+            $table->string('bibliography_link')->nullable();
+            $table->string('index_file')->nullable();
+            $table->string('sample_file')->nullable();
+            $table->string('buying_link')->nullable();
+            $table->string('ebuying_link')->nullable();
+            $table->string('audio_link')->nullable();
             $table->timestamps();
         });
     }
