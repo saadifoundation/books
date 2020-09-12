@@ -58,7 +58,7 @@ class BookController extends Controller
         foreach ($book->levels as $book_level) {
             array_push($book_levels_title_abbrs, $book_level->title_abbr);
         }
-        
+
         return view(
             'books.show',
             [
