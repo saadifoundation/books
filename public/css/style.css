@@ -1,4 +1,10 @@
-@import 'fontiran.css';
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/eot/IRANSansWebttf');
+}
+
 @import 'font-awesome.min.css';
 
 /** Colors:
