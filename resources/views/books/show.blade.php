@@ -23,7 +23,7 @@
   <div class="row mb-4">
     <div class="col-md-4">
       <a href="img/mina1.jpg" target="_blank" download="mina1.jpg" class="cover">
-        <img src="@if($book->cover !== NULL) {{ Storage::url($book->cover) }} @else {{ asset('img/cover.jpg') }} @endif" alt="" class="w-100">
+        <img src="{{ Storage::url($book->cover) }}" alt="" class="w-100">
       </a>
 
       <div class="border-md-1 text-center">
@@ -274,7 +274,7 @@
       <div class="col-6 col-md-3 mb-2">
         <a href="{{ route('books.show', $book->title_abbr) }}">
           <div class="card book-card">
-            <img src="@if($book->cover !== NULL) {{ Storage::url($book->cover) }} @else {{ asset('img/cover.jpg') }} @endif" class="card-img-top">
+            <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">
                 {{$book->title}}
