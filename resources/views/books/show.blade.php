@@ -38,12 +38,12 @@
               <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->index_file !== '' && Storage::exists('$book->index_file'))
+          @if($book->index_file !== '')
             <a href="{{ $book->index_file }}" target="_blank">
               <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->sample_file !== '' && Storage::exists('$book->sample_file'))
+          @if($book->sample_file !== '')
             <a href="{{ $book->sample_file }}" target="_blank">
               <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
             </a>
@@ -58,7 +58,7 @@
               <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
             </a>
           @endif
-          @if($book->audio_link !== '' && Storage::exists('$book->audio_link'))
+          @if($book->audio_link !== '')
             <a href="{{ $book->audio_link  }}" target="_blank">
               <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
             </a>
@@ -159,7 +159,7 @@
       <h2 class="text-center mt-4">
         فایل‌های صوتی
       </h2>
-      @if($book->audio_link !== '' && Storage::exists('$book->audio_link'))
+      @if($book->audio_link !== '')
         <a href="{{ $book->audio_link }}">
           دریافت تمام فایل‌های صوتی (zip)
         </a>
@@ -204,22 +204,22 @@
     </div>
   </div>
   @endif
-  @if ($book->users->where('group', 'writing')->isNotEmpty())
+  @if ($book->users->where('role_group', 'writing')->isNotEmpty())
     <div class="row text-center d-flex justify-content-center border-top border-level-a" id="writers-row">
       <div class="col-12">
         <h2 class="mb-4 mt-4">
           مؤلفان کتاب
         </h2>
       </div>
-      @foreach ($book->users->where('group', 'writing') as $user)
+      @foreach ($book->users->where('role_group', 'writing') as $user)
         <div class="col-6 col-md-3 person">
-          <a href="sahraei-reza.html">
+          <a href="{{ route('users.show', $user->name_en) }}">
             <figure class="figure text-center">
               <img src='{{ Storage::url("$user->pic") }}' alt="" class="w-50 rounded figure-img img-fluid">
               <figcaption class="figure-caption text-center">
                 {{ $user->name }}
                 <span class="badge badge-primary">
-                  {{ $user->title }}
+                  {{ $user->role_title }}
                 </span>
               </figcaption>
             </figure>
@@ -228,7 +228,7 @@
       @endforeach
     </div>
   @endif
-  @if ($book->users->whereNotIn('group', 'writing')->isNotEmpty())
+  @if ($book->users->whereNotIn('role_group', 'writing')->isNotEmpty())
     <div class="row text-center mb-4" id="other-persons-button-row">
       <div class="col-12">
         <a class="btn btn-primary" id="load-more" data-toggle="collapse" href="#other-persons" role="button" aria-expanded="false" aria-controls="other-persons">
@@ -243,9 +243,9 @@
             همکاران دیگر
           </h2>
         </div>
-        @foreach ($book->users->whereNotIn('group', 'writing') as $user)
+        @foreach ($book->users->whereNotIn('role_group', 'writing') as $user)
           <div class="col-6 col-md-3 person other-person">
-            <a href="sahraei-reza.html">
+            <a href="{{ route('users.show', $user->name_en) }}">
               <figure class="figure text-center">
                 <img src='{{ Storage::url("$user->pic") }}' alt="" class="w-50 rounded figure-img img-fluid">
                 <figcaption class="figure-caption text-center">
