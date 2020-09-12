@@ -37,12 +37,22 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function getRouteKeyName()
+    {
+        return 'name_en';
+    }
+
     public function books()
     {
         return $this->belongsToMany('App\Book')
                     ->withPivot('role_id')
                     ->withTimestamps()
                     ->join('roles', 'role_id', '=', 'roles.id')
-                    ->select('*');
+                    ->select(
+                        'books.*',
+                        'roles.title as role_title',
+                        'roles.title_abbr as role_title_abbr',
+                        'roles.group as role_group'
+                    );
     }
 }

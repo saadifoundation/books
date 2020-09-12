@@ -27,7 +27,12 @@ class Book extends Model
                     ->withPivot('role_id')
                     ->withTimestamps()
                     ->join('roles', 'role_id', '=', 'roles.id')
-                    ->select('*');
+                    ->select(
+                        'users.*',
+                        'roles.title as role_title',
+                        'roles.title_abbr as role_title_abbr',
+                        'roles.group as role_group'
+                    );
     }
     
     public function collection()
