@@ -17,7 +17,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->string('title_abbr')->unique();
-            $table->string('cover');
+            $table->string('cover')->nullable();
             $table->foreignId('collection_id')->constranied();
             $table->text('intro')->nullable();
             $table->string('intro_video')->nullable();
