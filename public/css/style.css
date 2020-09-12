@@ -2,7 +2,7 @@
 	font-family: IRANSans;
 	font-style: normal;
 	font-weight: 900;
-	src: url('../fonts/eot/IRANSansWebttf');
+	src: url('../font/IRANSansWeb.ttf');
 }
 
 @import 'font-awesome.min.css';
