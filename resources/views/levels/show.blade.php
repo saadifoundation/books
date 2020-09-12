@@ -45,93 +45,51 @@
       </div>
     </div>
   </div>
-  <div class="row text-center d-flex justify-content-center border-top mb-4" id="books-row">
-    <div class="col-12">
-      <h2 class="mb-4 mt-4">
-        کتاب‌های سطح
-      </h2>
-    </div>
-    <div class="col-6 col-md-3 mb-2">
-      <a href="mina2.html">
-        <div class="card book-card">
-          <img src="img/mina1.jpg" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text">
-              مینا 1
-            </p>
-          </div>
+  @if ($level->books->isNotEmpty())
+    <div class="row text-center d-flex justify-content-center border-top mb-4" id="books-row">
+      <div class="col-12">
+        <h2 class="mb-4 mt-4">
+          {{ __('کتاب‌های سطح') }}
+        </h2>
+      </div>
+      @foreach ($level->books as $book)
+        <div class="col-6 col-md-3 mb-2">
+          <a href="{{ route('books.show', $book->title_abbr) }}">
+            <div class="card book-card">
+              <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  {{$book->title}}
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      @endforeach
     </div>
-    <div class="col-6 col-md-3 mb-2">
-      <a href="mina2.html">
-        <div class="card book-card">
-          <img src="img/mina2.jpg" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text">
-              چارچوب 1
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3 mb-2">
-      <a href="mina2.html">
-        <div class="card book-card">
-          <img src="img/mina3.jpg" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text">
-              گام اول
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+  @endif
   <div class="row text-center d-flex justify-content-center border-top" id="writers-row">
     <div class="col-12">
       <h2 class="mb-4 mt-4">
-        مؤلفان سطح
+        {{ __('مؤلفان سطح') }}
       </h2>
     </div>
-    <div class="col-6 col-md-3 person">
-      <a href="sahraei-reza.html">
-        <figure class="figure text-center">
-          <img src="img/persons/sahraei-reza.jpg" alt="" class="w-50 rounded figure-img img-fluid">
-          <figcaption class="figure-caption text-center">
-            رضامراد صحرایی
-            <span class="badge badge-primary">
-              مؤلف <span class="badge badge-light">3</span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-    <div class="col-6 col-md-3 person">
-      <a href="sahraei-reza.html">
-        <figure class="figure text-center">
-          <img src="img/persons/gharibi-afsaneh.png" alt="" class="w-50 rounded figure-img img-fluid">
-          <figcaption class="figure-caption text-center">
-            افسانه غریبی
-            <span class="badge badge-primary">
-              مؤلف <span class="badge badge-light">1</span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
-    <div class="col-6 col-md-3 person">
-      <a href="sahraei-reza.html">
-        <figure class="figure text-center">
-          <img src="img/persons/marsus-fzeze.jpg" alt="" class="w-50 rounded figure-img img-fluid">
-          <figcaption class="figure-caption text-center">
-            فائزه مرصوص
-            <span class="badge badge-primary">
-              مؤلف <span class="badge badge-light">1</span>
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </div>
+    @foreach($level->books as $book)
+      @foreach($book->users->where('group', 'writing') as $user)
+        <div class="col-6 col-md-3 person">
+          <a href=" {{ route('users.show', $user->name_en) }} ">
+            <figure class="figure text-center">
+              <img src="{{ Storage::url($user->pic) }}" alt="" class="w-50 rounded figure-img img-fluid">
+              <figcaption class="figure-caption text-center">
+                {{ $user->name }}
+                <span class="badge badge-primary">
+                  {{ __('مؤلف') }} <span class="badge badge-light">{{ count($user->books) }}</span>
+                </span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      @endforeach
+    @endforeach
   </div>
 @endsection
