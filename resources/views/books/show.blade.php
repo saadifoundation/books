@@ -127,10 +127,10 @@
           {{ __('فایل‌های صوتی کتاب') }} <span class="badge badge-light">{{ count($book->audio) }}</span>
         </a>
         <a href="#writers-row" class="btn btn-primary btn-sm mb-2">
-          {{ __('مؤلفان کتاب') }} <span class="badge badge-light">{{ count($book->users->where('group', 'writing')) }}</span>
+          {{ __('مؤلفان کتاب') }} <span class="badge badge-light">{{ count($book->users->where('role_group', 'writing')) }}</span>
         </a>
         <a href="#other-persons-button-row" class="btn btn-primary btn-sm mb-2">
-          {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ count($book->users->whereNotIn('group', 'writing')) }}</span>
+          {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ count($book->users->whereNotIn('role_group', 'writing')) }}</span>
         </a>
       </div>
       
