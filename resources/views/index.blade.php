@@ -15,7 +15,7 @@
         </div>
         <div class="badges mb-3">
           <a href="#levels-row" class="btn btn-success btn-sm mb-3">
-              سطوح <span class="badge badge-light">7</span>
+              سطوح <span class="badge badge-light">{{ $levels->count() }}</span>
           </a>
           <a href="#books-row" class="btn btn-primary btn-sm mb-3">
             کتاب‌ها <span class="badge badge-light">{{ $books->count() }}</span>
