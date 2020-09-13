@@ -95,7 +95,7 @@
                                 <td>
                                   @foreach ($level->books as $book)
                                     <a href="{{ route('books.show', $book->title_abbr) }}">
-                                      <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-25 mb-3">
+                                      <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
                                     </a>
                                   @endforeach
                                 </td>

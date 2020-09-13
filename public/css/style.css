@@ -215,3 +215,8 @@ html {
     direction: rtl;
     text-align: center;
   }
+
+  /* width for books on index */
+  .w-10 {
+    width: 10%!important;
+  }
