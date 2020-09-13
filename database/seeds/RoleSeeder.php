@@ -13,40 +13,44 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        $role = new Role;
-        $role->title = "نویسنده";
-        $role->title_abbr = "writer";
-        $role->group = "writing";
-        $role->save();
-
-        $role = new Role;
-        $role->title = "مترجم";
-        $role->title_abbr = "translator";
-        $role->group = "writing";
-        $role->save();
-
-        $role = new Role;
-        $role->title = "ویراستار";
-        $role->title_abbr = "editor";
-        $role->group = "writing";
-        $role->save();
-
-        $role = new Role;
-        $role->title = "همکار تألیف";
-        $role->title_abbr = "co-writer";
-        $role->group = "writing";
-        $role->save();
-
-        $role = new Role;
-        $role->title = "ناظر علمی";
-        $role->title_abbr = "scientific-supervisor";
-        $role->group = "writing";
-        $role->save();
-
-        $role = new Role;
-        $role->title = "گرافیست";
-        $role->title_abbr = "graphist";
-        $role->group = "graphic";
-        $role->save();
+        $roles_data = [
+            [
+                'title' => 'نویسنده',
+                'title_abbr' => 'writer',
+                'group' => 'writing',
+            ],
+            [
+                'title' => 'مترجم',
+                'title_abbr' => 'translator',
+                'group' => 'writing',
+            ],
+            [
+                'title' => 'ویراستار',
+                'title_abbr' => 'editor',
+                'group' => 'writing',
+            ],
+            [
+                'title' => 'همکار تألیف',
+                'title_abbr' => 'co-writer',
+                'group' => 'writing',
+            ],
+            [
+                'title' => 'ناظر علمی',
+                'title_abbr' => 'scientific-supervisor',
+                'group' => 'writing',
+            ],
+            [
+                'title' => 'گرافیست',
+                'title_abbr' => 'graphist',
+                'group' => 'graphic',
+            ],
+        ];
+        foreach ($roles_data as $role_data) {
+            $role = new Role;
+            $role->title = $role_data['title'];
+            $role->title_abbr = $role_data['title_abbr'];
+            $role->group = $role_data['group'];
+            $role->save();
+        }
     }
 }
