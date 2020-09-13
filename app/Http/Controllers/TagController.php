@@ -46,7 +46,9 @@ class TagController extends Controller
      */
     public function show(Tag $tag)
     {
-        return $tag;
+        return view('tags.show', [
+            'tag' => $tag,
+        ]);
     }
 
     /**
