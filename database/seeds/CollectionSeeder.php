@@ -19,13 +19,17 @@ class CollectionSeeder extends Seeder
                 'title' => 'مینا',
                 'title_abbr' => 'mina',
                 'tags' => [
-                    'چهارمهارتی',
+                    '4skills',
+                    'language-learning',
                 ],
             ],
             [
                 'title' => 'لذت خواندن',
                 'title_abbr' => 'enjoyreading',
-                'tags' => [],
+                'tags' => [
+                    'reading',
+                    'language-learning',
+                ],
             ],
             [
                 'title' => 'ایران‌شناسی',
@@ -85,7 +89,7 @@ class CollectionSeeder extends Seeder
             $collection->intro = '';
             $collection->save();
             foreach ($collection_data['tags'] as $tag) {
-                $collection->tags()->save(Tag::firstWhere('title', $tag));
+                $collection->tags()->save(Tag::firstWhere('title_abbr', $tag));
             }
         }
     }
