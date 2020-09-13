@@ -22,8 +22,8 @@
   </div>
   <div class="row mb-4">
     <div class="col-md-4">
-      <a href="{{ Storage::url($book->cover) }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover">
-        <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-100">
+      <a href="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover">
+        <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100">
       </a>
 
       <div class="border-md-1 text-center">
@@ -274,7 +274,7 @@
       <div class="col-6 col-md-3 mb-2">
         <a href="{{ route('books.show', $book->title_abbr) }}">
           <div class="card book-card">
-            <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
+            <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
             <div class="card-body">
               <p class="card-text">
                 {{$book->title}}

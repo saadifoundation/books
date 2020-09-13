@@ -95,7 +95,7 @@
                               <td>
                                 @foreach ($level->books as $book)
                                   <a href="{{ route('books.show', $book->title_abbr) }}">
-                                    <img src="{{ Storage::url($book->cover) }}" alt="{{ $book->title }}" class="w-25">
+                                    <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-25 mb-3">
                                   </a>
                                 @endforeach
                               </td>
@@ -112,26 +112,24 @@
           بعضی از کتاب‌های بنیاد سعدی
       </h2>
     </div>
-    @foreach ($books as $book)
-      @if ($loop->index < 3)
-        <div class="col-6 col-md-3 mb-2">
-          <a href="{{route('books.show', $book->title_abbr)}}">
-            <div class="card book-card">
-              <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">
-                  {{ $book->title }}
-                  @foreach ($book->levels as $level)
-                    <span class="badge badge-primary">
-                      {{ $level->title }}
-                    </span>
-                  @endforeach
-                </p>
-              </div>
+    @foreach ($books->random(3) as $book)
+      <div class="col-6 col-md-3 mb-2">
+        <a href="{{route('books.show', $book->title_abbr)}}">
+          <div class="card book-card">
+            <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">
+                {{ $book->title }}
+                @foreach ($book->levels as $level)
+                  <span class="badge badge-primary">
+                    {{ $level->title }}
+                  </span>
+                @endforeach
+              </p>
             </div>
-          </a>
-        </div>
-      @endif
+          </div>
+        </a>
+      </div>
     @endforeach
     <div class="col-12">
         <a class="btn btn-primary btn-block" href="books.html">

@@ -56,7 +56,7 @@
         <div class="col-6 col-md-3 mb-2">
           <a href="{{ route('books.show', $book->title_abbr) }}">
             <div class="card book-card">
-              <img src="{{ Storage::url($book->cover) }}" class="card-img-top">
+              <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
               <div class="card-body">
                 <p class="card-text">
                   {{$book->title}}
