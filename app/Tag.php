@@ -11,8 +11,8 @@ class Tag extends Model
         return 'title_abbr';
     }
     
-    public function collections()
+    public function books()
     {
-        return $this->belongsToMany('App\Collection')->withTimestamps();
+        return $this->belongsToMany('App\Book')->withTimestamps();
     }
 }

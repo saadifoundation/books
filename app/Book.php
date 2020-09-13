@@ -39,4 +39,9 @@ class Book extends Model
     {
         return $this->belongsTo('App\Collection');
     }
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag')->withTimestamps();
+    }
 }

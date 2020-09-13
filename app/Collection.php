@@ -10,9 +10,4 @@ class Collection extends Model
     {
         return $this->hasMany('App\Book');
     }
-
-    public function tags()
-    {
-        return $this->belongsToMany('App\Tag')->withTimestamps();
-    }
 }
