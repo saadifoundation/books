@@ -9,7 +9,7 @@
         <div class="description font-weight-light">
             <p>
               بنیاد سعدی با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تأسیس شده است و تاکنون در این زمینه
-              <span class="badge">45</span>
+              <span class="badge">{{ $books->count() }}</span>
               کتاب تالیف کرده است.
             </p>
         </div>
@@ -18,13 +18,10 @@
               سطوح <span class="badge badge-light">7</span>
           </a>
           <a href="#books-row" class="btn btn-primary btn-sm mb-3">
-            کتاب‌ها <span class="badge badge-light">{{ count($books) }}</span>
+            کتاب‌ها <span class="badge badge-light">{{ $books->count() }}</span>
           </a>
           <a href="persons.html" class="btn btn-primary btn-sm mb-3">
-            مؤلفان <span class="badge badge-light">40</span>
-          </a>
-          <a href="persons.html" class="btn btn-primary btn-sm mb-3">
-              همکاران دیگر <span class="badge badge-light">65</span>
+            همکاران <span class="badge badge-light">{{ $users->count() }}</span>
           </a>
         </div>
       </div>
