@@ -19,8 +19,8 @@
     </div>
     <div class="row">
         <div class="col-md-4 text-center">
-            <a href="{{ Storage::url($user->pic) }}" target="_blank" download="sahraei-reza.jpg" class="cover">
-            <img src="@if($user->pic !== null) {{ Storage::url($user->pic) }} @else {{ asset('/img/person.jpg') }} @endif" alt="" class="w-100">
+            <a href="{{ Storage::url($user->pic) }}" target="_blank" download="{{$user->name_en}}.jpg">
+            <img src="{{ $user->pic !== null ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="" class="w-100">
             </a>
             <div class="buttons mt-3">
             @if ($user->resume !== NULL)
