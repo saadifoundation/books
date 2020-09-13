@@ -32,6 +32,18 @@ class RoleSeeder extends Seeder
         $role->save();
 
         $role = new Role;
+        $role->title = "همکار تألیف";
+        $role->title_abbr = "co-writer";
+        $role->group = "writing";
+        $role->save();
+
+        $role = new Role;
+        $role->title = "ناظر علمی";
+        $role->title_abbr = "scientific-supervisor";
+        $role->group = "writing";
+        $role->save();
+
+        $role = new Role;
         $role->title = "گرافیست";
         $role->title_abbr = "graphist";
         $role->group = "graphic";
