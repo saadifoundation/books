@@ -19,7 +19,7 @@ class CreateAudioTable extends Migration
             $table->string('file');
             $table->string('group_name');
             $table->string('group_order');
-            $table->foreignId('book_id')->constrained();
+            $table->foreignId('book_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

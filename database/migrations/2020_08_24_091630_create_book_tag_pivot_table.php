@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCollectionTagPivotTable extends Migration
+class CreateBookTagPivotTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateCollectionTagPivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('collection_tag', function (Blueprint $table) {
-            $table->foreignId('collection_id')->constrained()->onDelete('cascade');
+        Schema::create('book_tag', function (Blueprint $table) {
+            $table->foreignId('book_id')->constrained()->onDelete('cascade');
             $table->foreignId('tag_id')->constrained()->onDelete('cascade');
-            $table->primary(['collection_id', 'tag_id']);
+            $table->primary(['book_id', 'tag_id']);
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateCollectionTagPivotTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('collection_tag');
+        Schema::dropIfExists('book_tag');
     }
 }
