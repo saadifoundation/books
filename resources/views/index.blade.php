@@ -134,7 +134,7 @@
           </div>
         @endforeach
         <div class="col-12">
-            <a class="btn btn-primary btn-block" href="books.html">
+            <a class="btn btn-primary btn-block" href="{{ route('books.index') }}">
                 همۀ کتاب‌ها
               </a>
         </div>
