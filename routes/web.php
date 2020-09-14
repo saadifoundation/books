@@ -21,12 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/levels/{level}', 'LevelController@show')->name('level');
 
-Route::get('/collections/{collection}', 'CollectionController@show')->name('collection');
-
 Route::get('/tags/{tag}', 'TagController@show')->name('tag');
 
 Route::resource('books', 'BookController');
-
 Route::redirect('/{book}', '/books/{book}');
 
 Route::resource('users', 'UserController');
+
+Route::resource('collections', 'CollectionController');
