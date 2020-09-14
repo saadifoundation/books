@@ -112,9 +112,9 @@
 
       @endif
 
-      @if ( !empty($book->collection->tags->toArray()) )
+      @if ( $book->tags->isNotEmpty() )
         <div class="labels mb-3 text-right mb-4">
-          @foreach($book->collection->tags as $tag)
+          @foreach($book->tags as $tag)
             <a class="badge badge-success" href="{{ route('tag', $tag->title_abbr) }}">
               {{ $tag->title }}
             </a>
