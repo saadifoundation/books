@@ -10,7 +10,7 @@
           <li class="breadcrumb-item"><a href="/">
             کتاب‌های بنیاد سعدی
           </a></li>
-          <li class="breadcrumb-item"><a href="{{ route('collection', $book->collection->title_abbr) }}">
+          <li class="breadcrumb-item"><a href="{{ route('collections.show', $book->collection->title_abbr) }}">
             {{ $book->collection->title }}
           </a></li>
           <li class="breadcrumb-item active" aria-current="page">
