@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="book-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <div class="book-header py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h1 class="display-4 mt-5">
                         @yield('title')
                     </h1>
