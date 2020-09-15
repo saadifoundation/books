@@ -195,7 +195,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'مینا 4',
                 'title_abbr' => 'mina4',
-                'cover' => null,
+                'cover' => 'covers/mina4.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'mina')->id,
                 'intro' => <<<INTRO
                 اگر می‌خواهید زبانِ فارسیِ معیار را به شیوه‌ای لذّت‌بخش فرابگیرید، مینا بهترین انتخاب است. طرّاحیِ جذّاب مینا و محتوای کاربردی و حساب‌شده آن، به شما کمک می‌کند واژه‌ها، کارکردها و ساخت‌های دستوریِ مهّمِ زبانِ فارسی را، به‌سادگی و به‌سرعت، بیاموزید. درس‌های مینا، به گونه‌ای طرّاحی شده‌اند که هم فارسیِ گفتاری را به شما می‌آموزند و هم فارسیِ نوشتاری را. با مینا می‌توانید خیلی زود، به زبانِ فارسی صحبت کنید و بنویسید.
@@ -763,7 +763,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'گام اول اردو',
                 'title_abbr' => 'ur1ststep',
-                'cover' => null,
+                'cover' => 'covers/ur1ststep.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', '1ststep')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1240,7 +1240,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'چارچوب 3',
                 'title_abbr' => 'persianframe3',
-                'cover' => null,
+                'cover' => 'covers/persianframe3.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'persianframe')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1458,7 +1458,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'شیراز 2',
                 'title_abbr' => 'shiraz2',
-                'cover' => null,
+                'cover' => 'covers/shiraz2.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1512,7 +1512,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'شیراز 3',
                 'title_abbr' => 'shiraz3',
-                'cover' => null,
+                'cover' => 'covers/shiraz3.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1537,7 +1537,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'شیراز 4',
                 'title_abbr' => 'shiraz4',
-                'cover' => null,
+                'cover' => 'covers/shiraz4.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1599,7 +1599,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'سفر به ایران 1',
                 'title_abbr' => 'trip2iran1',
-                'cover' => null,
+                'cover' => 'covers/trip2iran1.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => <<<INTRO
                 دورۀ دوجلدی «سفر به ایران» از جمله کتاب‌های آموزش زبان فارسی با اهداف ویژه است و با هدف آموزش زبان فارسی به گردشگرانی که قصد بازدید از جاذبه‌های تاریخی، طبیعی، فرهنگی و هنری کشور ایران را دارند، تهیه شده است. در این کتاب، فرد با موقعیت‌های مختلفی که یک گردشگر به‌طور معمول در آن قرار گرفته و با آن مواجه می‌شود و گفتمان غالب و بی‌نشان در هر موقعیت آشنا شده و با مطالعۀ دروس و انجام تمرین‌های کتاب می‌تواند ارتباط نوشتاری و گفتاری مؤثری با فارسی‌زبانان برقرار کند.
@@ -1639,7 +1639,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'سفر به ایران 2',
                 'title_abbr' => 'trip2iran2',
-                'cover' => null,
+                'cover' => 'covers/trip2iran2.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => <<<INTRO
                 دورۀ دوجلدی «سفر به ایران» از جمله کتاب‌های آموزش زبان فارسی با اهداف ویژه است و با هدف آموزش زبان فارسی به گردشگرانی که قصد بازدید از جاذبه‌های تاریخی، طبیعی، فرهنگی و هنری کشور ایران را دارند، تهیه شده است. در این کتاب، فرد با موقعیت‌های مختلفی که یک گردشگر به‌طور معمول در آن قرار گرفته و با آن مواجه می‌شود و گفتمان غالب و بی‌نشان در هر موقعیت آشنا شده و با مطالعۀ دروس و انجام تمرین‌های کتاب می‌تواند ارتباط نوشتاری و گفتاری مؤثری با فارسی‌زبانان برقرار کند.
@@ -1675,7 +1675,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'روش‌های سادۀ آموزش زبان فارسی',
                 'title_abbr' => 'easyteaching',
-                'cover' => null,
+                'cover' => 'covers/easyteaching.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'shiraz')->id,
                 'intro' => <<<INTRO
                 آموزش زبان فارسی به غیرفارسی‌زبانان، یکی از حوزه‌های نوین آموزشی در دنیای امروز است. مدرسان گوناگونی از سراسر دنیا داوطلب آموزش این زبان در سطح بین‌المللی هستند تا بستر مناسبی برای یادگیری آن فراهم نمایند. 
@@ -1752,7 +1752,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'جملات کاربردی زبان فارسی',
                 'title_abbr' => 'pracsen1',
-                'cover' => null,
+                'cover' => 'covers/pracsen1.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'pracsen')->id,
                 'intro' => <<<INTRO
                 کتاب جملات کاربردی بر اساس برنامه درسی موقعیتی نوشته شده است که در آن 700 جمله کاربردی زبان فارسی در 18 موقعیت آورده شده‌است؛ جملاتی معمولاً فارسی‌زبان‌ها در هر موقعیت بیشتر از آنها‌ استفاده می‌کنند. این برای سفر، یادگیری فارسی با اهداف ویژه و یادگیری موقعیتی زبان فارسی  مفید خواهد بود.
@@ -1792,7 +1792,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'جملات کاربردی زبان فارسی 2',
                 'title_abbr' => 'pracsen2',
-                'cover' => null,
+                'cover' => 'covers/pracsen2.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'pracsen')->id,
                 'intro' => <<<INTRO
                 کتاب جملات کاربردی بر اساس برنامه درسی موقعیتی نوشته شده است که در آن 700 جمله کاربردی زبان فارسی در 18 موقعیت آورده شده‌است؛ جملاتی معمولاً فارسی‌زبان‌ها در هر موقعیت بیشتر از آنها‌ استفاده می‌کنند. این برای سفر، یادگیری فارسی با اهداف ویژه و یادگیری موقعیتی زبان فارسی  مفید خواهد بود.
@@ -1832,7 +1832,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'خواندن آمفا 1',
                 'title_abbr' => 'amfareading1',
-                'cover' => null,
+                'cover' => 'covers/amfareading1.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
                 'intro' => <<<INTRO
                 هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
@@ -1871,7 +1871,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'خواندن آمفا 2',
                 'title_abbr' => 'amfareading2',
-                'cover' => null,
+                'cover' => 'covers/amfareading2.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
                 'intro' => <<<INTRO
                 هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
@@ -1910,7 +1910,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'خواندن آمفا 3',
                 'title_abbr' => 'amfareading3',
-                'cover' => null,
+                'cover' => 'covers/amfareading3.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
                 'intro' => <<<INTRO
                 هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
@@ -1949,7 +1949,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'خواندن آمفا 4',
                 'title_abbr' => 'amfareading4',
-                'cover' => null,
+                'cover' => 'covers/amfareading4.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
                 'intro' => <<<INTRO
                 هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
@@ -1982,6 +1982,33 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
+                ],
+            ],
+            //howteachpersian
+            [
+                'title' => 'زبان فارسی را چگونه آموزش دهیم؟',
+                'title_abbr' => 'howteachpersian',
+                'cover' => 'covers/amfareading4.jpg',
+                'collection_id' => null,
+                'intro' => null,
+                'intro_video' => null,
+                'teaching_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => null,
+                'sample_file' => null,
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                ],
+                'tags' => [
+                    'teaching',
                 ],
             ],
         ];
