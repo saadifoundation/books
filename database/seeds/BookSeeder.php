@@ -280,6 +280,10 @@ class BookSeeder extends Seeder
                         'model' => User::firstWhere('name_en', 'Maryam-Soltani'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
                 ],
                 'tags' => [
                     'language-learning',
@@ -339,6 +343,10 @@ class BookSeeder extends Seeder
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
                 ],
                 'tags' => [
                     'language-learning',
@@ -390,6 +398,10 @@ class BookSeeder extends Seeder
                         'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
                 ],
                 'tags' => [
                     'language-learning',
@@ -440,6 +452,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                 ],
                 'tags' => [
