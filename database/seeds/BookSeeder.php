@@ -1527,7 +1527,36 @@ class BookSeeder extends Seeder
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                 ],
-                'users' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Hamid-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'SeyedeFateme-Tabasi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Maryam-Soltani'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Nashmin-Valadi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                ],
                 'tags' => [
                     'language-learning',
                     '4skills',
@@ -1552,7 +1581,36 @@ class BookSeeder extends Seeder
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b3'),
                 ],
-                'users' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Hamid-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'SeyedeFateme-Tabasi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Maryam-Soltani'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Aghaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Nashmin-Valadi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                ],
                 'tags' => [
                     'language-learning',
                     '4skills',
