@@ -152,18 +152,20 @@
         </div>
       @endif
 
-      <div class="levels mb-4">
-        @foreach ($levels as $level)
-          <div class="mb-1">
-              <a class="progress" href="{{route('levels.show', $level)}}">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated @if($book->levels->pluck('title_abbr')->contains($level->title_abbr)) bg-level-{{$level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$level->width}}" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
-                      {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
-                  </div>
-              </a>
-          </div> 
-        @endforeach
-      </div>
+      @if ($book->levels->isNotEmpty())
+        <div class="levels mb-4">
+          @foreach ($levels as $level)
+            <div class="mb-1">
+                <a class="progress" href="{{route('levels.show', $level)}}">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated @if($book->levels->pluck('title_abbr')->contains($level->title_abbr)) bg-level-{{$level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$level->width}}" 
+                    aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                        {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
+                    </div>
+                </a>
+            </div> 
+          @endforeach
+        </div>
+      @endif
 
     </div>
   </div>
