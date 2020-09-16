@@ -24,7 +24,7 @@
           </h2>
           <div class="alert alert-primary" role="alert">
             تاکنون
-            <span class="badge badge-light">{{ $tag->collections->count() }}</span>
+            <span class="badge badge-light">{{ $tag->books->count() }}</span>
             کتاب با برچسب
             <span class="badge badge-success">
                 {{$tag->title}}
@@ -32,14 +32,14 @@
             در بنیاد سعدی تهیه شده است.
           </div>
         </div>
-        @foreach ($tag->collections as $collection)
+        @foreach ($tag->books as $book)
             <div class="col-6 col-md-3 mb-2">
-            <a href="mina2.html">
+            <a href="{{ route('books.show', $book) }}">
                 <div class="card book-card">
-                <img src="img/mina1.jpg" class="card-img-top">
+                <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top" alt="{{$book->title}}">
                 <div class="card-body">
                     <p class="card-text">
-                    {{$collection->title}}
+                    {{$book->title}}
                     </p>
                 </div>
                 </div>

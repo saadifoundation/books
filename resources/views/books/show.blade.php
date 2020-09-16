@@ -7,12 +7,18 @@
     <div class="col-12">
       <nav aria-label="breadcrumb" class="border-top border-level-a">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">
-            کتاب‌های بنیاد سعدی
-          </a></li>
-          <li class="breadcrumb-item"><a href="{{ route('collections.show', $book->collection->title_abbr) }}">
-            {{ $book->collection->title }}
-          </a></li>
+          <li class="breadcrumb-item">
+            <a href="{{ route('index') }}">
+              {{ __('کتاب‌های بنیاد سعدی') }}
+            </a>
+          </li>
+          @if($book->collection !== NULL)
+            <li class="breadcrumb-item">
+              <a href="{{ route('collections.show', $book->collection) }}">
+                {{ $book->collection->title }}
+              </a>
+            </li>
+          @endif
           <li class="breadcrumb-item active" aria-current="page">
             {{ $book->title }}
           </li>
@@ -115,7 +121,7 @@
       @if ( $book->tags->isNotEmpty() )
         <div class="labels mb-3 text-right mb-4">
           @foreach($book->tags as $tag)
-            <a class="badge badge-success" href="{{ route('tag', $tag->title_abbr) }}">
+            <a class="badge badge-success" href="{{ route('tags.show', $tag) }}">
               {{ $tag->title }}
             </a>
           @endforeach
@@ -123,15 +129,21 @@
       @endif
 
       <div class="badges mb-3 text-right mb-4">
-        <a href="#sounds-row" class="btn btn-primary btn-sm mb-2">
-          {{ __('فایل‌های صوتی کتاب') }} <span class="badge badge-light">{{ count($book->audio) }}</span>
-        </a>
-        <a href="#writers-row" class="btn btn-primary btn-sm mb-2">
-          {{ __('مؤلفان کتاب') }} <span class="badge badge-light">{{ count($book->users->where('role_group', 'writing')) }}</span>
-        </a>
-        <a href="#other-persons-button-row" class="btn btn-primary btn-sm mb-2">
-          {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ count($book->users->whereNotIn('role_group', 'writing')) }}</span>
-        </a>
+        @if($book->audio->isNotEmpty())
+          <a href="#sounds-row" class="btn btn-primary btn-sm mb-2">
+            {{ __('فایل‌های صوتی کتاب') }} <span class="badge badge-light">{{ $book->audio->count() }}</span>
+          </a>
+        @endif
+        @if($book->users->where('role_group', 'writing')->isNotEmpty())
+          <a href="#writers-row" class="btn btn-primary btn-sm mb-2">
+            {{ __('مؤلفان کتاب') }} <span class="badge badge-light">{{ $book->users->where('role_group', 'writing')->count() }}</span>
+          </a>
+        @endif
+        @if($book->users->whereNotIn('role_group', 'writing')->isNotEmpty())
+          <a href="#other-persons-button-row" class="btn btn-primary btn-sm mb-2">
+            {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ $book->users->whereNotIn('role_group', 'writing')->count() }}</span>
+          </a>
+        @endif
       </div>
       
       @if($book->intro !== NULL)
@@ -143,7 +155,7 @@
       <div class="levels mb-4">
         @foreach ($levels as $level)
           <div class="mb-1">
-              <a class="progress" href="{{route('level', $level)}}">
+              <a class="progress" href="{{route('levels.show', $level)}}">
                   <div class="progress-bar progress-bar-striped progress-bar-animated @if($book->levels->pluck('title_abbr')->contains($level->title_abbr)) bg-level-{{$level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$level->width}}" 
                   aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
                       {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
@@ -159,11 +171,11 @@
   <div class="row text-center border-top mb-4 border-level-a" id="sounds-row">
     <div class="col-12 mb-4">
       <h2 class="text-center mt-4">
-        فایل‌های صوتی
+        {{ __('فایل‌های صوتی') }}
       </h2>
       @if($book->audio_link !== '')
         <a href="{{ Storage::url($book->audio_link) }}">
-          دریافت تمام فایل‌های صوتی (zip)
+          {{ __('دریافت تمام فایل‌های صوتی (zip)') }}
         </a>
       @endif
     </div>
@@ -217,7 +229,7 @@
         <div class="col-6 col-md-3 person">
           <a href="{{ route('users.show', $user->name_en) }}">
             <figure class="figure text-center">
-              <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="" class="w-50 rounded figure-img img-fluid">
+              <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
               <figcaption class="figure-caption text-center">
                 {{ $user->name }}
                 <span class="badge badge-primary">
@@ -234,7 +246,7 @@
     <div class="row text-center mb-4" id="other-persons-button-row">
       <div class="col-12">
         <a class="btn btn-primary" id="load-more" data-toggle="collapse" href="#other-persons" role="button" aria-expanded="false" aria-controls="other-persons">
-          همکاران دیگر
+          {{ __('همکاران دیگر') }}
         </a>
       </div>
     </div>
@@ -242,7 +254,7 @@
       <div class="row text-center d-flex justify-content-center">
         <div class="col-12">
           <h2 class="mb-4 mt-4">
-            همکاران دیگر
+            {{ __('همکاران دیگر') }}
           </h2>
         </div>
         @foreach ($book->users->whereNotIn('role_group', 'writing') as $user)
@@ -263,27 +275,29 @@
       </div>
     </div>
   @endif
-  @if($book->collection->books->whereNotIn('title_abbr', $book->title_abbr)->isNotEmpty())
-  <div class="row text-center d-flex justify-content-center border-top mb-4 border-level-a">
-    <div class="col-12">
-      <h2 class="mb-4 mt-4">
-        کتاب‌های مرتبط
-      </h2>
-    </div>
-    @foreach($book->collection->books->whereNotIn('title_abbr', $book->title_abbr) as $book)
-      <div class="col-6 col-md-3 mb-2">
-        <a href="{{ route('books.show', $book->title_abbr) }}">
-          <div class="card book-card">
-            <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text">
-                {{$book->title}}
-              </p>
-            </div>
+  @if($book->collection !== null)
+    @if($book->collection->books->whereNotIn('title_abbr', $book->title_abbr)->isNotEmpty())
+      <div class="row text-center d-flex justify-content-center border-top mb-4 border-level-a">
+        <div class="col-12">
+          <h2 class="mb-4 mt-4">
+            کتاب‌های مرتبط
+          </h2>
+        </div>
+        @foreach($book->collection->books->whereNotIn('title_abbr', $book->title_abbr) as $book)
+          <div class="col-6 col-md-3 mb-2">
+            <a href="{{ route('books.show', $book->title_abbr) }}">
+              <div class="card book-card">
+                <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">
+                    {{$book->title}}
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
+        @endforeach
       </div>
-    @endforeach
-  </div>
+    @endif
   @endif
 @endsection

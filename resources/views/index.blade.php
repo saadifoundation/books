@@ -34,7 +34,7 @@
             </h2>
             <p>
                 کتاب‌های بنیاد سعدی در 7 سطح مختلف تألیف و منتشر می‌شوند. این سطح‌بندی بر اساس
-                <a href="mina2.html">
+                <a href="{{ route('books.show', 'persianstandard') }}">
                     استاندارد مرجع آموزش زبان فارسی
                 </a>
                 است.
@@ -44,7 +44,7 @@
             <div class="levels">
                 @foreach ($levels as $level)
                     <div class="mb-1">
-                        <a class="progress" href="{{route('level', $level)}}">
+                        <a class="progress" href="{{route('levels.show', $level)}}">
                             <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
                             aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
                                 {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
@@ -78,29 +78,47 @@
                     </thead>
                     <tbody>
                         @foreach($levels as $level)
-                            <tr>
-                                <th scope="row">
-                                    <div class="mb-1">
-                                        <a class="progress" href="{{route('level', $level)}}">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
-                                            aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
-                                            {{ strtoupper($level->title_abbr)}}
-                                            </div>
-                                        </a>
-                                        <p>
-                                            {{ __($level->title) }}
-                                        </p>
-                                    </div>
-                                </th>
-                                <td>
-                                  @foreach ($level->books as $book)
-                                    <a href="{{ route('books.show', $book->title_abbr) }}">
-                                      <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
-                                    </a>
-                                  @endforeach
-                                </td>
-                            </tr>
+                          <tr>
+                            <th scope="row">
+                              <div class="mb-1">
+                                <a class="progress" href="{{route('levels.show', $level)}}">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
+                                  aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                                  {{ strtoupper($level->title_abbr)}}
+                                  </div>
+                                </a>
+                                <p>
+                                  {{ __($level->title) }}
+                                </p>
+                              </div>
+                            </th>
+                            <td>
+                              @foreach ($level->books as $book)
+                                <a href="{{ route('books.show', $book->title_abbr) }}">
+                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
+                                </a>
+                              @endforeach
+                            </td>
+                          </tr>
                         @endforeach
+                        <tr>
+                          <th scope="row">
+                            <div class="mb-1">
+                              <p>
+                                {{ __('تربیت مدرس') }}
+                              </p>
+                            </div>
+                          </th>
+                          <td>
+                            @foreach ($books as $book)
+                              @if($book->tags->whereIn('title_abbr', 'teaching'))
+                                <a href="{{ route('books.show', $book->title_abbr) }}">
+                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
+                                </a>
+                              @endif
+                            @endforeach
+                          </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
