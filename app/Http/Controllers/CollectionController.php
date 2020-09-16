@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Collection;
 use Illuminate\Http\Request;
+use App\Level;
 
 class CollectionController extends Controller
 {
@@ -46,9 +47,18 @@ class CollectionController extends Controller
      */
     public function show(Collection $collection)
     {
-        return $collection;
+        $levels = Level::all();
+
+        // //return $collection->books->first()->levels->pluck('title_abbr');
+        // $array_levels = array();
+        // $d = $collection->books->map(function ($book) {
+        //     dump($book->levels->pluck('title_abbr')->toArray());
+        //     return $book->levels;
+        // });
+        // dd($d);
         return view('collections.show', [
             'collection' => $collection,
+            'levels' => $levels,
         ]);
     }
 
