@@ -349,7 +349,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'لذت خواندن 3',
                 'title_abbr' => 'enjoyreading3',
-                'cover' => null,
+                'cover' => 'covers/enjoyreading3.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'enjoyreading')->id,
                 'intro' => <<<INTRO
                 اگر می‌خواهید از یادگیری زبان فارسی لذت ببرید، باید مهارت خواندن خود را تقویت کنید. این کتاب، با بهره‌گیری از اصول و مهارت‌های آموزشی مناسب، به شما کمک می کند تا:
@@ -400,7 +400,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'لذت خواندن 4',
                 'title_abbr' => 'enjoyreading4',
-                'cover' => null,
+                'cover' => 'covers/enjoyreading4.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'enjoyreading')->id,
                 'intro' => <<<INTRO
                 اگر می‌خواهید از یادگیری زبان فارسی لذت ببرید، باید مهارت خواندن خود را تقویت کنید. این کتاب، با بهره‌گیری از اصول و مهارت‌های آموزشی مناسب، به شما کمک می کند تا:
@@ -1285,7 +1285,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'چارچوب 2',
                 'title_abbr' => 'persianframe2',
-                'cover' => null,
+                'cover' => 'covers/persianframe2.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'persianframe')->id,
                 'intro' => null,
                 'intro_video' => null,
@@ -1864,7 +1864,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'خمره',
                 'title_abbr' => 'khomreh',
-                'cover' => null,
+                'cover' => 'covers/khomreh.jpg',
                 'collection_id' => null,
                 'intro' => null,
                 'intro_video' => null,
@@ -2148,7 +2148,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'زبان فارسی را چگونه آموزش دهیم؟',
                 'title_abbr' => 'howteachpersian',
-                'cover' => 'covers/amfareading4.jpg',
+                'cover' => 'covers/howteachpersian.jpg',
                 'collection_id' => null,
                 'intro' => null,
                 'intro_video' => null,
@@ -2234,7 +2234,7 @@ class BookSeeder extends Seeder
                     ],
                 ],
                 'tags' => [
-                    'teaching',
+                    'language-learning',
                 ],
             ],
         ];
