@@ -141,12 +141,12 @@
       @endif
 
       <div class="levels mb-4">
-        @foreach ($levels as $each_level)
+        @foreach ($levels as $level)
           <div class="mb-1">
-              <a class="progress" href="{{route('level', $each_level)}}">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated @if(in_array($each_level->title_abbr, $book_levels_title_abbrs)) bg-level-{{$each_level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$each_level->width}}" 
-                  aria-valuemin="0" aria-valuemax="100" style="width: {{$each_level->width}}%">
-                      {{ __("$each_level->title") }}: {{ strtoupper($each_level->title_abbr) }}
+              <a class="progress" href="{{route('level', $level)}}">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated @if($book->levels->pluck('title_abbr')->contains($level->title_abbr)) bg-level-{{$level->title_abbr}} @else bg-secondary @endif" role="progressbar" aria-valuenow="{{$level->width}}" 
+                  aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                      {{ __("$level->title") }}: {{ strtoupper($level->title_abbr) }}
                   </div>
               </a>
           </div> 

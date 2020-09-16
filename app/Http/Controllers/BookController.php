@@ -51,22 +51,12 @@ class BookController extends Controller
     public function show(Book $book)
     {
         $levels = Level::all();
-        foreach ($levels as $level) {
-            $level->width = ($level->order * 15) > 100 ? 100 : $level->order * 15;
-        }
-        
-        //create an array for book's levels' title_abbr
-        $book_levels_title_abbrs = [];
-        foreach ($book->levels as $book_level) {
-            array_push($book_levels_title_abbrs, $book_level->title_abbr);
-        }
 
         return view(
             'books.show',
             [
             'book' => $book,
             'levels' => $levels,
-            'book_levels_title_abbrs' => $book_levels_title_abbrs,
             ]
         );
     }
