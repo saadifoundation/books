@@ -23,7 +23,7 @@
         <div class="description font-weight-light">
             <p>
             در مجموع تاکنون
-            <span class="badge">{{ $users->count() }}</span>
+            {{ $users->count() }}
             فرد با بنیاد سعدی همکاری کرده‌اند.
             </p>
         </div>

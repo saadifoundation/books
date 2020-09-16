@@ -9,8 +9,8 @@
         <div class="description font-weight-light">
             <p>
               بنیاد سعدی با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تأسیس شده است و تاکنون در این زمینه
-              <span class="badge">{{ $books->count() }}</span>
-              کتاب تالیف کرده است.
+              {{ $books->count() }}
+              کتاب تالیف کرده یا در دست تألیف دارد.
             </p>
         </div>
         <div class="badges mb-3">
@@ -20,7 +20,7 @@
           <a href="#books-row" class="btn btn-primary btn-sm mb-3">
             کتاب‌ها <span class="badge badge-light">{{ $books->count() }}</span>
           </a>
-          <a href="persons.html" class="btn btn-primary btn-sm mb-3">
+          <a href="{{ route('users.index') }}" class="btn btn-primary btn-sm mb-3">
             همکاران <span class="badge badge-light">{{ $users->count() }}</span>
           </a>
         </div>
@@ -101,7 +101,7 @@
                             </td>
                           </tr>
                         @endforeach
-                        <tr>
+                        <!-- <tr>
                           <th scope="row">
                             <div class="mb-1">
                               <p>
@@ -111,14 +111,14 @@
                           </th>
                           <td>
                             @foreach ($books as $book)
-                              @if($book->tags->whereIn('title_abbr', 'teaching'))
+                              @if($book->tags->whereIn('tags.title_abbr', 'teaching'))
                                 <a href="{{ route('books.show', $book->title_abbr) }}">
                                   <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
                                 </a>
                               @endif
                             @endforeach
                           </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
