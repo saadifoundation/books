@@ -2175,7 +2175,7 @@ class BookSeeder extends Seeder
             [
                 'title' => '1001 شب',
                 'title_abbr' => '1001nights',
-                'cover' => null,
+                'cover' => 'covers/1001nights.jpg',
                 'collection_id' => null,
                 'intro' => null,
                 'intro_video' => null,
@@ -2206,7 +2206,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'آموزش فارسی با موسیقی',
                 'title_abbr' => 'persianwithmusic',
-                'cover' => null,
+                'cover' => 'covers/persianwithmusic.jpg',
                 'collection_id' => null,
                 'intro' => null,
                 'intro_video' => null,
