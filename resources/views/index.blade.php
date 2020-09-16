@@ -101,7 +101,7 @@
                             </td>
                           </tr>
                         @endforeach
-                        <!-- <tr>
+                        <tr>
                           <th scope="row">
                             <div class="mb-1">
                               <p>
@@ -111,14 +111,14 @@
                           </th>
                           <td>
                             @foreach ($books as $book)
-                              @if($book->tags->whereIn('tags.title_abbr', 'teaching'))
+                              @if($book->levels->isEmpty())
                                 <a href="{{ route('books.show', $book->title_abbr) }}">
                                   <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
                                 </a>
                               @endif
                             @endforeach
                           </td>
-                        </tr> -->
+                        </tr>
                     </tbody>
                 </table>
             </div>
