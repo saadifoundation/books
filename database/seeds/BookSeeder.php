@@ -239,7 +239,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'لذت خواندن 1',
                 'title_abbr' => 'enjoyreading1',
-                'cover' => null,
+                'cover' => 'covers/enjoyreading1.jpg',
                 'collection_id' => Collection::firstWhere('title_abbr', 'enjoyreading')->id,
                 'intro' => <<<INTRO
                 اگر می‌خواهید از یادگیری زبان فارسی لذت ببرید، باید مهارت خواندن خود را تقویت کنید. این کتاب، با بهره‌گیری از اصول و مهارت‌های آموزشی مناسب، به شما کمک می کند تا:
@@ -1313,7 +1313,10 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'b1'),
+                    Level::firstWhere('title_abbr', 'b2'),
+                ],
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -1892,7 +1895,10 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'b2'),
+                    Level::firstWhere('title_abbr', 'b3'),
+                ],
                 'users' => null,
                 'tags' => [
                     'educational-assistance',
@@ -1915,7 +1921,9 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'b2'),
+                ],
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -2203,7 +2211,10 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'b2'),
+                    Level::firstWhere('title_abbr', 'b3'),
+                ],
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2234,7 +2245,11 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'b2'),
+                    Level::firstWhere('title_abbr', 'b3'),
+                    Level::firstWhere('title_abbr', 'c1'),
+                ],
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
