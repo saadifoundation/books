@@ -36,12 +36,12 @@
             @endif
             @if ($user->website_link !== NULL)
                 <a href="{{ $user->website_link }}" target="_blank" class="btn btn-primary mb-2">
-                    <i class="far fa-comment"></i>
+                    <i class="fas fa-comment"></i>
                 </a>
             @endif
             @if ($user->orcid_link !== NULL)
                 <a href="{{ $user->orcid_link }}" target="_blank" class="btn btn-primary mb-2">
-                    <i class="far fa-comment"></i>
+                    <i class="fab fa-orcid"></i>
                 </a>
             @endif
             </div>
