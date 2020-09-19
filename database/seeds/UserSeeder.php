@@ -52,13 +52,15 @@ class UserSeeder extends Seeder
             [
                 'name' => 'حمید آقایی',
                 'name_en' => 'Hamid-Aghaei',
-                'email' => 'hamid.aghaei@yahoo.com',
-                'intro' => null,
+                'email' => 'aghaei@yahoo.com',
+                'intro' => <<<INTRO
+                دانشجوی دكتری زبان‌شناسی دانشگاه شهید بهشتی، دانش‌آموخته آزفا در مقطع كارشناسی ارشد و مدرس زبان فارسی به غیرفارسی‌زبانان
+                INTRO,
                 'pic' => 'user_pics/hamid_aghaei.jpg',
                 'resume' => null,
-                'linkedin_link' => null,
+                'linkedin_link' => 'https://www.linkedin.com/in/hamid-aghaei',
                 'website_link' => null,
-                'orcid_link' => null,
+                'orcid_link' => 'https://orcid.org/0000-0002-3517-3302',
             ],
             [
                 'name' => 'مروارید طالبی',
@@ -77,12 +79,23 @@ class UserSeeder extends Seeder
                 'name' => 'مریم سلطانی',
                 'name_en' => 'Maryam-Soltani',
                 'email' => 'mrym.soltani@gmail.com',
-                'intro' => null,
+                'intro' => <<<INTRO
+                مریم سلطانی، فارغ‌التحصیل کارشناسی ارشد رشتۀ آموزش زبان فارسی به غیرفارسی‌زبانان از دانشگاه علامه طباطبایی است. او از سال 1393 در پست کارشناس آموزش در بنیاد سعدی مشغول به کار است. او در تألیف مجموعه‌های آموزشی بنیاد سعدی همکاری داشته که عبارتند از:
+                <ul><li>جلدهای اول و دوم مجموعۀ سه‌جلدی «ایران‌شناسی»</li>
+                <li>جلدهای  اول، دوم و سوم از مجموعۀ چهارمهارتی «مینا»</li>
+                <li>جلد اول، دوم و سوم از مجموعۀ چهارجلدی «لذت خواندن»</li>
+                <li>جلد دوم مجموعۀ آموزشی«شیراز»  ویژۀ دانش‌آموزان نوجوان</li></ul>
+                سلطانی علاوه بر همکاری در کارگروه‌های تألیف در برگزاری آزمون‌های متفاوت همکاری داشته‌ و در دوره‌های متفاوت زبان‌آموزی و تربیت معلم تدریس کرده‌است. به طور نمونه:
+                <ul><li>انجام مصاحبۀ شفاهی در آزمون‌های تعیین سطح حضوری و غیرحضوری</li>
+                <li>برنامه‌ریزی و اجرای آزمون‌های تعیین سطح و پایان‌دوره</li>
+                <li>تدریس در دوره‌های دانش‌افزایی سال‌های 94 الی 97</li>
+                <li>تدریس مهارت «شنیدن» و «خواندن» در دوره‌های تربیت مدرس حضوری و غیرحضوری </li></ul>
+                INTRO,
                 'pic' => 'user_pics/maryam_soltani.jpg',
-                'resume' => null,
-                'linkedin_link' => null,
+                'resume' => 'resumes/maryam_soltani.jpg',
+                'linkedin_link' => 'https://linkedin.com/in/maryam-soltani',
                 'website_link' => null,
-                'orcid_link' => null,
+                'orcid_link' => 'https://orcid.org/0000-0001-9080-3007',
             ],
             [
                 'name' => 'منیره شهباز',
@@ -96,15 +109,21 @@ class UserSeeder extends Seeder
                 'orcid_link' => null,
             ],
             [
-                'name' => 'سیده فاطمه طبسی',
+                'name' => 'سیده‌فاطمه طبسی',
                 'name_en' => 'SeyedeFateme-Tabasi',
                 'email' => 'seyede.fateme.tabasi@gmail.com',
-                'intro' => null,
-                'pic' => 'user_pics/seyede_fateme_tabasi.jpg',
-                'resume' => null,
-                'linkedin_link' => null,
-                'website_link' => null,
-                'orcid_link' => null,
+                'intro' => <<<INTRO
+                <ul><li>کارشناسی رشتۀ زبان و ادبیات فارسی، کارشناسی‌ ‌ارشد رشتۀ آموزش زبان فارسی به غیرفارسی‌زبانان از دانشگاه علامه طباطبائی</li>
+                <li>مدرس دوره‌های آموزش زبان فارسی به غیرفارسی‌زبانان مراکز آزفای دانشگاه علامه طباطبائی، دانشگاه الزهرا (س) و بنیاد سعدی</li>
+                <li>عضو گروه نویسندگان مجموعۀ لذت خواندن (4 جلدی، ویژۀ فارسی‌آموزان سطح مقدماتی تا پیشرفته)</li>
+                <li>عضو گروه نویسندگان مجموعۀ شیراز (4 جلدی، ویژۀ فارسی‌آموزان سطح مقدماتی تا پیشرفته و دانش‌آموزان مدارس لبنان)</li>
+                <li>علاقه‌مندی‌های مطالعاتی و پژوهشی: «گفتمان‌کاوی»، «ایدئولوژی، جنسیت، هویت و فرهنگ در آموزش زبان»، «تحلیل منابع آموزشی»، «آموزش مهارت خواندن» و «آموزش واژه و اصطلاحات»</li></ul>
+                INTRO,
+                'pic' => 'user_pics/seyedefateme_tabasi.jpg',
+                'resume' => 'resumes/seyedefateme_tabasi.pdf',
+                'linkedin_link' => 'linkedin.com/in/fateme-tabasi-3552a81b7',
+                'website_link' => 'https://independent.academia.edu/FatemeTabasi',
+                'orcid_link' => 'https://orcid.org/0000-0003-4343-3327',
             ],
             [
                 'name' => 'فائزه مرصوص',
@@ -134,10 +153,10 @@ class UserSeeder extends Seeder
                 'email' => 'amojiry@gmail.com',
                 'intro' => null,
                 'pic' => 'user_pics/amirhossein_mojiriforoushani.jpg',
-                'resume' => null,
-                'linkedin_link' => null,
-                'website_link' => null,
-                'orcid_link' => null,
+                'resume' => 'resumes/amirhossein_mojiriforoushani.pdf',
+                'linkedin_link' => 'https://linkedin.com/in/amir-hossein-mojiri-foroushani',
+                'website_link' => 'https://amirmojiri.ir',
+                'orcid_link' => 'https://orcid.org/0000-0002-3041-068X',
             ],
             [
                 'name' => 'آزاده شکری',
