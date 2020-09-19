@@ -43,8 +43,8 @@
         </div>
         @if ($user->intro !== NULL)
             <div class="col-md-8 order-md-2">
-                <div class="description text-right font-weight-light">
-                    {{ $user->intro }}
+                <div class="description font-weight-light mb-4 text-justify">
+                    {!! nl2br($user->intro) !!}
                 </div>
             </div>
         @endif
