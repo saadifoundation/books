@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('resume')->nullable();
             $table->string('linkedin_link')->nullable();
             $table->string('website_link')->nullable();
+            $table->string('orcid')->nullable();
             $table->boolean('is_admin')->default(false);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
