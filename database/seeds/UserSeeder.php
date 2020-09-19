@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
                 'email' => 'rezasahraee@yahoo.com',
                 'intro' => null,
                 'pic' => 'user_pics/reza_sahraee.jpg',
-                'resume' => null,
+                'resume' => 'resumes/reza_sahraee.pdf',
                 'linkedin_link' => null,
                 'website_link' => null,
                 'orcid_link' => null,
@@ -64,12 +64,14 @@ class UserSeeder extends Seeder
                 'name' => 'مروارید طالبی',
                 'name_en' => 'Morvarid-Talebi',
                 'email' => 'morvarid.talebi@gmail.com',
-                'intro' => null,
+                'intro' => <<<INTRO
+                خانم مروارید طالبی دانشجوی مقطع دکتری رشتۀ «آموزش زبان فارسی به غیرفارسی‌زبانان» در دانشگاه علامه طباطبائی و کارشناس آموزش و پژوهش بنیاد سعدی است. آموزش و پژوهش حول زبان فارسی، خصوصاً دو مؤلفۀ «واژه» و «تلفظ» در حوزۀ علاقۀ ایشان است. از تألیفات ایشان می‌توان به کتاب «آموزش واژه» از مجموعه کتاب‌های «زبان فارسی را چگونه آموزش دهیم؟» چاپ انتشارات دانشگاه علامه طباطبائی و کتاب «آموزش کاربردی واژه (2)» چاپ انتشارات آزفا متعلق به بنیاد سعدی اشاره کرد. همچنین همکاری در طراحی، برگزاری و ارزیابی دوره‌های مختلف آموزش زبان فارسی و تربیت مدرس زبان فارسی، به‌صورت برخط و حضوری، از دیگر موارد در سوابق حرفه‌ای ایشان است.
+                INTRO,
                 'pic' => 'user_pics/morvarid_talebi.jpg',
-                'resume' => null,
-                'linkedin_link' => null,
+                'resume' => 'resumes/morvarid_talebi.pdf',
+                'linkedin_link' => 'https://linkedin.com/in/morvarid-talebi',
                 'website_link' => null,
-                'orcid_link' => null,
+                'orcid_link' => 'https://orcid.org/0000-0002-2473-1401',
             ],
             [
                 'name' => 'مریم سلطانی',
@@ -228,13 +230,15 @@ class UserSeeder extends Seeder
             [
                 'name' => 'هدی سلیمی',
                 'name_en' => 'Hoda-Salimi',
-                'email' => 'hoda.salimi136722@gmail.com',
-                'intro' => null,
+                'email' => 'h.salimi@saadifoundation.ir',
+                'intro' => <<<INTRO
+                هدی سلیمی، کارشناس ارشد آموزش زبان انگلیسی به غیر انگلیسی زبانان از دانشگاه علامه طباطبایی، در زمینه‌های حرفه‌ای آموزش مجازی زبان به خارجی‌ها و تربیت مدرس زبان فارسی به غیرفارسی‌زبانان مشغول به فعالیت است. او همچنین، فارغ التحصیل دورة بین‌المللی آموزش زبان انگلیسی به غیر انگلیسی‌زبانان است و هم‌اکنون مشغول طراحی دوره‌های حرفه‌ای تربیت مدرس زبان فارسی به غیر فارسی زبانان می‌باشد. هدی سلیمی، علاوه بر فعالیت‌های حرفه‌ای، چندین مقالة ملی و بین‌المللی در مجلات داخلی و خارجی منتشر نموده و آثار خود را در کنفرانس‌های ملی و بین‌المللی ارائه کرده است. سلیمی با بیش از 5 سال سابقة تدریس زبان انگلیسی و فارسی، مشغول به انجام فعالیت‌های آموزشی و پژوهشی در دانشگاه‌های مطرح ملی و بین‌المللی است. 
+                INTRO,
                 'pic' => 'user_pics/hoda_salimi.jpg',
-                'resume' => null,
-                'linkedin_link' => null,
-                'website_link' => null,
-                'orcid_link' => null,
+                'resume' => 'resumes/hoda_salimi.pdf',
+                'linkedin_link' => 'https://linkedin.com/in/hoda-salimi',
+                'website_link' => 'https://scholar.google.com/citations?hl=fa&user=swAnpDIAAAAJ',
+                'orcid_link' => 'https://orcid.org/0000-0001-6070-7276',
             ],
             [
                 'name' => 'بهروز محمودی بختیاری',
@@ -498,6 +502,24 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
+            ],
+            [
+                'name' => 'نشر نویسه پارسی',
+                'name_en' => 'Neveeseh-Parsi',
+                'email' => 'info@neveeseh',
+                'intro' => <<<INTRO
+                «نشر نویسه پارسی» فعالیت خود را در سال 1391، به مدیر مسئولی امیر احمدی آغاز كرد.
+                بخش مهمی از كتاب‌های این نشر به حوزه علم زبان‌شناسی و علوم شناختی اختصاص دارد. از دیگر زمینه‌های کاری این انتشارات می‌توان به علوم انسانی، علوم اجتماعی، عمومی، ادبیات و دانشگاهی اشاره کرد.
+                این انتشارات به‌عنوان ناشر تخصصی انجمن زبان‌شناسی ایران توانسته است تاکنون مجموعه مقالات بیش از 50 همایش ملی و بین‌المللی در حوزه علم زبان‌شناسی را منتشر کند. همچنین این نشر پیشنهاد دهنده، حامی اصلی و برگزارکننده جایزه معتبر «دکتر محمد مقدم» است، این جایزه هر ساله به رسالۀ برگزیده دکتری در رشته زبان‌شناسی همگانی اعطاء می‌شود.
+                فروشگاه: تهران، خیابان انقلاب، روبروی دانشگاه تهران، ابتدای خیابان دانشگاه، کتابفروشی توس
+                شماره تماس فروشگاه: 66461007
+                شماره تماس دفتر انتشارات: 77053246
+                INTRO,
+                'pic' => 'user_pics/neveeseh_parsi.jpg',
+                'resume' => 'resumes/neveeseh.pdf',
+                'linkedin_link' => null,
+                'website_link' => 'neveeseh.com',
                 'orcid_link' => null,
             ],
         ];
