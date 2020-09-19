@@ -542,6 +542,7 @@ class UserSeeder extends Seeder
             $user->resume = $user_data['resume'];
             $user->linkedin_link = $user_data['linkedin_link'];
             $user->website_link = $user_data['website_link'];
+            $user->orcid_link = $user_data['orcid_link'];
             $user->password = Hash::make('password');
             $user->save();
         }
