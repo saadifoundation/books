@@ -8,7 +8,7 @@
       <nav aria-label="breadcrumb" class="border-top border-level-a">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="{{ route('index') }}">
+            <a href="{{ route('books.index') }}">
               {{ __('کتاب‌های بنیاد سعدی') }}
             </a>
           </li>
