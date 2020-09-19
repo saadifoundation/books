@@ -36,7 +36,7 @@
             @endif
             @if ($user->website_link !== NULL)
                 <a href="{{ $user->website_link }}" target="_blank" class="btn btn-primary mb-2">
-                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-user-circle"></i>
                 </a>
             @endif
             @if ($user->orcid_link !== NULL)
