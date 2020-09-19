@@ -39,6 +39,11 @@
                     <i class="far fa-comment"></i>
                 </a>
             @endif
+            @if ($user->orcid_link !== NULL)
+                <a href="{{ $user->orcid_link }}" target="_blank" class="btn btn-primary mb-2">
+                    <i class="far fa-comment"></i>
+                </a>
+            @endif
             </div>
         </div>
         @if ($user->intro !== NULL)
