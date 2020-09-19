@@ -530,7 +530,7 @@ class UserSeeder extends Seeder
                 'pic' => 'user_pics/neveeseh_parsi.jpg',
                 'resume' => 'resumes/neveeseh.pdf',
                 'linkedin_link' => null,
-                'website_link' => 'neveeseh.com',
+                'website_link' => 'http://neveeseh.com',
                 'orcid_link' => null,
             ],
         ];
