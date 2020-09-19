@@ -25,6 +25,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'افسانه غریبی',
@@ -35,6 +36,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'امیر احمدی',
@@ -45,6 +47,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'حمید آقایی',
@@ -55,6 +58,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مروارید طالبی',
@@ -65,6 +69,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مریم سلطانی',
@@ -75,6 +80,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'منیره شهباز',
@@ -85,6 +91,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'سیده فاطمه طبسی',
@@ -95,6 +102,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'فائزه مرصوص',
@@ -105,6 +113,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'هانیه مشایخی',
@@ -115,6 +124,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'امیرحسین مجیری فروشانی',
@@ -125,6 +135,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'آزاده شکری',
@@ -135,6 +146,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'غلامحسین رضاپور',
@@ -145,6 +157,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'بابک نوبهاری',
@@ -155,6 +168,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'محمد محرابی',
@@ -165,6 +179,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مجید شمس‌الدین‌نژاد',
@@ -175,6 +190,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'شهناز احمدی‌قادر',
@@ -185,6 +201,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مرضیه‌سادات اعتمادالاسلامی',
@@ -195,6 +212,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'اکرم‌بیگم حاجی‌سیدرضایی',
@@ -205,6 +223,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'هدی سلیمی',
@@ -215,6 +234,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'بهروز محمودی بختیاری',
@@ -225,6 +245,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'اکرم نعمت‌الهی',
@@ -235,6 +256,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'داود ملک‌لو',
@@ -245,6 +267,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'سمانه صادقی',
@@ -255,6 +278,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'زهره شیرین‌بخش',
@@ -265,6 +289,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'زینب مرتضائی‌فر',
@@ -275,6 +300,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'سوفیا کتلاکی',
@@ -285,6 +311,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مسعود فکری',
@@ -295,6 +322,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'ملیکا ترکمان',
@@ -305,6 +333,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'حمیده لطفی نیا',
@@ -315,6 +344,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'فرزانه اعظم لطفی',
@@ -325,6 +355,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'فلیحه زهرا کاظمی',
@@ -335,6 +366,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'یوگویلی',
@@ -345,6 +377,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'محمد ابواکلام سرکار',
@@ -355,6 +388,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'کلاوس پدرسون',
@@ -365,6 +399,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'مریم شفقی',
@@ -375,6 +410,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'لیلیانا مارکوویچ',
@@ -385,6 +421,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'لیلا بنفشه',
@@ -395,6 +432,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'نسترن رستم‌زاده',
@@ -405,6 +443,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'محمد آقایی',
@@ -415,6 +454,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'نشمین ولدی',
@@ -425,6 +465,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'نازیلا فرمانی‌انوشه',
@@ -435,6 +476,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'فاطمه افشار',
@@ -445,6 +487,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
             [
                 'name' => 'علی‌اصغر رحیمی',
@@ -455,6 +498,7 @@ class UserSeeder extends Seeder
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
+                'orcid_link' => null,
             ],
         ];
         foreach ($users_data as $user_data) {
