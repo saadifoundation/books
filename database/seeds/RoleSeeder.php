@@ -44,6 +44,11 @@ class RoleSeeder extends Seeder
                 'title_abbr' => 'graphist',
                 'group' => 'graphic',
             ],
+            [
+                'title' => 'ناشر',
+                'title_abbr' => 'publisher',
+                'group' => 'writing',
+            ],
         ];
         foreach ($roles_data as $role_data) {
             $role = new Role;

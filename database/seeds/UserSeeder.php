@@ -174,7 +174,9 @@ class UserSeeder extends Seeder
                 'name' => 'بابک نوبهاری',
                 'name_en' => 'Babak-Nobahari',
                 'email' => 'b.nobahari53@gmail.com',
-                'intro' => null,
+                'intro' => <<<INTRO
+                کارشناس رشته گرافیک هستم از دانشگاه علم و فرهنگ. علاقه‌مند به عکاسی و ایرانگردی. 
+                INTRO,
                 'pic' => 'user_pics/babak_nobahari.jpg',
                 'resume' => null,
                 'linkedin_link' => null,

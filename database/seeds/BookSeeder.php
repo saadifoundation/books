@@ -2190,6 +2190,10 @@ class BookSeeder extends Seeder
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Neveeseh-Parsi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'publisher'),
+                    ],
                 ],
                 'tags' => [
                     'teaching',
