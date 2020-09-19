@@ -24,21 +24,23 @@
             <p>
             در مجموع تاکنون
             {{ $users->count() }}
-            فرد با بنیاد سعدی همکاری کرده‌اند.
+            فرد یا مؤسسه در تألیف کتاب با بنیاد سعدی همکاری کرده‌اند.
             </p>
         </div>
     </div>
-    @foreach ($users->unique() as $user)
-        <div class="col-6 col-md-3 person">
-            <a href="{{ route('users.show', $user) }}">
-            <figure class="figure text-center">
-                <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
-                <figcaption class="figure-caption text-center">
-                {{ $user->name }}
-                </figcaption>
-            </figure>
-            </a>
-        </div>
+    @foreach ($users->sortBy('name') as $user)
+        @if($user->books->isNotEmpty())
+            <div class="col-6 col-md-3 person">
+                <a href="{{ route('users.show', $user) }}">
+                <figure class="figure text-center">
+                    <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
+                    <figcaption class="figure-caption text-center">
+                    {{ $user->name }}
+                    </figcaption>
+                </figure>
+                </a>
+            </div>
+        @endif
     @endforeach
 </div>
 @endsection
