@@ -29,7 +29,7 @@
   <div class="row mb-4">
     <div class="col-md-4">
       <a href="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover">
-        <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100">
+        <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100 rounded">
       </a>
 
       <div class="border-md-1 text-center">
