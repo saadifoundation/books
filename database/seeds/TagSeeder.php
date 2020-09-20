@@ -74,6 +74,10 @@ class TagSeeder extends Seeder
                 'title' => 'دوزبانه',
                 'title_abbr' => '2languages',
             ],
+            [
+                'title' => 'فارسی با اهداف ویژه',
+                'title_abbr' => 'FSP',
+            ],
         ];
         foreach ($tags_data as $tag_data) {
             $tag = new Tag;
