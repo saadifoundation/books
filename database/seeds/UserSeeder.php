@@ -523,7 +523,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'نشر نویسه پارسی',
                 'name_en' => 'Neveeseh-Parsi',
-                'email' => 'info@neveeseh',
+                'email' => 'info@neveeseh.com',
                 'intro' => <<<INTRO
                 «نشر نویسه پارسی» فعالیت خود را در سال 1391، به مدیر مسئولی امیر احمدی آغاز كرد.
                 بخش مهمی از كتاب‌های این نشر به حوزه علم زبان‌شناسی و علوم شناختی اختصاص دارد. از دیگر زمینه‌های کاری این انتشارات می‌توان به علوم انسانی، علوم اجتماعی، عمومی، ادبیات و دانشگاهی اشاره کرد.
@@ -536,6 +536,28 @@ class UserSeeder extends Seeder
                 'resume' => 'resumes/neveeseh.pdf',
                 'linkedin_link' => null,
                 'website_link' => 'http://neveeseh.com',
+                'orcid_link' => null,
+            ],
+            [
+                'name' => 'هوشنگ مرادی‌کرمانی',
+                'name_en' => 'Houshang-MoradiKermani',
+                'email' => 'houshang_moradikermani@saadifoundation.ir',
+                'intro' => null,
+                'pic' => 'user_pics/houshang_moradikermani.jpg',
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
+            [
+                'name' => 'کارولین کراسکری',
+                'name_en' => 'Caroline-Croskery',
+                'email' => 'caroline_croskery@saadifoundation.ir',
+                'intro' => null,
+                'pic' => 'user_pics/caroline_croskery.jpg',
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
                 'orcid_link' => null,
             ],
         ];

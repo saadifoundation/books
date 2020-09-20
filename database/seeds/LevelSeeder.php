@@ -69,7 +69,7 @@ class LevelSeeder extends Seeder
                 'high_color' => '017337',
             ],
             [
-                'title' => 'فوق‌پیشرفته',
+                'title' => 'ماهر',
                 'title_abbr' => 'c2',
                 'order' => 7,
                 'intro' => 'این سطح هفتمین سطح آموزشی بنیاد سعدی است.',
