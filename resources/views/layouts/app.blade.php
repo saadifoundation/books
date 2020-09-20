@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <script src="https://kit.fontawesome.com/9a2db51625.js" crossorigin="anonymous"></script>
 
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicons/ssadifoundation-apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicons/ssadifoundation-apple-icon-60x60.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicons/ssadifoundation-apple-icon-72x72.png') }}">
@@ -25,10 +26,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicons/ssadifoundation-favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/favicons/ssadifoundation-favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicons/ssadifoundation-favicon-16x16.png') }}">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="{{ asset('img/favicons/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ asset('img/favicons/ssadifoundation-ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Meta tags -->
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="@yield('description')">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="@yield('title')">
+    <meta itemprop="description" content="@yield('description')">
+    <meta itemprop="image" content="{{ asset('img/saadifoundation-logo.png') }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:description" content="@yield('description')">
+    <meta property="og:image" content="{{ asset('img/saadifoundation-logo.png') }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title')">
+    <meta name="twitter:description" content="@yield('title')">
+    <meta name="twitter:image" content="{{ asset('img/saadifoundation-logo.png') }}">
 
   </head>
   <body>
