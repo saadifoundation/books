@@ -34,7 +34,7 @@
             </h2>
             <p>
                 کتاب‌های بنیاد سعدی در 7 سطح مختلف تألیف و منتشر می‌شوند. این سطح‌بندی بر اساس
-                <a href="{{ route('books.show', 'persianstandard') }}">
+                <a href="{{ route('books.show', 'persianstandard') }}" target="_blank">
                     استاندارد مرجع آموزش زبان فارسی
                 </a>
                 است.
