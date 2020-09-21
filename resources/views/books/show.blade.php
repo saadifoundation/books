@@ -28,8 +28,9 @@
   </div>
   <div class="row mb-4">
     <div class="col-md-4">
-      <a href="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover">
-        <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100 rounded">
+      <a href="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover container-image-with-badge">
+          <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100 rounded">
+          <span class="badge badge-success book-status-badge">something</span>
       </a>
 
       <div class="border-md-1 text-center">
