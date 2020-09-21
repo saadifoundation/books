@@ -14,10 +14,10 @@ class CreateBookUserPivotTable extends Migration
     public function up()
     {
         Schema::create('book_user', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('book_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('role_id')->constrained()->onDelete('cascade');
-            $table->primary(['book_id', 'user_id', 'role_id']);
             $table->timestamps();
         });
     }
