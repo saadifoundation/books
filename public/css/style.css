@@ -169,6 +169,10 @@ html {
   audio {
       width: 100%;
   }
+
+  th, tr, td {
+    vertical-align: middle !important;
+  }
   
   /* hover effects */
   .cover>img:hover {
@@ -220,3 +224,4 @@ html {
   .w-10 {
     width: 10%!important;
   }
+
