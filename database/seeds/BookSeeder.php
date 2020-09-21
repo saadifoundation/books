@@ -1322,8 +1322,8 @@ class BookSeeder extends Seeder
                 'ebuying_link' => null,
                 'audio_link' => null,
                 'levels' => [
-                    Level::firstWhere('title_abbr', 'b1'),
                     Level::firstWhere('title_abbr', 'b2'),
+                    Level::firstWhere('title_abbr', 'b3'),
                 ],
                 'users' => [
                     [
