@@ -69,7 +69,7 @@
                     <thead>
                         <tr>
                             <th scope="col">
-                                {{ __('سطح') }}
+                                {{ __('سطح') }} / {{  __('برچسب') }}
                             </th>
                             <th scope="col">
                                 {{ __('کتاب‌ها') }}
@@ -101,24 +101,22 @@
                             </td>
                           </tr>
                         @endforeach
-                        <tr>
-                          <th scope="row">
-                            <div class="mb-1">
-                              <p>
-                                {{ __('تربیت مدرس') }}
-                              </p>
-                            </div>
-                          </th>
-                          <td>
-                            @foreach ($books as $book)
-                              @if($book->levels->isEmpty())
+                        @foreach ($other_books_tags as $other_tag)
+                          <tr>
+                            <th scope="row">
+                              <a href="{{ route('tags.show', $other_tag) }}" class="badge badge-primary">
+                                {{$other_tag->title}}
+                              </a>
+                            </th>
+                            <td>
+                              @foreach ($other_tag->books as $book)
                                 <a href="{{ route('books.show', $book->title_abbr) }}">
                                   <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
                                 </a>
-                              @endif
-                            @endforeach
-                          </td>
-                        </tr>
+                              @endforeach
+                            </td>
+                          </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
