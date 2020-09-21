@@ -46,7 +46,7 @@
                       <a class="progress" href="#">
                         <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
                         aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
-                          {{ $level->title }} {{ strtoupper($level->title_abbr) }}
+                          {{ strtoupper($level->title_abbr) }}
                         </div>
                       </a>
                     </div>
