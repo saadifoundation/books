@@ -35,14 +35,31 @@
         @foreach ($tag->books as $book)
             <div class="col-6 col-md-3 mb-2">
             <a href="{{ route('books.show', $book) }}">
-                <div class="card book-card">
-                <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top" alt="{{$book->title}}">
-                <div class="card-body">
-                    <p class="card-text">
-                    {{$book->title}}
-                    </p>
-                </div>
-                </div>
+              <div class="card book-card">
+                  <img src="{{ $book->cover !== NULL ? Storage::url($book->cover) : asset('img/cover.jpg') }}" class="card-img-top">
+                  <div class="card-body">
+                      <p class="card-text">
+                          {{ $book->title }}
+                          @foreach ($book->levels as $level)
+                            <div class="mb-1">
+                              <a class="progress" href="{{ route('levels.show', $level) }}">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-level-{{$level->title_abbr}}" role="progressbar" aria-valuenow="{{$level->width}}" 
+                                aria-valuemin="0" aria-valuemax="100" style="width: {{$level->width}}%">
+                                  {{ strtoupper($level->title_abbr) }}
+                                </div>
+                              </a>
+                            </div>
+                          @endforeach
+                          @foreach ($book->tags as $tag)
+                            <a href="{{ route('tags.show', $tag) }}">
+                              <span class="badge badge-primary">
+                                {{ $tag->title }}
+                              </span>
+                            </a>
+                          @endforeach
+                      </p>
+                  </div>
+              </div>
             </a>
             </div>
         @endforeach
