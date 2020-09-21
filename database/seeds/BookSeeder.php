@@ -2072,12 +2072,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2091,6 +2086,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
+                    'amfa',
                 ],
             ],
             //amfareading2
@@ -2111,12 +2107,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2130,6 +2121,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
+                    'amfa',
                 ],
             ],
             //amfareading3
@@ -2150,12 +2142,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2169,6 +2156,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
+                    'amfa',
                 ],
             ],
             //amfareading4
@@ -2189,12 +2177,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2208,6 +2191,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
+                    'amfa',
                 ],
             ],
             //howteachpersian
