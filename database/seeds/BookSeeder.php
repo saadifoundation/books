@@ -2033,14 +2033,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'a'),
-                    Level::firstWhere('title_abbr', 'b1'),
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2053,6 +2046,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
+                    'educational-assistance',
                 ],
             ],
             //pracsen2
@@ -2074,14 +2068,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'a'),
-                    Level::firstWhere('title_abbr', 'b1'),
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                    Level::firstWhere('title_abbr', 'c2'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2094,6 +2081,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
+                    'educational-assistance',
                 ],
             ],
             //amfareading1
@@ -2289,10 +2277,7 @@ class BookSeeder extends Seeder
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                ],
+                'levels' => null,
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
@@ -2305,6 +2290,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
+                    'educational-assistance',
                 ],
             ],
             //persianwithmusic
