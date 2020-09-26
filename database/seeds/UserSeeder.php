@@ -233,10 +233,10 @@ class UserSeeder extends Seeder
                 دانش‌آموختۀ دانشگاه علامۀ طباطبایی در مقطع کارشناسی ارشد رشتۀ زبان‌شناسی، گرایش آموزش زبان فارسی به غیرفارسی‌زبانان. عضو هستۀ پژوهش‌های بنیادی دانشگاه علامه طباطبایی برای توسعۀ آموزش زبان فارسی به خارجیان. عضو کارگروه پروژۀ تهیه و تدوین درس‌نامۀ آموزش کاربردی دستور زبان فارسی با نام «چارچوب» در سه جلد، که جلد اول به چاپ رسیده و جلد دوم در شرف چاپ است. عنوان رسالۀ کارشناسی ارشد «بررسی بازخوردهای تصحیحی مدرسین مرکز بین المللی آموزش زبان فارسی مؤسسۀ لغت‌نامه دهخدا بر اساس الگوی لیستر و رانتا». چاپ مقالات علمی در مجلات علمی - تخصصی زبان‌شناسی. ارائۀ مقاله و چاپ آن در مجموعه مقالات نهمین همایش انجمن زبان‌شناسی ایران. ارائۀ مقاله در نخستین همایش واکاوی منابع آموزش زبان فارسی به خارجیان دانشگاه بهشتی. تمرکز بخش اعظم فعالیت‌های علمی بر مبنای آموزش زبان فارسی به غیرفارسی‌زبانان. عضو گروه برگزاری دوره‌های آموزشی زبان فارسی یرای زبان‌آموزانی از کشورهای غیرفارسی زبان طی سال‌های 95 تا 98.
                 INTRO,
                 'pic' => 'user_pics/marziyesadat_eatemadaleslami.jpg',
-                'resume' => 'resumes/marziyesadat_eatemadaleslami.pdf',
-                'linkedin_link' => 'https://linkedin.com/in/meatemad',
+                'resume' => null,
+                'linkedin_link' => null,
                 'website_link' => null,
-                'orcid_link' => 'https://orcid.org/0000-0002-1696-3392',
+                'orcid_link' => null,
             ],
             [
                 'name' => 'اکرم‌بیگم حاجی‌سیدرضایی',
@@ -485,11 +485,11 @@ class UserSeeder extends Seeder
             [
                 'name' => 'نشمین ولدی',
                 'name_en' => 'Nashmin-Valadi',
-                'email' => 'nashmin_valadi@saadifoundation.ir',
+                'email' => 'nashminv@gmail.com',
                 'intro' => null,
-                'pic' => null,
+                'pic' => 'user_pics/nashmin_valadi.jpg',
                 'resume' => null,
-                'linkedin_link' => null,
+                'linkedin_link' => 'https://www.linkedin.com/in/nashmin-valadi-a6747aab',
                 'website_link' => null,
                 'orcid_link' => null,
             ],
