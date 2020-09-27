@@ -160,7 +160,7 @@ class BookSeeder extends Seeder
                 'elearning_link' => 'https://mina.saadifoundation.ir',
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/6221281',
                 'index_file' => null,
-                'sample_file' => null,
+                'sample_file' => 'samples/mina3.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/mina3.zip',

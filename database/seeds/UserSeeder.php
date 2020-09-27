@@ -462,12 +462,14 @@ class UserSeeder extends Seeder
             ],
             [
                 'name' => 'نسترن رستم‌زاده',
-                'name_en' => 'Nastaran-Rostamzade',
-                'email' => 'nastaran_rostamzade@saadifoundation.ir',
-                'intro' => null,
-                'pic' => null,
-                'resume' => null,
-                'linkedin_link' => null,
+                'name_en' => 'Nastaran-Rostamzadeh',
+                'email' => 'nastaran_rostamzadeh@saadifoundation.ir',
+                'intro' => <<<INTRO
+                نسترن رستم¬زاده، متولد 1361 در تهران است. وی دوره¬ی کارشناسی خود را درشته مترجمی زبان انگلیسی در دانشگاه چمران اهواز به اتمام رساند و سپس در رشته آموزش زبان فارسی به غیرفارسی زبانان در دانشگاه علامه طباطبایی به ادامه تحصیل پرداخت.همزمان با دوران دانشجویی همکاری خود را با بخش زبان فارسی کانون زبان ایران آغاز کرد و پس از اخذ مدرک کارشناسی ارشد با موسسه دهخدا و مرکز بین¬المللی آموزش زبان فارسی دانشگاه تهران شروع به همکاری کرد. در 8 سال گذشته علاوه بر همکاری با موسسات آموزشی از جمله موسسه دهخدا، در مدرسه سفارت آلمان به عنوان معلم زبان فارسی مشغول به کار است. وی هم اکنون دانشجوی آموزش زبان فارسی به غیر فارسی زبانان در مقطع دکترا در دانشگاه علامه طباطبایی است.
+                INTRO,
+                'pic' => 'user_pics/nastaran_rostamzadeh.jpg',
+                'resume' => 'resumes/nastaran_rostamzadeh.pdf',
+                'linkedin_link' => 'https://www.linkedin.com/in/nastaran-rostamzadeh-444442138',
                 'website_link' => null,
                 'orcid_link' => null,
             ],
