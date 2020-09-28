@@ -1597,7 +1597,7 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
                     [
-                        'model' => User::firstWhere('name_en', 'Nastaran-Rostamzade'),
+                        'model' => User::firstWhere('name_en', 'Nastaran-Rostamzadeh'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
                     [
