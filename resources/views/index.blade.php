@@ -107,7 +107,7 @@
                         @foreach ($other_books_tags as $other_tag)
                           <tr>
                             <th scope="row">
-                              <a href="{{ route('tags.show', $other_tag) }}" class="badge badge-primary">
+                              <a href="{{ route('tags.show', $other_tag) }}" class="badge badge-info">
                                 {{$other_tag->title}}
                               </a>
                             </th>
@@ -153,7 +153,7 @@
                         @endforeach
                         @foreach ($book->tags as $tag)
                           <a href="{{ route('tags.show', $tag) }}">
-                            <span class="badge badge-primary">
+                            <span class="badge badge-info">
                               {{ $tag->title }}
                             </span>
                           </a>

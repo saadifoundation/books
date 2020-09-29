@@ -125,7 +125,7 @@
       @if ( $book->tags->isNotEmpty() )
         <div class="labels mb-3 text-right mb-4">
           @foreach($book->tags as $tag)
-            <a class="badge badge-success" href="{{ route('tags.show', $tag) }}">
+            <a class="badge badge-info" href="{{ route('tags.show', $tag) }}">
               {{ $tag->title }}
             </a>
           @endforeach
@@ -309,7 +309,7 @@
                           @endforeach
                           @foreach ($book->tags as $tag)
                             <a href="{{ route('tags.show', $tag) }}">
-                              <span class="badge badge-primary">
+                              <span class="badge badge-info">
                                 {{ $tag->title }}
                               </span>
                             </a>
