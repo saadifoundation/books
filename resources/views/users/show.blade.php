@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-md-4 text-center">
             <a href="{{ Storage::url($user->pic) }}" target="_blank" download="{{$user->name_en}}.jpg" class="cover">
-            <img src="{{ $user->pic !== null ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="" class="w-100 rounded ">
+            <img src="{{ $user->pic !== null ? Storage::url($user->pic) : asset('/img/person.png') }}" alt="" class="w-100 rounded ">
             </a>
             <div class="buttons mt-3">
             @if ($user->resume !== NULL)
