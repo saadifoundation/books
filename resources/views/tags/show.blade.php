@@ -29,7 +29,7 @@
             تاکنون
             <span class="badge badge-light">{{ $tag->books->count() }}</span>
             کتاب با برچسب
-            <span class="badge badge-success">
+            <span class="badge badge-info">
                 {{$tag->title}}
             </span>
             در بنیاد سعدی تهیه شده است.
