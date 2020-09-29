@@ -53,21 +53,30 @@
 
   </head>
   <body>
-    <div class="navbar navbar-expand-sm fixed-top navbar-dark bg-info justify-content-center">
-        <h5 class="my-0 ml-md-auto font-weight-normal">
-          @yield('title')
-        </h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="{{ route('index') }}">
+    <div class="navbar navbar-expand-sm navbar-light bg-light justify-content-center">
+      <div class="container">
+        <a class="navbar-brand" href="{{ route('index') }}">
+          <img src="{{ asset('img/saadifoundation-logo-header.png') }}" alt="" class="img-responsive" width="300" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ route('index') }}"><span class="sr-only">(current)</span>
                 {{ __('فهرست کتاب‌ها') }}
-            </a>
-        </nav>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="book-header py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4 mt-5">
+                <div class="book-header pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4 mt-2">
                         @yield('title')
                     </h1>
                 </div>
