@@ -91,6 +91,16 @@
               </small>
           </div>
       </div>
+      <div class="row">
+        <div class="col-md col-12">
+          <small class="d-block mb-3 text-muted">
+            {{ __('لطفا اگر مشکلی در این صفحه پیدا کردید، به ما اطلاع دهید') }}: 
+              <a href="{{ config('app.github_link') }}/issues/new?title={{ __('گزارش مشکل') }}:+@yield('title')&body=%0A%0A%0A---%0A{{ __('گزارش مشکل در صفحۀ') }}+ [@yield('title')]({{Request::url()}})" target="_blank">
+                {{ __('گزارش مشکل') }}
+              </a>
+          </small>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
