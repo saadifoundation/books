@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>
-        @yield('title')
-    </title>
+    <title>@yield('title')</title>
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -38,20 +36,20 @@
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="@yield('title')">
     <meta itemprop="description" content="@yield('description')">
-    <meta itemprop="image" content="{{ asset('img/saadifoundation-logo.png') }}">
+    <meta itemprop="image" content="@yield('image')">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:image" content="{{ asset('img/saadifoundation-logo.png') }}">
+    <meta property="og:image" content="@yield('image')">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title')">
-    <meta name="twitter:description" content="@yield('title')">
-    <meta name="twitter:image" content="{{ asset('img/saadifoundation-logo.png') }}">
+    <meta name="twitter:description" content="@yield('description')">
+    <meta name="twitter:image" content="@yield('image')">
 
   </head>
   <body>

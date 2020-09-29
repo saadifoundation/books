@@ -2,6 +2,9 @@
 
 @section('title', __('همۀ همکاران بنیاد سعدی'))
 
+@section('description', __("در این صفحه می‌توانید کتاب‌های آموزشی بنیاد سعدی را ببینید. کتاب‌هایی که با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تالیف شده‌اند."))
+@section('image', asset('img/saadifoundation-logo.png'))
+
 @section('content')
 
 <div class="row">

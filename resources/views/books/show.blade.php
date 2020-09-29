@@ -2,6 +2,9 @@
 
 @section ('title', $book->title)
 
+@section('description', $book->intro !== null ? substr(strip_tags($book->intro), 0, 400)."..." : $book->title)
+@section('image', $book->cover !== null ? asset(Storage::url($book->cover)) : asset('img/saadifoundation-logo.png'))
+
 @section('content')
   <div class="row">
     <div class="col-12">

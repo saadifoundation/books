@@ -2,6 +2,9 @@
 
 @section('title', __('همۀ کتاب‌های بنیاد سعدی'))
 
+@section('description', __("در این صفحه می‌توانید کتاب‌های آموزشی بنیاد سعدی را ببینید. کتاب‌هایی که با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تالیف شده‌اند."))
+@section('image', asset('img/saadifoundation-logo.png'))
+
 @section('content')
     <div class="row">
         <div class="col-12">
@@ -21,8 +24,8 @@
         <div class="col-12">
           <div class="description font-weight-light">
             <p>
-                بنیاد سعدی با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تأسیس شده است و تاکنون در این زمینه
-                <span class="badge">{{ $books->count() }}</span>
+                بنیاد سعدی با هدف آموزش زبان فارسی به غیرفارسی‌زبانان تأسیس شده است و تاکنون در این زمینه 
+                {{ $books->count() }} 
                 کتاب تالیف کرده است.
             </p>
           </div>

@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('title', __('سطح').' '.__($level->title))
+
+@section('description', $level->intro !== null ? substr(strip_tags($level->intro), 0, 400)."..." : $level->title)
+@section('image', asset('img/saadifoundation-logo.png'))
+
 @section('content')
   <div class="row">
     <div class="col-12">

@@ -2,6 +2,9 @@
 
 @section('title', $user->name)
 
+@section('description', $user->intro !== null ? substr(strip_tags($user->intro), 0, 400)."..." : $user->name)
+@section('image', $user->pic !== null ? asset(Storage::url($user->pic)) : asset('img/saadifoundation-logo.png'))
+
 @section('content')
     <div class="row">
         <div class="col-12">

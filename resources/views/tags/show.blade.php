@@ -2,6 +2,9 @@
 
 @section('title', __('برچسب').' '.__($tag->title))
 
+@section('description', $tag->intro !== null ? substr(strip_tags($tag->intro), 0, 400)."..." : $tag->title)
+@section('image', asset('img/saadifoundation-logo.png'))
+
 @section('content')
     <div class="row">
         <div class="col-12">
