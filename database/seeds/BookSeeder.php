@@ -159,7 +159,7 @@ class BookSeeder extends Seeder
                 'teaching_video' => null,
                 'elearning_link' => 'https://mina.saadifoundation.ir',
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/6221281',
-                'index_file' => null,
+                'index_file' => 'indexes/mina3.pdf',
                 'sample_file' => 'samples/mina3.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
@@ -271,7 +271,6 @@ class BookSeeder extends Seeder
                 'audio_link' => 'audio_zip/enjoyreading1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
-                    Level::firstWhere('title_abbr', 'b1'),
                 ],
                 'users' => [
                     [
@@ -652,6 +651,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'editor'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -701,6 +704,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Masoud-Fekri'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -761,6 +768,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'editor'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -815,6 +826,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -872,6 +887,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'editor'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -922,6 +941,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Yugvili'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -980,6 +1003,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'editor'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -1029,6 +1056,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Klaus-Peterson'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -1083,6 +1114,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -1128,6 +1163,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Liliana-Markowic'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
@@ -1178,6 +1217,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -1226,6 +1269,10 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
                     [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -1272,6 +1319,10 @@ class BookSeeder extends Seeder
                     [
                         'model' => User::firstWhere('name_en', 'Davoud-Maleklou'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
