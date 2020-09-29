@@ -235,7 +235,7 @@
         <div class="col-6 col-md-3 person">
           <a href="{{ route('users.show', $user->name_en) }}">
             <figure class="figure text-center">
-              <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
+              <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.png') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
               <figcaption class="figure-caption text-center">
                 {{ $user->name }}
                 <span class="badge badge-primary">
