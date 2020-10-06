@@ -18,13 +18,13 @@
         </div>
         <div class="badges mb-3">
           <a href="#levels-row" class="btn btn-success btn-sm mb-3">
-              سطوح <span class="badge badge-light">{{ $levels->count() }}</span>
+              {{ __('سطوح') }} <span class="badge badge-light">{{ $levels->count() }}</span>
           </a>
           <a href="#books-row" class="btn btn-primary btn-sm mb-3">
-            کتاب‌ها <span class="badge badge-light">{{ $books->count() }}</span>
+            {{ __('کتاب‌ها') }} <span class="badge badge-light">{{ $books->count() }}</span>
           </a>
           <a href="{{ route('users.index') }}" class="btn btn-primary btn-sm mb-3">
-            همکاران <span class="badge badge-light">{{ $users->count() }}</span>
+            {{ __('همکاران') }} <span class="badge badge-light">{{ $users->count() }}</span>
           </a>
         </div>
       </div>
@@ -33,7 +33,7 @@
       <div class="row text-center border-top mb-3" id="levels-row">
         <div class="col-12">
             <h2 class="mb-4 mt-4">
-              سطوح استاندارد مرجع بنیاد سعدی
+              {{ __('سطوح استاندارد مرجع بنیاد سعدی') }}
             </h2>
             <p>
                 کتاب‌های بنیاد سعدی در 7 سطح مختلف تألیف و منتشر می‌شوند. این سطح‌بندی بر اساس
@@ -130,7 +130,7 @@
       <div class="row text-center d-flex justify-content-center border-top mb-4" id="books-row">
         <div class="col-12">
           <h2 class="mb-4 mt-4">
-              بعضی از کتاب‌های بنیاد سعدی
+              {{ __('بعضی از کتاب‌های بنیاد سعدی') }}
           </h2>
         </div>
         @foreach ($books->random(3) as $book)
@@ -166,7 +166,7 @@
         @endforeach
         <div class="col-12">
             <a class="btn btn-primary btn-block" href="{{ route('books.index') }}">
-                همۀ کتاب‌ها
+                {{ __('همۀ کتاب‌ها') }}
               </a>
         </div>
       </div>

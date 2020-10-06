@@ -11,7 +11,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{ route('index') }}">
-            سطوح بنیاد سعدی
+            {{ __('سطوح بنیاد سعدی') }}
           </a></li>
           <li class="breadcrumb-item active" aria-current="page">
             {{__('سطح') }} {{__($level->title)}}
@@ -24,7 +24,7 @@
     <div class="col-12">
       <div class="badges mb-3 text-right">
         <a href="#books-row" class="btn btn-primary btn-sm mb-3">
-          کتاب‌های سطح <span class="badge badge-light">{{$level->books->count() }}</span>
+          {{ __('کتاب‌های سطح') }} <span class="badge badge-light">{{$level->books->count() }}</span>
         </a>
       </div>
       <div class="description text-right font-weight-light">

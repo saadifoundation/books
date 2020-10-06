@@ -228,7 +228,7 @@
     <div class="row text-center d-flex justify-content-center border-top border-level-a" id="writers-row">
       <div class="col-12">
         <h2 class="mb-4 mt-4">
-          مؤلفان کتاب
+          {{ __('مؤلفان کتاب') }}
         </h2>
       </div>
       @foreach ($book->users->where('role_group', 'writing') as $user)
@@ -286,7 +286,7 @@
       <div class="row text-center d-flex justify-content-center border-top mb-4 border-level-a">
         <div class="col-12">
           <h2 class="mb-4 mt-4">
-            کتاب‌های مرتبط
+            {{ __('کتاب‌های مرتبط') }}
           </h2>
         </div>
         @foreach($book->collection->books->whereNotIn('title_abbr', $book->title_abbr) as $book)
