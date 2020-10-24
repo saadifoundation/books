@@ -187,7 +187,7 @@
     </div>
     <div class="col-12">
         <div class="accordion" id="accordionLessons">
-          @foreach ($book->audio->groupBy('group_name')->sortBy('group_order') as $audio_group)
+          @foreach ($book->audio->sortBy('group_order')->groupBy('group_name') as $audio_group)
             <div class="card">
               <div class="card-header" id="heading{{$loop->index}}">
                 <h2 class="mb-0">
