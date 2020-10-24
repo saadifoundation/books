@@ -179,7 +179,7 @@
       <h2 class="text-center mt-4">
         {{ __('فایل‌های صوتی') }}
       </h2>
-      @if($book->audio_link !== '')
+      @if($book->audio_link !== NULL)
         <a href="{{ Storage::url($book->audio_link) }}">
           {{ __('دریافت تمام فایل‌های صوتی (zip)') }}
         </a>
