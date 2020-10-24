@@ -101,7 +101,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/mina2.pdf',
                 'sample_file' => 'samples/mina2.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81809',
                 'audio_link' => 'audio_zip/mina2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
@@ -162,7 +162,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/mina3.pdf',
                 'sample_file' => 'samples/mina3.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81811',
                 'audio_link' => 'audio_zip/mina3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -267,7 +267,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/enjoyreading1.pdf',
                 'sample_file' => 'samples/enjoyreading1.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81783',
                 'audio_link' => 'audio_zip/enjoyreading1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -442,7 +442,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/enjoyreading4.pdf',
                 'sample_file' => 'samples/enjoyreading4.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81805',
                 'audio_link' => 'audio_zip/enjoyreading4.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b3'),
@@ -494,7 +494,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/iranology1.pdf',
                 'sample_file' => 'samples/iranology1.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81782',
                 'audio_link' => 'audio_zip/iranology1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
@@ -559,7 +559,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/iranology2.pdf',
                 'sample_file' => 'samples/iranology2.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81806',
                 'audio_link' => 'audio_zip/iranology2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b3'),
@@ -620,7 +620,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/en1ststep.pdf',
                 'sample_file' => 'samples/en1ststep.pdf',
                 'buying_link' => 'http://book.atu.ac.ir/book_567.html',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/77693',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -976,7 +976,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/bn1ststep.pdf',
                 'sample_file' => 'samples/bn1ststep.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82370',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -1250,7 +1250,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/tr1ststep.pdf',
                 'sample_file' => 'samples/tr1ststep.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82369',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -1302,7 +1302,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/tg1ststep.pdf',
                 'sample_file' => 'samples/tg1ststep.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82367',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -1470,7 +1470,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/persianinuse1.pdf',
                 'sample_file' => 'samples/persianinuse1.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82159',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -1521,7 +1521,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/persianinuse2.pdf',
                 'sample_file' => 'samples/persianinuse2.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82160',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -1576,7 +1576,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/persianinuse3.pdf',
                 'sample_file' => 'samples/persianinuse3.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/82161',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -1629,7 +1629,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/shiraz1.pdf',
                 'sample_file' => 'samples/shiraz1.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/81780',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
