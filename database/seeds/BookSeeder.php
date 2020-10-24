@@ -616,12 +616,12 @@ class BookSeeder extends Seeder
                 'intro_video' => null,
                 'teaching_video' => null,
                 'elearning_link' => null,
-                'bibliography_link' => null,
+                'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5760047',
                 'index_file' => 'indexes/en1ststep.pdf',
                 'sample_file' => 'samples/en1ststep.pdf',
                 'buying_link' => 'http://book.atu.ac.ir/book_567.html',
                 'ebuying_link' => 'https://taaghche.com/book/77693',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -684,7 +684,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/ar1ststep.pdf',
                 'buying_link' => 'https://khamooshbook.com/product/%da%af%d8%a7%d9%85-%d8%a7%d9%88%d9%84-%d8%b9%d8%b1%d8%a8%db%8c-%d8%af%d8%b1-%db%8c%d8%a7%d8%af%da%af%db%8c%d8%b1%db%8c-%d8%b2%d8%a8%d8%a7%d9%86-%d9%81%d8%a7%d8%b1%d8%b3%db%8c/',
                 'ebuying_link' => 'https://taaghche.com/book/56277',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -742,7 +742,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/de1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -802,7 +802,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/fr1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -857,7 +857,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/ur1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -921,7 +921,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/zh1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -977,7 +977,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/bn1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82370',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1036,7 +1036,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/da1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1092,7 +1092,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/ru1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1143,7 +1143,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/sr1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1199,7 +1199,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/es1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1246,12 +1246,12 @@ class BookSeeder extends Seeder
                 'intro_video' => null,
                 'teaching_video' => null,
                 'elearning_link' => null,
-                'bibliography_link' => null,
+                'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5760053',
                 'index_file' => 'indexes/tr1ststep.pdf',
                 'sample_file' => 'samples/tr1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82369',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1298,12 +1298,12 @@ class BookSeeder extends Seeder
                 'intro_video' => null,
                 'teaching_video' => null,
                 'elearning_link' => null,
-                'bibliography_link' => null,
+                'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5915058',
                 'index_file' => 'indexes/tg1ststep.pdf',
                 'sample_file' => 'samples/tg1ststep.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82367',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
@@ -1353,7 +1353,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/persianframe1.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/persianframe1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                     Level::firstWhere('title_abbr', 'b1'),
@@ -1471,7 +1471,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/persianinuse1.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82159',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/persianinuse1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                     Level::firstWhere('title_abbr', 'b1'),
@@ -1522,7 +1522,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/persianinuse2.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82160',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/persianinuse2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                     Level::firstWhere('title_abbr', 'b1'),
@@ -1577,7 +1577,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/persianinuse3.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/82161',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/persianinuse3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                     Level::firstWhere('title_abbr', 'b3'),
@@ -2053,7 +2053,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/hidr.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/hidr.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                 ],
