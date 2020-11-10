@@ -16,6 +16,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         $users_data = [
+            //Reza-Sahraee
             [
                 'name' => 'رضامراد صحرایی',
                 'name_en' => 'Reza-Sahraee',
@@ -27,6 +28,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Afsaneh-Gharibi
             [
                 'name' => 'افسانه غریبی',
                 'name_en' => 'Afsaneh-Gharibi',
@@ -40,6 +42,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Amir-Ahmadi
             [
                 'name' => 'امیر احمدی',
                 'name_en' => 'Amir-Ahmadi',
@@ -51,6 +54,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Hamid-Aghaei
             [
                 'name' => 'حمید آقایی',
                 'name_en' => 'Hamid-Aghaei',
@@ -64,6 +68,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => 'https://orcid.org/0000-0002-3517-3302',
             ],
+            //Morvarid-Talebi
             [
                 'name' => 'مروارید طالبی',
                 'name_en' => 'Morvarid-Talebi',
@@ -77,6 +82,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => 'https://orcid.org/0000-0002-2473-1401',
             ],
+            //Maryam-Soltani
             [
                 'name' => 'مریم سلطانی',
                 'name_en' => 'Maryam-Soltani',
@@ -93,6 +99,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => 'https://orcid.org/0000-0001-9080-3007',
             ],
+            //Monire-Shahbaz
             [
                 'name' => 'منیره شهباز',
                 'name_en' => 'Monire-Shahbaz',
@@ -107,6 +114,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //SeyedeFateme-Tabasi
             [
                 'name' => 'سیده‌فاطمه طبسی',
                 'name_en' => 'SeyedeFateme-Tabasi',
@@ -120,6 +128,7 @@ class UserSeeder extends Seeder
                 'website_link' => 'https://independent.academia.edu/FatemeTabasi',
                 'orcid_link' => 'https://orcid.org/0000-0003-4343-3327',
             ],
+            //Faeze-Marsous
             [
                 'name' => 'فائزه مرصوص',
                 'name_en' => 'Faeze-Marsous',
@@ -131,6 +140,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Hanieh-Mashayekhi
             [
                 'name' => 'هانیه مشایخی',
                 'name_en' => 'Hanieh-Mashayekhi',
@@ -144,6 +154,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Amirhossein-MojiriForoushani
             [
                 'name' => 'امیرحسین مجیری فروشانی',
                 'name_en' => 'Amirhossein-MojiriForoushani',
@@ -155,6 +166,7 @@ class UserSeeder extends Seeder
                 'website_link' => 'https://amirmojiri.ir',
                 'orcid_link' => 'https://orcid.org/0000-0002-3041-068X',
             ],
+            //Azadeh-Shokri
             [
                 'name' => 'آزاده شکری',
                 'name_en' => 'Azadeh-Shokri',
@@ -166,6 +178,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //GholamHosein-Rezapour
             [
                 'name' => 'غلامحسین رضاپور',
                 'name_en' => 'GholamHosein-Rezapour',
@@ -177,6 +190,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Babak-Nobahari
             [
                 'name' => 'بابک نوبهاری',
                 'name_en' => 'Babak-Nobahari',
@@ -190,6 +204,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Mohammd-Mehraabi
             [
                 'name' => 'محمد محرابی',
                 'name_en' => 'Mohammd-Mehraabi',
@@ -201,6 +216,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Majid-Shamsoddinnejad
             [
                 'name' => 'مجید شمس‌الدین‌نژاد',
                 'name_en' => 'Majid-Shamsoddinnejad',
@@ -212,6 +228,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Shahnaz-Ahmadighader
             [
                 'name' => 'شهناز احمدی‌قادر',
                 'name_en' => 'Shahnaz-Ahmadighader',
@@ -225,6 +242,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //MarziyeSadat-EatemadalEslami
             [
                 'name' => 'مرضیه‌سادات اعتمادالاسلامی',
                 'name_en' => 'MarziyeSadat-EatemadalEslami',
@@ -238,6 +256,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Akram-Seyedrezaei
             [
                 'name' => 'اکرم‌بیگم حاجی‌سیدرضایی',
                 'name_en' => 'Akram-Seyedrezaei',
@@ -249,12 +268,14 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Hoda-Salimi
             [
                 'name' => 'هدی سلیمی',
                 'name_en' => 'Hoda-Salimi',
                 'email' => 'h.salimi@saadifoundation.ir',
                 'intro' => <<<INTRO
                 هدی سلیمی، کارشناس ارشد آموزش زبان انگلیسی به غیر انگلیسی زبانان از دانشگاه علامه طباطبایی، در زمینه‌های حرفه‌ای آموزش مجازی زبان به خارجی‌ها و تربیت مدرس زبان فارسی به غیرفارسی‌زبانان مشغول به فعالیت است. او همچنین، فارغ التحصیل دورة بین‌المللی آموزش زبان انگلیسی به غیر انگلیسی‌زبانان است و هم‌اکنون مشغول طراحی دوره‌های حرفه‌ای تربیت مدرس زبان فارسی به غیر فارسی زبانان می‌باشد. هدی سلیمی، علاوه بر فعالیت‌های حرفه‌ای، چندین مقالة ملی و بین‌المللی در مجلات داخلی و خارجی منتشر نموده و آثار خود را در کنفرانس‌های ملی و بین‌المللی ارائه کرده است. سلیمی با بیش از 5 سال سابقة تدریس زبان انگلیسی و فارسی، مشغول به انجام فعالیت‌های آموزشی و پژوهشی در دانشگاه‌های مطرح ملی و بین‌المللی است. 
+                <div dir="ltr" lang="en">Hoda Salimi is an MA graduate in TEFL from Allameh Tabataba’I University. She is currently working on various topics in second language teaching such as Computer-assisted Language Teaching, Language Testing and Assessment, and Teacher Education Programs. Moreover, she is a TESOL Certificate holder and is now the head of the TPSOL (Teaching Persian to the Speakers of Other Languages) Courses. Hoda Salimi has published articles in TEFL in national and international journals and has presented her works in national and international conferences. Salimi has taught English and Persian for over five years and is now involved in various educational and research projects in national and international universities.</div>
                 INTRO,
                 'pic' => 'user_pics/hoda_salimi.jpg',
                 'resume' => 'resumes/hoda_salimi.pdf',
@@ -262,6 +283,7 @@ class UserSeeder extends Seeder
                 'website_link' => 'https://scholar.google.com/citations?hl=fa&user=swAnpDIAAAAJ',
                 'orcid_link' => 'https://orcid.org/0000-0001-6070-7276',
             ],
+            //Behrouz-MahmoodiBakhtiari
             [
                 'name' => 'بهروز محمودی بختیاری',
                 'name_en' => 'Behrouz-MahmoodiBakhtiari',
@@ -273,6 +295,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Akram-Nematolahi
             [
                 'name' => 'اکرم نعمت‌الهی',
                 'name_en' => 'Akram-Nematolahi',
@@ -284,6 +307,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Davoud-Maleklou
             [
                 'name' => 'داود ملک‌لو',
                 'name_en' => 'Davoud-Maleklou',
@@ -295,6 +319,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Samaneh-Sadeghi
             [
                 'name' => 'سمانه صادقی',
                 'name_en' => 'Samaneh-Sadeghi',
@@ -306,6 +331,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Zohreh-Shirinbakhsh
             [
                 'name' => 'زهره شیرین‌بخش',
                 'name_en' => 'Zohreh-Shirinbakhsh',
@@ -317,6 +343,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Zeinab-Mortezaeifar
             [
                 'name' => 'زینب مرتضائی‌فر',
                 'name_en' => 'Zeinab-Mortezaeifar',
@@ -328,6 +355,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Sofia-Koutlaki
             [
                 'name' => 'سوفیا کتلاکی',
                 'name_en' => 'Sofia-Koutlaki',
@@ -339,6 +367,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Masoud-Fekri
             [
                 'name' => 'مسعود فکری',
                 'name_en' => 'Masoud-Fekri',
@@ -350,6 +379,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Melika-Torkaman
             [
                 'name' => 'ملیکا ترکمان',
                 'name_en' => 'Melika-Torkaman',
@@ -361,6 +391,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Hamideh-Latifinia
             [
                 'name' => 'حمیده لطفی نیا',
                 'name_en' => 'Hamideh-Latifinia',
@@ -372,6 +403,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Farzane-Aazamlotfi
             [
                 'name' => 'فرزانه اعظم لطفی',
                 'name_en' => 'Farzane-Aazamlotfi',
@@ -383,6 +415,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Falihe-Zahrakazemi
             [
                 'name' => 'فلیحه زهرا کاظمی',
                 'name_en' => 'Falihe-Zahrakazemi',
@@ -394,6 +427,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Yugvili
             [
                 'name' => 'یوگویلی',
                 'name_en' => 'Yugvili',
@@ -405,6 +439,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Mohammad-AbukalamSarkar
             [
                 'name' => 'محمد ابواکلام سرکار',
                 'name_en' => 'Mohammad-AbukalamSarkar',
@@ -416,6 +451,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Klaus-Peterson
             [
                 'name' => 'کلاوس پدرسون',
                 'name_en' => 'Klaus-Peterson',
@@ -427,6 +463,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Maryam-Shafaghi
             [
                 'name' => 'مریم شفقی',
                 'name_en' => 'Maryam-Shafaghi',
@@ -438,6 +475,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Liliana-Markowic
             [
                 'name' => 'لیلیانا مارکوویچ',
                 'name_en' => 'Liliana-Markowic',
@@ -449,6 +487,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Leila-Banafshe
             [
                 'name' => 'لیلا بنفشه',
                 'name_en' => 'Leila-Banafshe',
@@ -460,6 +499,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Nastaran-Rostamzadeh
             [
                 'name' => 'نسترن رستم‌زاده',
                 'name_en' => 'Nastaran-Rostamzadeh',
@@ -473,6 +513,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Mohammad-Aghaei
             [
                 'name' => 'محمد آقایی',
                 'name_en' => 'Mohammad-Aghaei',
@@ -484,6 +525,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Nashmin-Valadi
             [
                 'name' => 'نشمین ولدی',
                 'name_en' => 'Nashmin-Valadi',
@@ -495,6 +537,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Nazila-FarmaniAnoushe
             [
                 'name' => 'نازیلا فرمانی‌انوشه',
                 'name_en' => 'Nazila-FarmaniAnoushe',
@@ -506,6 +549,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Fateme-Afshar
             [
                 'name' => 'فاطمه افشار',
                 'name_en' => 'Fateme-Afshar',
@@ -517,6 +561,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //AliAsghar-Rahimi
             [
                 'name' => 'علی‌اصغر رحیمی',
                 'name_en' => 'AliAsghar-Rahimi',
@@ -528,6 +573,7 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Neveeseh-Parsi
             [
                 'name' => 'نشر نویسه پارسی',
                 'name_en' => 'Neveeseh-Parsi',
@@ -546,6 +592,7 @@ class UserSeeder extends Seeder
                 'website_link' => 'http://neveeseh.com',
                 'orcid_link' => null,
             ],
+            //Houshang-MoradiKermani
             [
                 'name' => 'هوشنگ مرادی‌کرمانی',
                 'name_en' => 'Houshang-MoradiKermani',
@@ -557,12 +604,25 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Caroline-Croskery
             [
                 'name' => 'کارولین کراسکری',
                 'name_en' => 'Caroline-Croskery',
                 'email' => 'caroline_croskery@saadifoundation.ir',
                 'intro' => null,
                 'pic' => 'user_pics/caroline_croskery.jpg',
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
+            //Saadi-Foundation-Writers-Group
+            [
+                'name' => 'گروه تألیف بنیاد سعدی',
+                'name_en' => 'Saadi-Foundation-Writers-Group',
+                'email' => 'amoozesh@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
                 'resume' => null,
                 'linkedin_link' => null,
                 'website_link' => null,
