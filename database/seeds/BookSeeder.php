@@ -2384,6 +2384,96 @@ class BookSeeder extends Seeder
                     'language-learning',
                 ],
             ],
+            //ttc1
+            [
+                'title' => 'دورۀ مقدماتی تربیت مدرس زبان فارسی',
+                'title_abbr' => 'ttc1',
+                'cover' => null,
+                'collection_id' => null,
+                'intro' => <<<INTRO
+                با پررنگ‌تر شدن حوزة آموزش زبان فارسی به غیرفارسی زبانان در سراسر دنیا، تعداد داوطلبان آموزش این زبان نیز در سراسر دنیا افزایش یافته است که منجر به گسترش هرچه بیشتر این زبان و همچنین ارائة تخصصی آموزش این زبان در اقصی نقاط دنیا می‌شود. 
+                به این ترتیب، بنیاد سعدی تلاش نموده با برنامه‌ریزی دقیق و بهره‌برداری از اطلاعات به‌روز مطرح در دنیا و دوره‌های بین‌المللی تربیت مدرس به تولید جدیدترین محتوای آموزشی برای تربیت مدرسان زبان فارسی بپردازد. این کتاب، منبع مقدماتی طراحی شده برای مدرسان آیندة زبان فارسی است که اطلاعات پایه‌ای مورد نیاز برای آموزش زبان را در اختیار آنها قرار می‌دهد. 
+                <div dir="ltr" lang="en">As teaching Persian to the speakers of other languages has become widespread, the number of applicants for teaching this language has increased ending up in spreading this language internationally. As a result, there is a growing need for reliable references to access the specific language teaching skills. That is the reason why, Saadi Foundation has tried to produce the novel materials and latest updates in the field of Persian language teaching using the newest educational resources alongside adapting the well-known international language teacher training courses such as TESOL and CELTA. 
+                This book is the introductory reference designed for prospective Persian language teachers, which provides basic information regarding language teaching.</div>
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'intro_video' => null,
+                'teaching_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => 'indexes/ttc1.pdf',
+                'sample_file' => null,
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Morvarid-Talebi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Shahnaz-Ahmadighader'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'MarziyeSadat-EatemadalEslami'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'scientific-supervisor'),
+                    ],
+                ],
+                'tags' => [
+                    'how-to-teach',
+                ],
+            ],
+            //ttc2
+            [
+                'title' => 'دورۀ تکمیلی تربیت مدرس زبان فارسی',
+                'title_abbr' => 'ttc2',
+                'cover' => null,
+                'collection_id' => null,
+                'intro' => <<<INTRO
+                با پررنگ‌تر شدن حوزة آموزش زبان فارسی به غیرفارسی زبانان در سراسر دنیا، تعداد داوطلبان آموزش این زبان نیز در سراسر دنیا افزایش یافته است که منجر به گسترش هرچه بیشتر این زبان و همچنین ارائة تخصصی آموزش این زبان در اقصی نقاط دنیا می‌شود. 
+                به این ترتیب، بنیاد سعدی تلاش نموده با برنامه‌ریزی دقیق و بهره‌برداری از اطلاعات به‌روز مطرح در دنیا و دوره‌های بین‌المللی تربیت مدرس به تولید جدیدترین محتوای آموزشی برای تربیت مدرسان زبان فارسی بپردازد. این کتاب، منبع تکمیلی طراحی شده برای مدرسان آیندة زبان فارسی است که اطلاعات جامع و کامل مورد نیاز برای آموزش زبان را در اختیار آنها قرار می‌دهد. 
+                <div dir="ltr" lang="en">As teaching Persian to the speakers of other languages has become widespread, the number of applicants for teaching this language has increased ending up in spreading this language internationally. As a result, there is a growing need for reliable references to access the specific language teaching skills. That is the reason why, Saadi Foundation has tried to produce the novel materials and latest updates in the field of Persian language teaching using the newest educational resources alongside adapting the well-known international language teacher training courses such as TESOL and CELTA. 
+                This book is the main reference designed for prospective Persian language teachers, which provides comprehensive information regarding language teaching.</div>
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'intro_video' => null,
+                'teaching_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => 'indexes/ttc2.pdf',
+                'sample_file' => null,
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Saadi-Foundation-Writers-Group'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'scientific-supervisor'),
+                    ],
+                ],
+                'tags' => [
+                    'how-to-teach',
+                ],
+            ],
         ];
         foreach ($books_data as $book_data) {
             $book = new Book;
