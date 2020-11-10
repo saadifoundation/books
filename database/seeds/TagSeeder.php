@@ -64,11 +64,11 @@ class TagSeeder extends Seeder
             ],
             [
                 'title' => 'برای مدرسان',
-                'title_abbr' => 'teaching',
+                'title_abbr' => 'how-to-teach',
             ],
             [
                 'title' => 'کمک‌آموزشی',
-                'title_abbr' => 'educational-assistance',
+                'title_abbr' => 'enrichment',
             ],
             [
                 'title' => 'دوزبانه',
@@ -80,7 +80,7 @@ class TagSeeder extends Seeder
             ],
             [
                 'title' => 'آمفا',
-                'title_abbr' => 'amfa',
+                'title_abbr' => 'amfa-readiness',
             ],
         ];
         foreach ($tags_data as $tag_data) {

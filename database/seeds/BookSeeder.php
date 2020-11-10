@@ -1880,7 +1880,7 @@ class BookSeeder extends Seeder
                     ],
                 ],
                 'tags' => [
-                    'teaching',
+                    'how-to-teach',
                 ],
             ],
             //trip2iran1
@@ -1969,7 +1969,7 @@ class BookSeeder extends Seeder
             ],
             //easyteaching
             [
-                'title' => 'روش‌های سادۀ آموزش زبان فارسی',
+                'title' => 'تکنیک‌های سادۀ آموزش زبان فارسی به غیرفارسی‌زبانان (138 فعالیت آموزشی)',
                 'title_abbr' => 'easyteaching',
                 'cover' => 'covers/easyteaching.jpg',
                 'collection_id' => null,
@@ -1999,7 +1999,7 @@ class BookSeeder extends Seeder
                     ],
                 ],
                 'tags' => [
-                    'teaching',
+                    'how-to-teach',
                 ],
             ],
             //khomreh
@@ -2033,7 +2033,7 @@ class BookSeeder extends Seeder
                     ],
                 ],
                 'tags' => [
-                    'educational-assistance',
+                    'enrichment',
                     '2languages',
                 ],
             ],
@@ -2097,7 +2097,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
-                    'educational-assistance',
+                    'enrichment',
                 ],
             ],
             //pracsen2
@@ -2132,7 +2132,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
-                    'educational-assistance',
+                    'enrichment',
                 ],
             ],
             //amfareading1
@@ -2168,7 +2168,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
-                    'amfa',
+                    'amfa-readiness',
                 ],
             ],
             //amfareading2
@@ -2204,7 +2204,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
-                    'amfa',
+                    'amfa-readiness',
                 ],
             ],
             //amfareading3
@@ -2240,7 +2240,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
-                    'amfa',
+                    'amfa-readiness',
                 ],
             ],
             //amfareading4
@@ -2276,7 +2276,7 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'reading',
-                    'amfa',
+                    'amfa-readiness',
                 ],
             ],
             //howteachpersian
@@ -2308,7 +2308,7 @@ class BookSeeder extends Seeder
                     ],
                 ],
                 'tags' => [
-                    'teaching',
+                    'how-to-teach',
                 ],
             ],
             //1001nights
@@ -2341,7 +2341,7 @@ class BookSeeder extends Seeder
                 ],
                 'tags' => [
                     'language-learning',
-                    'educational-assistance',
+                    'enrichment',
                 ],
             ],
             //persianwithmusic
