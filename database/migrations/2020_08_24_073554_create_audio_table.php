@@ -17,6 +17,7 @@ class CreateAudioTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('file');
+            $table->integer('order');
             $table->string('group_name');
             $table->integer('group_order');
             $table->foreignId('book_id')->constrained()->onDelete('cascade');

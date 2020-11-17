@@ -173,7 +173,7 @@
 
     </div>
   </div>
-  @if($book->audio->groupBy('group_name')->sortBy('group_order')->isNotEmpty())
+  @if($book->audio->isNotEmpty())
   <div class="row text-center border-top mb-4 border-level-a" id="sounds-row">
     <div class="col-12 mb-4">
       <h2 class="text-center mt-4">
@@ -187,7 +187,7 @@
     </div>
     <div class="col-12">
         <div class="accordion" id="accordionLessons">
-          @foreach ($book->audio->sortBy('group_order')->groupBy('group_name') as $audio_group)
+          @foreach ($book->audio->sortBy('group_order')->sortBy('order')->groupBy('group_name') as $audio_group)
             <div class="card">
               <div class="card-header" id="heading{{$loop->index}}">
                 <h2 class="mb-0">
