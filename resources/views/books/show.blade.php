@@ -95,7 +95,7 @@
 
       @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
         <div>
-          <p class="teaching_video_buttons">
+          <p class="teaching-video-button">
             <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
               {{ __('ویدئوهای روش تدریس') }}
             </button>
