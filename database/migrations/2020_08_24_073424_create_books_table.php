@@ -22,7 +22,8 @@ class CreateBooksTable extends Migration
             $table->text('intro')->nullable();
             $table->foreignId('status_id')->nullable()->constrained()->onDelete('cascade');
             $table->string('intro_video')->nullable();
-            $table->string('teaching_video')->nullable();
+            $table->string('teaching_intro_video')->nullable();
+            $table->string('teaching_detailed_video')->nullable();
             $table->string('elearning_link')->nullable();
             $table->string('bibliography_link')->nullable();
             $table->string('index_file')->nullable();
