@@ -628,6 +628,18 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Leila-Kiashemshaki
+            [
+                'name' => 'لیلا کیاشمشکی',
+                'name_en' => 'Leila-Kiashemshaki',
+                'email' => 'leila.kiashemshaki@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
         ];
         foreach ($users_data as $user_data) {
             $user = new User;

@@ -623,7 +623,7 @@ class BookSeeder extends Seeder
                 Take the First Step with pleasure: the first step is half the job done.</div>
                 INTRO,
                 'status_id' => Status::firstWhere('title_abbr', 'released')->id,
-                'intro_video' => NULL,
+                'intro_video' => null,
                 'teaching_intro_video' => 'eMENR',
                 'teaching_detailed_video' => 'DQxvc',
                 'elearning_link' => null,
@@ -1438,6 +1438,14 @@ class BookSeeder extends Seeder
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Shahnaz-Ahmadighader'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Akram-Seyedrezaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Leila-Kiashemshaki'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
                     [
@@ -2330,17 +2338,19 @@ class BookSeeder extends Seeder
                 'title_abbr' => 'howteachpersian',
                 'cover' => 'covers/howteachpersian.jpg',
                 'collection_id' => null,
-                'intro' => null,
+                'intro' => <<<INTRO
+                تنوع فارسی‌آموزان خارجی، در کنار تفاوت‌های فردی آنها و سایر عوامل تأثیرگذار در یادگیری زبان دوم (مانند سن، جنس، زبان اول، نظام آموزشی و مانند اینها)، تربیت معلمان و مدرسان حرفه‌ای برای آموزش ساده، سریع، انگیزه‌بخش و مؤثر زبان فارسی را به یک ضرورت قطعی و غیرقابل اجتناب بدل ساخته است. برای آموزش اثربخش زبان فارسی تسلّط کافی بر این زبان و آشنایی با روش‌ها و فنون تدریس آن لازم است اما کافی نیست. معلم موفق زبان فارسی کسی است که بتواند اصول و فنون آموزشی را به خوبی و به درستی بکار ببندد. کتاب حاضر با همین هدف تألیف شده است. این کتاب در 9 فصل مجزا سامان یافته و پس از فصل مقدمه، که درباره مسائل کلی آموزش زبان دوم/ خارجی است، فصل های 2 تا 8 به ترتیب به آموزش مهارت‌های شنیدن، صحبت‌کردن، خواندن و نوشتن تلّفظ، واژه و دستور زبان فارسی اختصاص یافته‌اند. فصل پایانی نیز درباره سبک‌ها و راهبردهای یادگیری است. در انتهای هر فصل، یک آزمونک طراحی شده‌ که پاسخ تشریحی آنها در انتهای کتاب ارائه شده‌است. همچنین، در پایان هر فصل مهم‌ترین منابع که می‌تواند برای مطالعۀ بیشتر خوانندگان نیز سودمند باشند، معرفی شده است. مخاطبان اصلی این کتاب همۀ استادان و مدرسان زبان فارسی در داخل و خارج از ایران هستند. بعلاوه، این کتاب می­تواند منبع قابل‌اتکایی برای دو درس «اصول و فنون آموزش مهارت­های زبانی» و «تدریس عملی» در دوره کارشناسی ارشد آموزش زبان فارسی به غیرفارسی‌زبانان باشد.
+                INTRO,
                 'status_id' => Status::firstWhere('title_abbr', 'released')->id,
                 'intro_video' => null,
                 'teaching_intro_video' => null,
                 'teaching_detailed_video' => null,
                 'elearning_link' => null,
                 'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
+                'index_file' => 'indexes/howteachpersian.pdf',
+                'sample_file' => 'samples/howteachpersian.pdf',
+                'buying_link' => 'http://neveeseh.com/index.php?route=product/product&product_id=194',
+                'ebuying_link' => 'https://taaghche.com/book/85513',
                 'audio_link' => null,
                 'levels' => null,
                 'users' => [
