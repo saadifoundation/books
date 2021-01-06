@@ -98,7 +98,7 @@
                             <td>
                               @foreach ($level->books as $book)
                                 <a href="{{ route('books.show', $book->title_abbr) }}" class="cover">
-                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
+                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" title="{{ $book->title }}" class="w-10 mb-3">
                                 </a>
                               @endforeach
                             </td>
@@ -114,7 +114,7 @@
                             <td>
                               @foreach ($other_tag->books as $book)
                                 <a href="{{ route('books.show', $book->title_abbr) }}" class="cover">
-                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-10 mb-3">
+                                  <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" title="{{ $book->title }}" class="w-10 mb-3">
                                 </a>
                               @endforeach
                             </td>
