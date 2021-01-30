@@ -329,7 +329,7 @@ class BookSeeder extends Seeder
                 'sample_file' => null,
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/enjoyreading2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
                     Level::firstWhere('title_abbr', 'b2'),
@@ -1668,7 +1668,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/shiraz1.pdf',
                 'buying_link' => null,
                 'ebuying_link' => 'https://taaghche.com/book/81780',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/shiraz1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                 ],
@@ -2020,6 +2020,7 @@ class BookSeeder extends Seeder
                 'intro' => <<<INTRO
                 آموزش زبان فارسی به غیرفارسی‌زبانان، یکی از حوزه‌های نوین آموزشی در دنیای امروز است. مدرسان گوناگونی از سراسر دنیا داوطلب آموزش این زبان در سطح بین‌المللی هستند تا بستر مناسبی برای یادگیری آن فراهم نمایند. 
                 در این قدم، مدرس باید با استفاده از شیوه‌ها و روش‌های نوین آموزشی، یادگیری زبان فارسی را برای مشتاقان آن تسهیل نملید، تا علاوه بر یادگیری زبان، از به کارگیری آن لذت ببرند. اگر مدرس بتواند با فراهم نمودن شیوه‌های هرچه قوی‌تر و به‌روزتر آموزشی فضای مناسبی برای یادگیری ایجاد کتد، کمک بزرگی به گسترش زبان فارسی در جهان انجام داده است. 
+                <div dir='ltr'>Teaching Persian to the speakers of other languages is one of the new areas of educational research in today’s world. In order to provide a suitable way for learning Persian, various volunteer teachers from around the world are interested in teaching this language internationally. Therefore, a critical role for the language specialists is defined and that is to facilitate Persian language learning for the teachers using the novel methods and approaches in language pedagogy. If the teachers become able to apply with such strong and updated techniques to provide a suitable space for learning, they could perfectly help distribute Persian in the world. </div>
                 INTRO,
                 'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
                 'intro_video' => null,
