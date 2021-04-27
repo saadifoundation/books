@@ -72,6 +72,74 @@
             <a href="{{ Storage::url($book->audio_link) }}" target="_blank">
               <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
             </a>
+
+          @endif
+          @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
+            <a href="#" data-toggle="modal" data-target="#teaching-videos-modal">
+              <img src="{{ asset('img/buttons/08_Teaching-Videos.png') }}" alt="" class="w-75">
+            </a>
+            <div class="modal fade" id="teaching-videos-modal" tabindex="-1" role="dialog" aria-labelledby="teaching-videos-modal-label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="teaching-videos-modal=label">
+                      {{ __('ویدئوهای روش تدریس') }}
+                    </h5>
+                  </div>
+                  <div class="modal-body">
+                    <div id="accordion">
+                      @if ($book->teaching_intro_video !== NULL)
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت اول') }}
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                              <div class="h_iframe-aparat_embed_frame">
+                                <span style="display: block;padding-top: 57%">
+                                </span>
+                                <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_intro_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      @endif
+                      @if ($book->teaching_detailed_video !== NULL)
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت دوم') }}
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              <div class="h_iframe-aparat_embed_frame">
+                                <span style="display: block;padding-top: 57%">
+                                </span>
+                                <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_detailed_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      {{ __('بازگشت') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           @endif
         </div>
       </div>
@@ -90,78 +158,6 @@
           <p class="caption">
             {{ __('ویدئوی معرفی کتاب') }}
           </p>
-        </div>
-      @endif
-
-      @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
-        <div>
-          <p class="teaching-video-button">
-            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
-              {{ __('ویدئوهای روش تدریس') }}
-            </button>
-          </p>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  {{ __('ویدئوهای روش تدریس') }}
-                </h5>
-              </div>
-              <div class="modal-body">
-                <div id="accordion">
-                  @if ($book->teaching_intro_video !== NULL)
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت اول') }}
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          <div class="h_iframe-aparat_embed_frame">
-                            <span style="display: block;padding-top: 57%">
-                            </span>
-                            <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_intro_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-                            </iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  @endif
-                  @if ($book->teaching_detailed_video !== NULL)
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت دوم') }}
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          <div class="h_iframe-aparat_embed_frame">
-                            <span style="display: block;padding-top: 57%">
-                            </span>
-                            <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_detailed_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-                            </iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  @endif
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                  {{ __('بازگشت') }}
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       @endif
 
