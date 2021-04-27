@@ -319,7 +319,7 @@ class BookSeeder extends Seeder
                 بدون کمک دیگران، هر متنی را به زبان فارسی بخوانید.
                 متن های این کتاب بسیار جذاب و همه پسند و تصاویر درس ها نیز، اصیل، دیدنی و چشم نواز هستند. طراحی زیبای کتاب، لذت خواندن آن را دوچندان کرده است. در هر درس، دو مهارت برای تقویت خواندن و واژه معرفی شده است. یادگیری این مهارت ها به شما کمک خواهد کرد بدون نیاز به کمک دیگران، با دنیای زبان فارسی ارتباط برقرار کنید و از لذت دائمی آن بهره مند شوید. 
                 INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'status_id' => Status::firstWhere('title_abbr', 'released')->id,
                 'intro_video' => null,
                 'teaching_intro_video' => 'mAlMG',
                 'teaching_detailed_video' => 'PZBFm',
@@ -384,17 +384,17 @@ class BookSeeder extends Seeder
                 بدون کمک دیگران، هر متنی را به زبان فارسی بخوانید.
                 متن های این کتاب بسیار جذاب و همه پسند و تصاویر درس ها نیز، اصیل، دیدنی و چشم نواز هستند. طراحی زیبای کتاب، لذت خواندن آن را دوچندان کرده است. در هر درس، دو مهارت برای تقویت خواندن و واژه معرفی شده است. یادگیری این مهارت ها به شما کمک خواهد کرد بدون نیاز به کمک دیگران، با دنیای زبان فارسی ارتباط برقرار کنید و از لذت دائمی آن بهره مند شوید. 
                 INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'status_id' => Status::firstWhere('title_abbr', 'released')->id,
                 'intro_video' => null,
                 'teaching_intro_video' => 'mAlMG',
                 'teaching_detailed_video' => 'PZBFm',
                 'elearning_link' => null,
-                'bibliography_link' => null,
+                'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/7506921',
                 'index_file' => 'indexes/enjoyreading3.pdf',
-                'sample_file' => null,
+                'sample_file' => 'samples/enjoyreading3.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/enjoyreading3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                     Level::firstWhere('title_abbr', 'b3'),
