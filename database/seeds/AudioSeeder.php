@@ -1247,16 +1247,8 @@ class AudioSeeder extends Seeder
             ],
             //mina1
             [
-                'title' => 'مقدمه',
-                'file' => 'audio/mina1/TRACK0.mp3',
-                'order' => 0,
-                'group_name' => 'مقدمه',
-                'group_order' => 0,
-                'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
-            ],
-            [
                 'title' => 'شمارۀ 1',
-                'file' => 'audio/mina1/TRACK01.mp3',
+                'file' => 'audio/mina1/1.mp3',
                 'order' => 1,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1264,7 +1256,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 2',
-                'file' => 'audio/mina1/TRACK02.mp3',
+                'file' => 'audio/mina1/2.mp3',
                 'order' => 2,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1272,7 +1264,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 3',
-                'file' => 'audio/mina1/TRACK03.mp3',
+                'file' => 'audio/mina1/3.mp3',
                 'order' => 3,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1280,7 +1272,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 4',
-                'file' => 'audio/mina1/TRACK04.mp3',
+                'file' => 'audio/mina1/4.mp3',
                 'order' => 4,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1288,7 +1280,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 5',
-                'file' => 'audio/mina1/TRACK05.mp3',
+                'file' => 'audio/mina1/5.mp3',
                 'order' => 5,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1296,7 +1288,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 6',
-                'file' => 'audio/mina1/TRACK06.mp3',
+                'file' => 'audio/mina1/6.mp3',
                 'order' => 6,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1304,7 +1296,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 7',
-                'file' => 'audio/mina1/TRACK07.mp3',
+                'file' => 'audio/mina1/7.mp3',
                 'order' => 7,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1312,7 +1304,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 8',
-                'file' => 'audio/mina1/TRACK08.mp3',
+                'file' => 'audio/mina1/8.mp3',
                 'order' => 8,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1320,7 +1312,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 9',
-                'file' => 'audio/mina1/TRACK09.mp3',
+                'file' => 'audio/mina1/9.mp3',
                 'order' => 9,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1328,7 +1320,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 10',
-                'file' => 'audio/mina1/TRACK10.mp3',
+                'file' => 'audio/mina1/10.mp3',
                 'order' => 10,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1336,7 +1328,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 11',
-                'file' => 'audio/mina1/TRACK11.mp3',
+                'file' => 'audio/mina1/11.mp3',
                 'order' => 11,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1344,7 +1336,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 12',
-                'file' => 'audio/mina1/TRACK12.mp3',
+                'file' => 'audio/mina1/12.mp3',
                 'order' => 12,
                 'group_name' => 'درس اول',
                 'group_order' => 1,
@@ -1352,7 +1344,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 13',
-                'file' => 'audio/mina1/TRACK13.mp3',
+                'file' => 'audio/mina1/13.mp3',
                 'order' => 13,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1360,7 +1352,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 14',
-                'file' => 'audio/mina1/TRACK14.mp3',
+                'file' => 'audio/mina1/14.mp3',
                 'order' => 14,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1368,7 +1360,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 15',
-                'file' => 'audio/mina1/TRACK15.mp3',
+                'file' => 'audio/mina1/15.mp3',
                 'order' => 15,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1376,7 +1368,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 16',
-                'file' => 'audio/mina1/TRACK16.mp3',
+                'file' => 'audio/mina1/16.mp3',
                 'order' => 16,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1384,7 +1376,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 17',
-                'file' => 'audio/mina1/TRACK17.mp3',
+                'file' => 'audio/mina1/17.mp3',
                 'order' => 17,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1392,7 +1384,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 18',
-                'file' => 'audio/mina1/TRACK18.mp3',
+                'file' => 'audio/mina1/18.mp3',
                 'order' => 18,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1400,7 +1392,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 19',
-                'file' => 'audio/mina1/TRACK19.mp3',
+                'file' => 'audio/mina1/19.mp3',
                 'order' => 19,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1408,7 +1400,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 20',
-                'file' => 'audio/mina1/TRACK20.mp3',
+                'file' => 'audio/mina1/20.mp3',
                 'order' => 20,
                 'group_name' => 'درس دوم',
                 'group_order' => 2,
@@ -1416,7 +1408,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 21',
-                'file' => 'audio/mina1/TRACK21.mp3',
+                'file' => 'audio/mina1/21.mp3',
                 'order' => 21,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1424,7 +1416,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 22',
-                'file' => 'audio/mina1/TRACK22.mp3',
+                'file' => 'audio/mina1/22.mp3',
                 'order' => 22,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1432,7 +1424,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 23',
-                'file' => 'audio/mina1/TRACK23.mp3',
+                'file' => 'audio/mina1/23.mp3',
                 'order' => 23,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1440,7 +1432,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 24',
-                'file' => 'audio/mina1/TRACK24.mp3',
+                'file' => 'audio/mina1/24.mp3',
                 'order' => 24,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1448,7 +1440,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 25',
-                'file' => 'audio/mina1/TRACK25.mp3',
+                'file' => 'audio/mina1/25.mp3',
                 'order' => 25,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1456,7 +1448,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 26',
-                'file' => 'audio/mina1/TRACK26.mp3',
+                'file' => 'audio/mina1/26.mp3',
                 'order' => 26,
                 'group_name' => 'درس سوم',
                 'group_order' => 3,
@@ -1464,23 +1456,23 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 27',
-                'file' => 'audio/mina1/TRACK27.mp3',
+                'file' => 'audio/mina1/27.mp3',
                 'order' => 27,
-                'group_name' => 'درس چهارم',
-                'group_order' => 4,
+                'group_name' => 'درس سوم',
+                'group_order' => 3,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 28',
-                'file' => 'audio/mina1/TRACK28.mp3',
+                'file' => 'audio/mina1/28.mp3',
                 'order' => 28,
-                'group_name' => 'درس چهارم',
-                'group_order' => 4,
+                'group_name' => 'درس سوم',
+                'group_order' => 3,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 29',
-                'file' => 'audio/mina1/TRACK29.mp3',
+                'file' => 'audio/mina1/29.mp3',
                 'order' => 29,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1488,7 +1480,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 30',
-                'file' => 'audio/mina1/TRACK30.mp3',
+                'file' => 'audio/mina1/30.mp3',
                 'order' => 30,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1496,7 +1488,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 31',
-                'file' => 'audio/mina1/TRACK31.mp3',
+                'file' => 'audio/mina1/31.mp3',
                 'order' => 31,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1504,7 +1496,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 32',
-                'file' => 'audio/mina1/TRACK32.mp3',
+                'file' => 'audio/mina1/32.mp3',
                 'order' => 32,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1512,7 +1504,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 33',
-                'file' => 'audio/mina1/TRACK33.mp3',
+                'file' => 'audio/mina1/33.mp3',
                 'order' => 33,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1520,7 +1512,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 34',
-                'file' => 'audio/mina1/TRACK34.mp3',
+                'file' => 'audio/mina1/34.mp3',
                 'order' => 34,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1528,7 +1520,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 35',
-                'file' => 'audio/mina1/TRACK35.mp3',
+                'file' => 'audio/mina1/35.mp3',
                 'order' => 35,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1536,7 +1528,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 36',
-                'file' => 'audio/mina1/TRACK36.mp3',
+                'file' => 'audio/mina1/36.mp3',
                 'order' => 36,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1544,7 +1536,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 37',
-                'file' => 'audio/mina1/TRACK37.mp3',
+                'file' => 'audio/mina1/37.mp3',
                 'order' => 37,
                 'group_name' => 'درس چهارم',
                 'group_order' => 4,
@@ -1552,23 +1544,23 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 38',
-                'file' => 'audio/mina1/TRACK38.mp3',
+                'file' => 'audio/mina1/38.mp3',
                 'order' => 38,
-                'group_name' => 'درس پنجم',
-                'group_order' => 5,
+                'group_name' => 'درس چهارم',
+                'group_order' => 4,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 39',
-                'file' => 'audio/mina1/TRACK39.mp3',
+                'file' => 'audio/mina1/39.mp3',
                 'order' => 39,
-                'group_name' => 'درس پنجم',
-                'group_order' => 5,
+                'group_name' => 'درس چهارم',
+                'group_order' => 4,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 40',
-                'file' => 'audio/mina1/TRACK40.mp3',
+                'file' => 'audio/mina1/40.mp3',
                 'order' => 40,
                 'group_name' => 'درس پنجم',
                 'group_order' => 5,
@@ -1576,7 +1568,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 41',
-                'file' => 'audio/mina1/TRACK41.mp3',
+                'file' => 'audio/mina1/41.mp3',
                 'order' => 41,
                 'group_name' => 'درس پنجم',
                 'group_order' => 5,
@@ -1584,7 +1576,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 42',
-                'file' => 'audio/mina1/TRACK42.mp3',
+                'file' => 'audio/mina1/42.mp3',
                 'order' => 42,
                 'group_name' => 'درس پنجم',
                 'group_order' => 5,
@@ -1592,7 +1584,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 43',
-                'file' => 'audio/mina1/TRACK43.mp3',
+                'file' => 'audio/mina1/43.mp3',
                 'order' => 43,
                 'group_name' => 'درس پنجم',
                 'group_order' => 5,
@@ -1600,31 +1592,31 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 44',
-                'file' => 'audio/mina1/TRACK44.mp3',
+                'file' => 'audio/mina1/44.mp3',
                 'order' => 44,
-                'group_name' => 'درس ششم',
-                'group_order' => 6,
+                'group_name' => 'درس پنجم',
+                'group_order' => 5,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 45',
-                'file' => 'audio/mina1/TRACK45.mp3',
+                'file' => 'audio/mina1/45.mp3',
                 'order' => 45,
-                'group_name' => 'درس ششم',
-                'group_order' => 6,
+                'group_name' => 'درس پنجم',
+                'group_order' => 5,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 46',
-                'file' => 'audio/mina1/TRACK46.mp3',
+                'file' => 'audio/mina1/46.mp3',
                 'order' => 46,
-                'group_name' => 'درس ششم',
-                'group_order' => 7,
+                'group_name' => 'درس پنجم',
+                'group_order' => 5,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 47',
-                'file' => 'audio/mina1/TRACK47.mp3',
+                'file' => 'audio/mina1/47.mp3',
                 'order' => 47,
                 'group_name' => 'درس ششم',
                 'group_order' => 7,
@@ -1632,7 +1624,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 48',
-                'file' => 'audio/mina1/TRACK48.mp3',
+                'file' => 'audio/mina1/48.mp3',
                 'order' => 48,
                 'group_name' => 'درس ششم',
                 'group_order' => 7,
@@ -1640,7 +1632,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 49',
-                'file' => 'audio/mina1/TRACK49.mp3',
+                'file' => 'audio/mina1/49.mp3',
                 'order' => 49,
                 'group_name' => 'درس ششم',
                 'group_order' => 6,
@@ -1648,7 +1640,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 50',
-                'file' => 'audio/mina1/TRACK50.mp3',
+                'file' => 'audio/mina1/50.mp3',
                 'order' => 50,
                 'group_name' => 'درس ششم',
                 'group_order' => 6,
@@ -1656,7 +1648,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 51',
-                'file' => 'audio/mina1/TRACK51.mp3',
+                'file' => 'audio/mina1/51.mp3',
                 'order' => 51,
                 'group_name' => 'درس ششم',
                 'group_order' => 7,
@@ -1664,7 +1656,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 52',
-                'file' => 'audio/mina1/TRACK52.mp3',
+                'file' => 'audio/mina1/52.mp3',
                 'order' => 52,
                 'group_name' => 'درس ششم',
                 'group_order' => 6,
@@ -1672,23 +1664,23 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 53',
-                'file' => 'audio/mina1/TRACK53.mp3',
+                'file' => 'audio/mina1/53.mp3',
                 'order' => 53,
                 'group_name' => 'درس ششم',
-                'group_order' => 7,
+                'group_order' => 6,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 54',
-                'file' => 'audio/mina1/TRACK54.mp3',
+                'file' => 'audio/mina1/54.mp3',
                 'order' => 54,
-                'group_name' => 'درس هفتم',
-                'group_order' => 7,
+                'group_name' => 'درس ششم',
+                'group_order' => 6,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 55',
-                'file' => 'audio/mina1/TRACK55.mp3',
+                'file' => 'audio/mina1/55.mp3',
                 'order' => 55,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1696,7 +1688,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 56',
-                'file' => 'audio/mina1/TRACK56.mp3',
+                'file' => 'audio/mina1/56.mp3',
                 'order' => 56,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1704,7 +1696,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 57',
-                'file' => 'audio/mina1/TRACK57.mp3',
+                'file' => 'audio/mina1/57.mp3',
                 'order' => 57,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1712,7 +1704,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 58',
-                'file' => 'audio/mina1/TRACK58.mp3',
+                'file' => 'audio/mina1/58.mp3',
                 'order' => 58,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1720,7 +1712,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 59',
-                'file' => 'audio/mina1/TRACK59.mp3',
+                'file' => 'audio/mina1/59.mp3',
                 'order' => 59,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1728,7 +1720,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 60',
-                'file' => 'audio/mina1/TRACK60.mp3',
+                'file' => 'audio/mina1/60.mp3',
                 'order' => 60,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1736,7 +1728,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 61',
-                'file' => 'audio/mina1/TRACK61.mp3',
+                'file' => 'audio/mina1/61.mp3',
                 'order' => 61,
                 'group_name' => 'درس هفتم',
                 'group_order' => 7,
@@ -1744,15 +1736,15 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 62',
-                'file' => 'audio/mina1/TRACK62.mp3',
+                'file' => 'audio/mina1/62.mp3',
                 'order' => 62,
-                'group_name' => 'درس هفتم',
-                'group_order' => 7,
+                'group_name' => 'درس هشتم',
+                'group_order' => 8,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
             ],
             [
                 'title' => 'شمارۀ 63',
-                'file' => 'audio/mina1/TRACK63.mp3',
+                'file' => 'audio/mina1/63.mp3',
                 'order' => 63,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1760,7 +1752,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 64',
-                'file' => 'audio/mina1/TRACK64.mp3',
+                'file' => 'audio/mina1/64.mp3',
                 'order' => 64,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1768,7 +1760,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 65',
-                'file' => 'audio/mina1/TRACK65.mp3',
+                'file' => 'audio/mina1/65.mp3',
                 'order' => 65,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1776,7 +1768,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 66',
-                'file' => 'audio/mina1/TRACK66.mp3',
+                'file' => 'audio/mina1/66.mp3',
                 'order' => 66,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1784,7 +1776,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 67',
-                'file' => 'audio/mina1/TRACK67.mp3',
+                'file' => 'audio/mina1/67.mp3',
                 'order' => 67,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1792,7 +1784,7 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 68',
-                'file' => 'audio/mina1/TRACK68.mp3',
+                'file' => 'audio/mina1/68.mp3',
                 'order' => 68,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
@@ -1800,8 +1792,16 @@ class AudioSeeder extends Seeder
             ],
             [
                 'title' => 'شمارۀ 69',
-                'file' => 'audio/mina1/TRACK69.mp3',
+                'file' => 'audio/mina1/69.mp3',
                 'order' => 69,
+                'group_name' => 'درس هشتم',
+                'group_order' => 8,
+                'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
+            ],
+            [
+                'title' => 'شمارۀ 70',
+                'file' => 'audio/mina1/70.mp3',
+                'order' => 70,
                 'group_name' => 'درس هشتم',
                 'group_order' => 8,
                 'book_id' => Book::firstWhere('title_abbr', 'mina1')->id,
