@@ -603,7 +603,7 @@ class AudioSeeder extends Seeder
             ],
             //enjoyreading3
             [
-                'title' => 'بخش 1 درس 1',
+                'title' => 'بخش 1 درس 1: اعضای اضافی',
                 'file' => 'audio/enjoyreading2/1-1.mp3',
                 'order' => 1,
                 'group_name' => 'بخش 1',
@@ -611,7 +611,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 1 درس 2',
+                'title' => 'بخش 1 درس 2: صدا داریم تا صدا',
                 'file' => 'audio/enjoyreading2/1-2.mp3',
                 'order' => 2,
                 'group_name' => 'بخش 1',
@@ -619,7 +619,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 2 درس 1',
+                'title' => 'بخش 2 درس 1: شیر، جام، سیمرغ',
                 'file' => 'audio/enjoyreading2/2-1.mp3',
                 'order' => 3,
                 'group_name' => 'بخش 2',
@@ -627,7 +627,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 2 درس 2',
+                'title' => 'بخش 2 درس 2: تئاتر در مرز',
                 'file' => 'audio/enjoyreading2/2-2.mp3',
                 'order' => 4,
                 'group_name' => 'بخش 2',
@@ -635,7 +635,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 3 درس 1',
+                'title' => 'بخش 3 درس 1: شیخ اجل',
                 'file' => 'audio/enjoyreading2/3-1.mp3',
                 'order' => 5,
                 'group_name' => 'بخش 3',
@@ -643,7 +643,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 3 درس 2',
+                'title' => 'بخش 3 درس 2: مسافر ترسو',
                 'file' => 'audio/enjoyreading2/3-2.mp3',
                 'order' => 6,
                 'group_name' => 'بخش 3',
@@ -651,7 +651,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 4 درس 1',
+                'title' => 'بخش 4 درس 1: مغز و نیمکره‌هایش',
                 'file' => 'audio/enjoyreading2/4-1.mp3',
                 'order' => 7,
                 'group_name' => 'بخش 4',
@@ -659,7 +659,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 4 درس 2',
+                'title' => 'بخش 4 درس 2: چپ‌دستی',
                 'file' => 'audio/enjoyreading2/4-2.mp3',
                 'order' => 8,
                 'group_name' => 'بخش 4',
@@ -667,7 +667,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 5 درس 1',
+                'title' => 'بخش 5 درس 1: گزارش سفر',
                 'file' => 'audio/enjoyreading2/5-1.mp3',
                 'order' => 9,
                 'group_name' => 'بخش 5',
@@ -675,7 +675,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 5 درس 2',
+                'title' => 'بخش 5 درس 2: برادران امیدوار',
                 'file' => 'audio/enjoyreading2/5-2.mp3',
                 'order' => 10,
                 'group_name' => 'بخش 5',
@@ -683,7 +683,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 6 درس 1',
+                'title' => 'بخش 6 درس 1: صدا، دوربین، حرکت!',
                 'file' => 'audio/enjoyreading2/6-1.mp3',
                 'order' => 11,
                 'group_name' => 'بخش 6',
@@ -691,7 +691,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 6 درس 2',
+                'title' => 'بخش 6 درس 2: سینما حقیقت',
                 'file' => 'audio/enjoyreading2/6-2.mp3',
                 'order' => 12,
                 'group_name' => 'بخش 6',
@@ -699,7 +699,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 7 درس 1',
+                'title' => 'بخش 7 درس 1: از زندگی قبیله‌ای تا دهکدۀ جهانی',
                 'file' => 'audio/enjoyreading2/7-1.mp3',
                 'order' => 13,
                 'group_name' => 'بخش 7',
@@ -707,7 +707,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 7 درس 2',
+                'title' => 'بخش 7 درس 2: شهر رؤیاها',
                 'file' => 'audio/enjoyreading2/7-2.mp3',
                 'order' => 14,
                 'group_name' => 'بخش 7',
@@ -715,7 +715,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 8 درس 1',
+                'title' => 'بخش 8 درس 1: قهرمانان',
                 'file' => 'audio/enjoyreading2/8-1.mp3',
                 'order' => 15,
                 'group_name' => 'بخش 8',
@@ -723,7 +723,7 @@ class AudioSeeder extends Seeder
                 'book_id' => Book::firstWhere('title_abbr', 'enjoyreading3')->id,
             ],
             [
-                'title' => 'بخش 8 درس 2',
+                'title' => 'بخش 8 درس 2: فردوسی و اسطوره',
                 'file' => 'audio/enjoyreading2/8-2.mp3',
                 'order' => 16,
                 'group_name' => 'بخش 8',
