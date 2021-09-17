@@ -278,21 +278,6 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
-            //Hoda-Salimi
-            [
-                'name' => 'هدی سلیمی',
-                'name_en' => 'Hoda-Salimi',
-                'email' => 'h.salimi@saadifoundation.ir',
-                'intro' => <<<INTRO
-                هدی سلیمی، کارشناس ارشد آموزش زبان انگلیسی به غیر انگلیسی زبانان از دانشگاه علامه طباطبایی، در زمینه‌های حرفه‌ای آموزش مجازی زبان به خارجی‌ها و تربیت مدرس زبان فارسی به غیرفارسی‌زبانان مشغول به فعالیت است. او همچنین، فارغ التحصیل دورة بین‌المللی آموزش زبان انگلیسی به غیر انگلیسی‌زبانان است و هم‌اکنون مشغول طراحی دوره‌های حرفه‌ای تربیت مدرس زبان فارسی به غیر فارسی زبانان می‌باشد. هدی سلیمی، علاوه بر فعالیت‌های حرفه‌ای، چندین مقالة ملی و بین‌المللی در مجلات داخلی و خارجی منتشر نموده و آثار خود را در کنفرانس‌های ملی و بین‌المللی ارائه کرده است. سلیمی با بیش از 5 سال سابقة تدریس زبان انگلیسی و فارسی، مشغول به انجام فعالیت‌های آموزشی و پژوهشی در دانشگاه‌های مطرح ملی و بین‌المللی است. 
-                <div dir="ltr" lang="en">Hoda Salimi is an MA graduate in TEFL from Allameh Tabataba’I University. She is currently working on various topics in second language teaching such as Computer-assisted Language Teaching, Language Testing and Assessment, and Teacher Education Programs. Moreover, she is a TESOL Certificate holder and is now the head of the TPSOL (Teaching Persian to the Speakers of Other Languages) Courses. Hoda Salimi has published articles in TEFL in national and international journals and has presented her works in national and international conferences. Salimi has taught English and Persian for over five years and is now involved in various educational and research projects in national and international universities.</div>
-                INTRO,
-                'pic' => 'user_pics/hoda_salimi.jpg',
-                'resume' => 'resumes/hoda_salimi.pdf',
-                'linkedin_link' => 'https://linkedin.com/in/hoda-salimi',
-                'website_link' => 'https://scholar.google.com/citations?hl=fa&user=swAnpDIAAAAJ',
-                'orcid_link' => 'https://orcid.org/0000-0001-6070-7276',
-            ],
             //Behrouz-MahmoodiBakhtiari
             [
                 'name' => 'بهروز محمودی بختیاری',

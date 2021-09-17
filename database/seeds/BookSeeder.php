@@ -658,10 +658,6 @@ class BookSeeder extends Seeder
                         'role_title' => Role::firstWhere('title_abbr', 'editor'),
                     ],
                     [
-                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'editor'),
-                    ],
-                    [
                         'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
                         'role_title' => Role::firstWhere('title_abbr', 'graphist'),
                     ],
@@ -835,10 +831,6 @@ class BookSeeder extends Seeder
                     ],
                     [
                         'model' => User::firstWhere('name_en', 'Hamideh-Latifinia'),
-                        'role_title' => Role::firstWhere('title_abbr', 'translator'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
                         'role_title' => Role::firstWhere('title_abbr', 'translator'),
                     ],
                     [
@@ -2039,10 +2031,6 @@ class BookSeeder extends Seeder
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
                 ],
                 'tags' => [
                     'how-to-teach',
@@ -2434,10 +2422,6 @@ class BookSeeder extends Seeder
                 'levels' => null,
                 'users' => [
                     [
-                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
                         'model' => User::firstWhere('name_en', 'Morvarid-Talebi'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
@@ -2483,10 +2467,6 @@ class BookSeeder extends Seeder
                 'audio_link' => null,
                 'levels' => null,
                 'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Hoda-Salimi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
                     [
                         'model' => User::firstWhere('name_en', 'Saadi-Foundation-Writers-Group'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
