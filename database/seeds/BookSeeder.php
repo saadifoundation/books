@@ -2484,6 +2484,62 @@ class BookSeeder extends Seeder
                     'how-to-teach',
                 ],
             ],
+            //hy1ststep
+            [
+                'title' => 'گام اول ارمنی',
+                'title_abbr' => 'hy1ststep',
+                'cover' => 'covers/hy1ststep.jpg',
+                'collection_id' => Collection::firstWhere('title_abbr', '1ststep')->id,
+                'intro' => <<<INTRO
+                <div dir="ltr" lang="hy">Պարսկերեն սովորելիս առաջին քայլը շատ կարևոր և կենսական է: Լեզվի ուսուցման այս նախնական էտապում պարսկերեն սովորողը պետք է ընտելանա պարսկերենին, որպեսզի կարողանա լեզվի յուրացման այս պրոցեսից հաճույք ստանալ: Եթե պարսկերեն սովորող ուսանողը լեզվի ուսուցման հենց առաջին էտապից պարզ ու հստակ պատկերացում կազմի պարսկերենի կառուցվածքի և առանձնահատկությունների մասին, մեծ հաճույքով ու արագորեն կյուրացնի այն: «Առաջին քայլը» (Գամ-է ավալ) մի գիրք է, որ հենց այդ հստակ պատկերացումը ստեղծելու նպատակով է կազմվել` հիմնվելով իրանցի և օտարերկրացի պարսկերեն դասավանդող ուսուցիչների և դասախոսների դասավանդման բազմամյա փորձի վրա: Գրքի հիմնական նպատակը այն է, որ պարսկերենը նոր յուրացնողներն ուսուցման հենց սկզբից կիրառեն պարսկերեն կարևոր քերականական կարգերը, բառերն ու նախադասությունները: Գրքի բոլոր վարժությունները փոխկապակցված են և դրանցից յուրաքանչյուրի կատարման կարևոր նախապայմանն է լեզվական թիրախավորված հստակ խնդիրների լուծումը: 
+                «Առաջին քայլը» (Գամ-է ավալ)  գիրքը շարադրված է ժամանակակից խոսակցական լեզվով և լեզվի ուսուցման հենց սկզբից մեծ ուշադրություն է դարձնում բոլոր լեզվական հմտությունների զարգացմանը: Այս գրքի դասավանդման և յուրացման համար նախատեսված է 40-ից մինչև 60 ժամ ուսուցում, որի ընթացքում պարսկերենը նոր յուրացնողն առանց խոչընդոտի և մեծ հաճույքով ծանոթանում է պարսկերենի հիմնարար և լայն կիրառություն ունեցող քերականական կառուցվածքներին, յուրացնում է այս էտապի համար ընդգրկուն պառապաշարը, հասակացողությունները և դրանց ճիշտ կիրառումը:
+                «Առաջին քայլը» (Գամ-է ավալ) գրքում պարսից լեզվի ուսուցումը կատարվում է կիրառելով լեզվի ողջ գունապնակն ու ներուժը, և գիրքն ավարտելուց հետո լեզուն նոր յուրացնողը կարողանում է խոսել, կարդալ և նույնիսկ գրել պարսկերեն: Պարսից լեզվի գեղեցիկ և հարուստ աշխարհում Ձեր առաջին քայլը կատարե'ք վստահ և հաճույքով, քանզի յուրաքանչյուր գործի հաջողության կեսը կախված է նրա հաջող մեկնարկից:</div>
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'under-press')->id,
+                'intro_video' => null,
+                'teaching_intro_video' => 'eMENR',
+                'teaching_detailed_video' => 'DQxvc',
+                'elearning_link' => 'http://s1f.ir/e1ststep',
+                'bibliography_link' => null,
+                'index_file' => 'indexes/hy1ststep.pdf',
+                'sample_file' => 'samples/hy1ststep.pdf',
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => 'audio_zip/1ststep.zip',
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'n'),
+                ],
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Faeze-Marsous'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Davoud-Maleklou'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Armina-Sergisian'),
+                        'role_title' => Role::firstWhere('title_abbr', 'translator'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammd-Mehraabi'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                ],
+                'tags' => [
+                    'language-learning',
+                    'alphabetic',
+                ],
+            ],
         ];
         foreach ($books_data as $book_data) {
             $book = new Book;

@@ -241,7 +241,9 @@ html {
   }
 
   /*correct display other language texts (specially numbers) */
-  :lang(en),:lang(de),:lang(fr), :lang(zh), :lang(bn), :lang(da), :lang(bn), :lang(ru), :lang(sr), :lang(es), :lang(tr), :lang(tg) {
+  :lang(en),:lang(de),:lang(fr), :lang(zh), :lang(bn),
+  :lang(da), :lang(bn), :lang(ru), :lang(sr), :lang(es),
+  :lang(tr), :lang(tg), :lang(hy) {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
       Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
   }
