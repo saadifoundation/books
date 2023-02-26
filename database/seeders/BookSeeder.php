@@ -2313,20 +2313,27 @@ class BookSeeder extends Seeder
                 'title_abbr' => 'simple-techniques',
                 'cover' => 'covers/simple-techniques.jpg',
                 'collection_id' => null,
-                'intro' => null,
+                'intro' => <<<INTRO
+                کتاب‌ روش‌های سادة زبان فارسی به غیر فارسی‌زبانان با هدف آسان کردن یادگیری و یاددهی زبان فارسی به غیر فارسی‌زبانان، آموزش تدریس خلاقانه به مدرسان و به تبع آن، تربیت مدرسان حرفه‌ای و ماهر برای آموزش زبان فارسی تألیف شده‌است. این کتاب در سال 1400 توسط انتشارات آزفای بنیاد سعدی به چاپ رسیده است. کتاب تألیف رضامراد صحرائی و هدی سلیمی در 7 فصل است که مجموعاً 59 روش و 138 فعالیت خلاقانه آموزشی در حوزه‌های مختلف آموزش زبان را در اختیار مخاطب قرار می‌دهد. مخاطب این کتاب مربیان و مدرسان زبان و کلیة علاقه‌مندان به مباحث آموزش زبان است. 
+                INTRO,
                 'status_id' => Status::firstWhere('title_abbr', 'released')->id,
                 'intro_video' => null,
                 'teaching_intro_video' => null,
                 'teaching_detailed_video' => null,
                 'elearning_link' => null,
-                'bibliography_link' => null,
+                'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/8493954',
                 'index_file' => null,
                 'sample_file' => null,
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/141047',
                 'audio_link' => null,
                 'levels' => null,
-                'users' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                ],
                 'tags' => [
                     'how-to-teach',
                 ],
