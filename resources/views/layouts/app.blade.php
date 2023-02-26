@@ -92,12 +92,6 @@
                 <img class="mb-2" src="{{ asset('/img/saadifoundation-logo.png') }}" alt="" width="24" height="24">
               </a>
               <small class="d-block mb-3 text-muted" style="font-family: Roboto;">&copy; {{ \Carbon\Carbon::now()->year }} Saadi Foundation</small>
-              <small class="d-block mb-3 text-muted">
-                  Developed By: 
-                  <a href="https://amirmojiri.ir" target="_blank">
-                    Amir Mojiri
-                  </a>
-              </small>
           </div>
       </div>
       <div class="row">
