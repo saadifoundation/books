@@ -1460,7 +1460,7 @@ class BookSeeder extends Seeder
             [
                 'title' => 'چارچوب 3',
                 'title_abbr' => 'persianframe3',
-                'cover' => 'covers/persianframe3.jpg',
+                'cover' => null,
                 'collection_id' => Collection::firstWhere('title_abbr', 'persianframe')->id,
                 'intro' => null,
                 'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
