@@ -2179,154 +2179,6 @@ class BookSeeder extends Seeder
                     'enrichment',
                 ],
             ],
-            //amfareading1
-            [
-                'title' => 'خواندن آمفا 1',
-                'title_abbr' => 'amfareading1',
-                'cover' => 'covers/amfareading1.jpg',
-                'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
-                'intro' => <<<INTRO
-                هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
-                INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => null,
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                ],
-                'tags' => [
-                    'language-learning',
-                    'reading',
-                    'amfa-readiness',
-                ],
-            ],
-            //amfareading2
-            [
-                'title' => 'خواندن آمفا 2',
-                'title_abbr' => 'amfareading2',
-                'cover' => 'covers/amfareading2.jpg',
-                'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
-                'intro' => <<<INTRO
-                هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
-                INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => null,
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                ],
-                'tags' => [
-                    'language-learning',
-                    'reading',
-                    'amfa-readiness',
-                ],
-            ],
-            //amfareading3
-            [
-                'title' => 'خواندن آمفا 3',
-                'title_abbr' => 'amfareading3',
-                'cover' => 'covers/amfareading3.jpg',
-                'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
-                'intro' => <<<INTRO
-                هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
-                INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => null,
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                ],
-                'tags' => [
-                    'language-learning',
-                    'reading',
-                    'amfa-readiness',
-                ],
-            ],
-            //amfareading4
-            [
-                'title' => 'خواندن آمفا 4',
-                'title_abbr' => 'amfareading4',
-                'cover' => 'covers/amfareading4.jpg',
-                'collection_id' => Collection::firstWhere('title_abbr', 'amfareading')->id,
-                'intro' => <<<INTRO
-                هر مهارت زبانی، زیرمهارت‌هایی دارد که نوع‌ خواندن و ادراک ما از متن را تحث تأثیر قرار می‌دهد. در این 4 مجلد،12 زیرمهارت خواندن در قالب دوازده فصل (هر جلد سه فصل) ارائه می‌شود که هر فصل شامل 9 متن است که فقط و فقط به یک زیرمهارت خواندن می‌پردازد. این کتب در راستای آماده‌سازی فارسی‌آموزان / غیرفارسی‌زبانان برای آزمون‌های بین‌المللی زبان فارسی، مخصوصاً آمفا تهیه و تدوین شده‌اند.
-                INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => null,
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'GholamHosein-Rezapour'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                ],
-                'tags' => [
-                    'language-learning',
-                    'reading',
-                    'amfa-readiness',
-                ],
-            ],
             //1001nights
             [
                 'title' => '1001 شب',
@@ -2359,93 +2211,6 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'enrichment',
-                ],
-            ],
-            //persianwithmusic
-            [
-                'title' => 'آموزش فارسی با موسیقی',
-                'title_abbr' => 'persianwithmusic',
-                'cover' => 'covers/persianwithmusic.jpg',
-                'collection_id' => null,
-                'intro' => null,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => [
-                    Level::firstWhere('title_abbr', 'b2'),
-                    Level::firstWhere('title_abbr', 'b3'),
-                    Level::firstWhere('title_abbr', 'c1'),
-                ],
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Hanieh-Mashayekhi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Babak-Nobahari'),
-                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
-                    ],
-                ],
-                'tags' => [
-                    'language-learning',
-                ],
-            ],
-            //ttc1
-            [
-                'title' => 'دورۀ مقدماتی تربیت مدرس زبان فارسی',
-                'title_abbr' => 'ttc1',
-                'cover' => 'covers/ttc1.jpg',
-                'collection_id' => null,
-                'intro' => <<<INTRO
-                با پررنگ‌تر شدن حوزة آموزش زبان فارسی به غیرفارسی زبانان در سراسر دنیا، تعداد داوطلبان آموزش این زبان نیز در سراسر دنیا افزایش یافته است که منجر به گسترش هرچه بیشتر این زبان و همچنین ارائة تخصصی آموزش این زبان در اقصی نقاط دنیا می‌شود. 
-                به این ترتیب، بنیاد سعدی تلاش نموده با برنامه‌ریزی دقیق و بهره‌برداری از اطلاعات به‌روز مطرح در دنیا و دوره‌های بین‌المللی تربیت مدرس به تولید جدیدترین محتوای آموزشی برای تربیت مدرسان زبان فارسی بپردازد. این کتاب، منبع مقدماتی طراحی شده برای مدرسان آیندة زبان فارسی است که اطلاعات پایه‌ای مورد نیاز برای آموزش زبان را در اختیار آنها قرار می‌دهد. 
-                <div dir="ltr" lang="en">As teaching Persian to the speakers of other languages has become widespread, the number of applicants for teaching this language has increased ending up in spreading this language internationally. As a result, there is a growing need for reliable references to access the specific language teaching skills. That is the reason why, Saadi Foundation has tried to produce the novel materials and latest updates in the field of Persian language teaching using the newest educational resources alongside adapting the well-known international language teacher training courses such as TESOL and CELTA. 
-                This book is the introductory reference designed for prospective Persian language teachers, which provides basic information regarding language teaching.</div>
-                INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
-                'intro_video' => null,
-                'teaching_intro_video' => null,
-                'teaching_detailed_video' => null,
-                'elearning_link' => null,
-                'bibliography_link' => null,
-                'index_file' => null,
-                'sample_file' => null,
-                'buying_link' => null,
-                'ebuying_link' => null,
-                'audio_link' => null,
-                'levels' => null,
-                'users' => [
-                    [
-                        'model' => User::firstWhere('name_en', 'Morvarid-Talebi'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Shahnaz-Ahmadighader'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'MarziyeSadat-EatemadalEslami'),
-                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
-                    ],
-                    [
-                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
-                        'role_title' => Role::firstWhere('title_abbr', 'scientific-supervisor'),
-                    ],
-                ],
-                'tags' => [
-                    'how-to-teach',
                 ],
             ],
             //ttc2
@@ -2540,6 +2305,30 @@ class BookSeeder extends Seeder
                 'tags' => [
                     'language-learning',
                     'alphabetic',
+                ],
+            ],
+            //simple-techniques
+            [
+                'title' => 'روشهای سادۀ آموزش زبان فارسی به غیرفارسی‌زبانان',
+                'title_abbr' => 'simple-techniques',
+                'cover' => 'covers/simple-techniques.jpg',
+                'collection_id' => null,
+                'intro' => null,
+                'status_id' => Status::firstWhere('title_abbr', 'released')->id,
+                'intro_video' => null,
+                'teaching_intro_video' => null,
+                'teaching_detailed_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => null,
+                'sample_file' => null,
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => null,
+                'tags' => [
+                    'how-to-teach',
                 ],
             ],
         ];
