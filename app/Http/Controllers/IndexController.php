@@ -16,7 +16,7 @@ class IndexController extends Controller
         $levels = Level::all();
         $books = Book::all();
         $users = User::all();
-        $other_books_tags = Tag::all()->whereIn('title_abbr', ['amfa-readiness', 'enrichment', 'how-to-teach']);
+        $other_books_tags = Tag::all()->whereIn('title_abbr', ['enrichment', 'how-to-teach']);
 
         return view(
             'index',

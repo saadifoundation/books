@@ -80,10 +80,6 @@ class TagSeeder extends Seeder
                 'title' => 'فارسی با اهداف ویژه',
                 'title_abbr' => 'FSP',
             ],
-            [
-                'title' => 'آمفا',
-                'title_abbr' => 'amfa-readiness',
-            ],
         ];
         foreach ($tags_data as $tag_data) {
             $tag = new Tag;
