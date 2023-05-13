@@ -2011,35 +2011,53 @@ class BookSeeder extends Seeder
             ],
             //easyteaching
             [
-                'title' => 'تکنیک‌های سادۀ آموزش زبان فارسی به غیرفارسی‌زبانان (138 فعالیت آموزشی)',
+                'title' => 'دستور سادۀ زبان فارسی',
                 'title_abbr' => 'easyteaching',
                 'cover' => 'covers/easyteaching.jpg',
                 'collection_id' => null,
                 'intro' => <<<INTRO
-                آموزش زبان فارسی به غیرفارسی‌زبانان، یکی از حوزه‌های نوین آموزشی در دنیای امروز است. مدرسان گوناگونی از سراسر دنیا داوطلب آموزش این زبان در سطح بین‌المللی هستند تا بستر مناسبی برای یادگیری آن فراهم نمایند. 
-                در این قدم، مدرس باید با استفاده از شیوه‌ها و روش‌های نوین آموزشی، یادگیری زبان فارسی را برای مشتاقان آن تسهیل نملید، تا علاوه بر یادگیری زبان، از به کارگیری آن لذت ببرند. اگر مدرس بتواند با فراهم نمودن شیوه‌های هرچه قوی‌تر و به‌روزتر آموزشی فضای مناسبی برای یادگیری ایجاد کتد، کمک بزرگی به گسترش زبان فارسی در جهان انجام داده است. 
-                <div dir='ltr'>Teaching Persian to the speakers of other languages is one of the new areas of educational research in today’s world. In order to provide a suitable way for learning Persian, various volunteer teachers from around the world are interested in teaching this language internationally. Therefore, a critical role for the language specialists is defined and that is to facilitate Persian language learning for the teachers using the novel methods and approaches in language pedagogy. If the teachers become able to apply with such strong and updated techniques to provide a suitable space for learning, they could perfectly help distribute Persian in the world. </div>
+                کتاب «دستورسادۀ زبان فارسی» کتابی است مرجع و مناسب برای رفع نواقص و کاستیهای دانش دستوری استادان و دانشجویان خارجی. در این کتاب دستور با تمرکز بر ارتباط «صورت»، «معنا» و «کارکرد» برای هر ساخت زبانی توضیح داده شده و موضوعات و مفاهیم دستوری با زبانی ساده و قابل فهم ارائه شده و برای درک بهتر هر کارکرد یا توضیح موارد خاص و استثناء ها ، نمونه‌های آسان و متناسب با گفتارِ امروزِ زبان فارسی آورده شده‌است. همچنین برای تمرین و تثبیت موضوعات آموخته شده «مجموعۀ چارچوب» متناظر با این کتاب تولید شده‌است. طبقه‌بندی ساده و روشن موضوعات دستوری در بخش فهرست به استادان و دانشجویان کمک میکند تا به‌سرعت و به‌راحتی موضوع مورد سؤال خود را از آن پیدا کنند و مطالعه کرده و بیاموزند. این کتاب برای سطح پیشرفته C1 و C2 مناسب است.
                 INTRO,
-                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'status_id' => Status::firstWhere('title_abbr', 'released')->id,
                 'intro_video' => null,
                 'teaching_intro_video' => null,
                 'teaching_detailed_video' => null,
                 'elearning_link' => null,
                 'bibliography_link' => null,
-                'index_file' => null,
+                'index_file' => 'indexes/easyteaching.pdf',
                 'sample_file' => 'samples/easyteaching.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
-                'levels' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'c1'),
+                    Level::firstWhere('title_abbr', 'c2'),
+                ],
                 'users' => [
                     [
                         'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
                         'role_title' => Role::firstWhere('title_abbr', 'writer'),
                     ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Shahnaz-Ahmadighader'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'MarziyeSadat-EatemadalEslami'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Akram-Seyedrezaei'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Leila-Kiashemshaki'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
                 ],
                 'tags' => [
                     'how-to-teach',
+                    'grammar',
                 ],
             ],
             //khomreh
