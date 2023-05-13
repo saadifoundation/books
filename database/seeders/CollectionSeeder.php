@@ -102,6 +102,11 @@ class CollectionSeeder extends Seeder
                 'title_abbr' => 'ttc',
                 'intro' => null,
             ],
+            [
+                'title' => 'طوطی',
+                'title_abbr' => 'tooti',
+                'intro' => null,
+            ],
         ];
         foreach ($collections_data as $collection_data) {
             $collection = new Collection;

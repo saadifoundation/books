@@ -2338,6 +2338,52 @@ class BookSeeder extends Seeder
                     'how-to-teach',
                 ],
             ],
+            //Tooti
+            [
+                'title' => 'طوطی',
+                'title_abbr' => 'tooti',
+                'cover' => 'covers/tooti.jpg',
+                'collection_id' => Collection::firstWhere('title_abbr', 'tooti')->id,
+                'intro' => <<<INTRO
+                با کتاب «طوطی» یادگیری زبانِ فارسی را می‌توان گام به گام از ابتدا آغاز کرد و به عنوان یک مخاطب هندی از یادگیری یک زبان آشنا که در تاریخ کشور هند ریشه دارد، لذت برد. برنامۀ درسی دقیق و کاربردی این کتاب کمک می کند آواها و حروف الفبای زبان فارسی و همچنین عبارتهای ساده و تلفظ و امالی واژه ها به سادگی و به سرعت یادگرفته شود. »طوطی« مخاطب خود را برای ورود به سطح مقدماتی کامالً آماده می کند ، زیرا فارسیآموز بعد از اتمام آن می تواند به زبان فارسی بخواند ، بنویسد و گفتگوهای ساده را درک و تولید کند. با وجود چهار مهارتی بودن کتاب، با توجه به سطح مخاطبان آن، یعنی فارسی آموزان سطح نوآموز، تمرکز کتاب بیشتر بر مهارت شنیداری است. نکتۀ مهم در مورد کتاب »طوطی« این است که بودن فرهنگ ایران و هند در کنار هم فرایند یادگیری را برای مخاطب هندی شیرینتر کرده است. تصاویر جذاب با طراحی حرفه ای، در کنار تکلیف ها همراه با کار گروهی، بازی و فایلهای صوتی برای فارسی آموزان نوجوان و بزرگسال این امکان را فراهم می کند که واژه های پرکاربرد و ضروری فارسی را در موقعیت های مختلف درک کنند و به کار ببرند . کتاب »طوطی« 7 فصل و مجموعاً 35 درس دارد. در هر فصل زبانآموز ضمن یادگیری 5 الی 6 واج یا نویسۀ زبان فارسی، با واژه هایی که دارای آن نویسه هستند، یک مکالمۀ ساده در یک موقعیت ساده و کاربردی، نکته های سادة دستوری، یک متن خواندن با اهداف شنیداری و یک نکتۀ ساده و کاربردی الزم آشنا می شود. در انتهای هر فصل یک مرور برای تثبیت یادگیری نکته های آموزشی آن فصل وجود دارد. کتاب دارای فایل صوتی است. این کتاب، کتاب کار و راهنمای مدرس دارد، از این رو آموزش و یادگیری را برای مدرس و فارسی‌آموز آسانتر و لذّت‌بخش‌تر می سازد.
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'released')->id,
+                'intro_video' => null,
+                'teaching_intro_video' => null,
+                'teaching_detailed_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => 'indexes/tooti.pdf',
+                'sample_file' => 'samples/tooti.pdf',
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => [
+                    Level::firstWhere('title_abbr', 'n'),
+                ],
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Reza-Sahraee'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Maryam-Soltani'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Leila-Kiashemshaki'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Faeze-Marsous'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                ],
+                'tags' => [
+                    'language-learning',
+                    '4skills',
+                ],
+            ],
         ];
         foreach ($books_data as $book_data) {
             $book = new Book;
