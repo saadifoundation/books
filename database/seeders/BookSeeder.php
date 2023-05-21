@@ -2009,11 +2009,11 @@ class BookSeeder extends Seeder
                     'FSP',
                 ],
             ],
-            //easyteaching
+            //simplegrammar
             [
                 'title' => 'دستور سادۀ زبان فارسی',
-                'title_abbr' => 'easyteaching',
-                'cover' => 'covers/easyteaching.jpg',
+                'title_abbr' => 'simplegrammar',
+                'cover' => 'covers/simplegrammar.jpg',
                 'collection_id' => null,
                 'intro' => <<<INTRO
                 کتاب «دستورسادۀ زبان فارسی» کتابی است مرجع و مناسب برای رفع نواقص و کاستیهای دانش دستوری استادان و دانشجویان خارجی. در این کتاب دستور با تمرکز بر ارتباط «صورت»، «معنا» و «کارکرد» برای هر ساخت زبانی توضیح داده شده و موضوعات و مفاهیم دستوری با زبانی ساده و قابل فهم ارائه شده و برای درک بهتر هر کارکرد یا توضیح موارد خاص و استثناء ها ، نمونه‌های آسان و متناسب با گفتارِ امروزِ زبان فارسی آورده شده‌است. همچنین برای تمرین و تثبیت موضوعات آموخته شده «مجموعۀ چارچوب» متناظر با این کتاب تولید شده‌است. طبقه‌بندی ساده و روشن موضوعات دستوری در بخش فهرست به استادان و دانشجویان کمک میکند تا به‌سرعت و به‌راحتی موضوع مورد سؤال خود را از آن پیدا کنند و مطالعه کرده و بیاموزند. این کتاب برای سطح پیشرفته C1 و C2 مناسب است.
@@ -2024,8 +2024,8 @@ class BookSeeder extends Seeder
                 'teaching_detailed_video' => null,
                 'elearning_link' => null,
                 'bibliography_link' => null,
-                'index_file' => 'indexes/easyteaching.pdf',
-                'sample_file' => 'samples/easyteaching.pdf',
+                'index_file' => 'indexes/simplegrammar.pdf',
+                'sample_file' => 'samples/simplegrammar.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
                 'audio_link' => null,
