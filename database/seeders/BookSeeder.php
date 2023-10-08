@@ -1420,7 +1420,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/persianframe2.pdf',
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/persianframe2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                     Level::firstWhere('title_abbr', 'b3'),
@@ -1723,7 +1723,7 @@ class BookSeeder extends Seeder
                 'sample_file' => null,
                 'buying_link' => null,
                 'ebuying_link' => null,
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/shiraz2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
                 ],
