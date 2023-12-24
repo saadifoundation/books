@@ -18,6 +18,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'github_link' => env('GITHUB_LINK'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
