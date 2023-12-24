@@ -2,16 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Level;
-use App\Book;
-use App\User;
-use App\Tag;
-
-use Illuminate\Http\Request;
+use App\Models\Book;
+use App\Models\Level;
+use App\Models\Tag;
+use App\Models\User;
+use Illuminate\View\View;
 
 class IndexController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $levels = Level::all();
         $books = Book::all();

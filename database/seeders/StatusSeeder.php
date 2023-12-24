@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Status;
 use Illuminate\Database\Seeder;
-
-use App\Status;
 
 class StatusSeeder extends Seeder
 {
@@ -27,7 +26,7 @@ class StatusSeeder extends Seeder
                 'bootstrap_color' => 'info',
             ],
             [
-                'title'=> 'چاپ‌شده',
+                'title' => 'چاپ‌شده',
                 'title_abbr' => 'released',
                 'bootstrap_color' => 'success',
             ],

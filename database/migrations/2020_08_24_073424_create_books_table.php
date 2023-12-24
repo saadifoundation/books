@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBooksTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -18,9 +18,9 @@ class CreateBooksTable extends Migration
             $table->string('title')->unique();
             $table->string('title_abbr')->unique();
             $table->string('cover')->nullable();
-            $table->foreignId('collection_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('collection_id')->nullable()->constrained()->cascadeOnDelete();
             $table->text('intro')->nullable();
-            $table->foreignId('status_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('status_id')->nullable()->constrained()->cascadeOnDelete();
             $table->string('intro_video')->nullable();
             $table->string('teaching_intro_video')->nullable();
             $table->string('teaching_detailed_video')->nullable();
@@ -44,4 +44,4 @@ class CreateBooksTable extends Migration
     {
         Schema::dropIfExists('books');
     }
-}
+};

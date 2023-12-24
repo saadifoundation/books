@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Level;
 use Illuminate\Database\Seeder;
-
-use App\Level;
 
 class LevelSeeder extends Seeder
 {

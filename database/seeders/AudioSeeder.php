@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Audio;
+use App\Models\Book;
 use Illuminate\Database\Seeder;
-use App\Audio;
-use App\Book;
 
 class AudioSeeder extends Seeder
 {
