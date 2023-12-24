@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAudioTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,7 @@ class CreateAudioTable extends Migration
             $table->integer('order');
             $table->string('group_name');
             $table->integer('group_order');
-            $table->foreignId('book_id')->constrained()->onDelete('cascade');
+            $table->foreignId('book_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -34,4 +34,4 @@ class CreateAudioTable extends Migration
     {
         Schema::dropIfExists('audio');
     }
-}
+};

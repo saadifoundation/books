@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +19,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/', [IndexController::class, 'index'])->name('index');
 
-Auth::routes();
+Route::get('levels/{level}', [LevelController::class, 'show'])->name('levels.show');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('tags/{tag}', [TagController::class, 'show'])->name('tags.show');
 
-Route::resource('levels', 'LevelController');
+Route::get('users', [UserController::class, 'index'])->name('users.index');
+Route::get('users/{user}', [UserController::class, 'show'])->name('users.show');
 
-Route::resource('tags', 'TagController');
+Route::get('collections/{collection}', [CollectionController::class, 'show'])->name('collections.show');
 
-Route::resource('users', 'UserController');
-
-Route::resource('collections', 'CollectionController');
-
-Route::resource('books', 'BookController');
+Route::get('books', [BookController::class, 'index'])->name('books.index');
+Route::get('books/{book}', [BookController::class, 'show'])->name('books.show');
 Route::redirect('/{book}', '/books/{book}');

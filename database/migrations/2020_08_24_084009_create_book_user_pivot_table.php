@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBookUserPivotTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -15,9 +15,9 @@ class CreateBookUserPivotTable extends Migration
     {
         Schema::create('book_user', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('book_id')->constrained()->onDelete('cascade');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('role_id')->constrained()->onDelete('cascade');
+            $table->foreignId('book_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('role_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -31,4 +31,4 @@ class CreateBookUserPivotTable extends Migration
     {
         Schema::dropIfExists('book_user');
     }
-}
+};
