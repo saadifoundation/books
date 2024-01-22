@@ -508,7 +508,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5111816',
                 'index_file' => 'indexes/iranology1.pdf',
                 'sample_file' => 'samples/iranology1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af%db%8c-%d9%88%d8%a7%da%98%d9%87-1',
+                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%b4%d9%86%d8%a7%d8%b3%db%8c-1/',
                 'ebuying_link' => 'https://taaghche.com/book/81782',
                 'audio_link' => 'audio_zip/iranology1.zip',
                 'levels' => [
