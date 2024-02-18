@@ -232,7 +232,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/mina4.pdf',
                 'sample_file' => 'samples/mina4.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/کتاب-مینا-4',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/136238',
                 'audio_link' => 'audio_zip/mina4.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b3'),
@@ -333,7 +333,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/enjoyreading2.pdf',
                 'sample_file' => 'samples/enjoyreading2.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-2',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/156420',
                 'audio_link' => 'audio_zip/enjoyreading2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
@@ -398,7 +398,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/enjoyreading3.pdf',
                 'sample_file' => 'samples/enjoyreading3.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-3',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/109610',
                 'audio_link' => 'audio_zip/enjoyreading3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -816,7 +816,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/fr1ststep.pdf',
                 'sample_file' => 'samples/fr1ststep.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/198152',
                 'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -1373,7 +1373,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/persianframe1.pdf',
                 'sample_file' => 'samples/persianframe1.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/چارچوب-1',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/109605',
                 'audio_link' => 'audio_zip/persianframe1.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -1418,7 +1418,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/persianframe2.pdf',
                 'sample_file' => 'samples/persianframe2.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/136260',
                 'audio_link' => 'audio_zip/persianframe2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -1721,7 +1721,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/shiraz2.pdf',
                 'sample_file' => null,
                 'buying_link' => 'https://core.saadifoundation.ir/product/کتاب-شیراز-2',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/136254',
                 'audio_link' => 'audio_zip/shiraz2.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b1'),
@@ -1782,7 +1782,7 @@ class BookSeeder extends Seeder
                 'index_file' => null,
                 'sample_file' => null,
                 'buying_link' => 'https://core.saadifoundation.ir/product/شیراز-3',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/195463',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -2026,7 +2026,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/simplegrammar.pdf',
                 'sample_file' => 'samples/simplegrammar.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/دستور-ساده-زبان-فارسی-ویژه-استادان-و-دا',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/142635',
                 'audio_link' => null,
                 'levels' => [
                     Level::firstWhere('title_abbr', 'c1'),
@@ -2111,7 +2111,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/hidr.pdf',
                 'sample_file' => 'samples/hidr.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/سلام-دکتر',
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/133782',
                 'audio_link' => 'audio_zip/hidr.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
@@ -2288,7 +2288,7 @@ class BookSeeder extends Seeder
                 'index_file' => 'indexes/hy1ststep.pdf',
                 'sample_file' => 'samples/hy1ststep.pdf',
                 'buying_link' => null,
-                'ebuying_link' => null,
+                'ebuying_link' => 'https://taaghche.com/book/191276',
                 'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
