@@ -43,7 +43,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5759815',
                 'index_file' => 'indexes/mina1.pdf',
                 'sample_file' => 'samples/mina1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%85%db%8c%d9%86%d8%a7-1',
+                'buying_link' => 'https://core.saadifoundation.ir/product/مینا-1',
                 'ebuying_link' => 'https://taaghche.com/book/84083',
                 'audio_link' => 'audio_zip/mina1.zip',
                 'levels' => [
@@ -107,7 +107,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5759818',
                 'index_file' => 'indexes/mina2.pdf',
                 'sample_file' => 'samples/mina2.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%85%db%8c%d9%86%d8%a7-2',
+                'buying_link' => 'https://core.saadifoundation.ir/product/مینا-2',
                 'ebuying_link' => 'https://taaghche.com/book/81809',
                 'audio_link' => 'audio_zip/mina2.zip',
                 'levels' => [
@@ -169,7 +169,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/6221281',
                 'index_file' => 'indexes/mina3.pdf',
                 'sample_file' => 'samples/mina3.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%85%db%8c%d9%86%d8%a7-3',
+                'buying_link' => 'https://core.saadifoundation.ir/product/مینا-3',
                 'ebuying_link' => 'https://taaghche.com/book/81811',
                 'audio_link' => 'audio_zip/mina3.zip',
                 'levels' => [
@@ -276,7 +276,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/enjoyreading1.pdf',
                 'sample_file' => 'samples/enjoyreading1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%84%d8%b0%d8%aa-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-1',
+                'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-1',
                 'ebuying_link' => 'https://taaghche.com/book/81783',
                 'audio_link' => 'audio_zip/enjoyreading1.zip',
                 'levels' => [
@@ -332,7 +332,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/4513411',
                 'index_file' => 'indexes/enjoyreading2.pdf',
                 'sample_file' => 'samples/enjoyreading2.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%84%d8%b0%d8%aa-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-2',
+                'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-2',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/enjoyreading2.zip',
                 'levels' => [
@@ -397,7 +397,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/7506921',
                 'index_file' => 'indexes/enjoyreading3.pdf',
                 'sample_file' => 'samples/enjoyreading3.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d9%84%d8%b0%d8%aa-%d8%ae%d9%88%d8%a7%d9%86%d8%af%d9%86-3',
+                'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-3',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/enjoyreading3.zip',
                 'levels' => [
@@ -507,7 +507,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5111816',
                 'index_file' => 'indexes/iranology1.pdf',
                 'sample_file' => 'samples/iranology1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%b4%d9%86%d8%a7%d8%b3%db%8c-1/',
+                'buying_link' => 'https://core.saadifoundation.ir/product/ایران-شناسی-1',
                 'ebuying_link' => 'https://taaghche.com/book/81782',
                 'audio_link' => 'audio_zip/iranology1.zip',
                 'levels' => [
@@ -573,7 +573,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/6219230',
                 'index_file' => 'indexes/iranology2.pdf',
                 'sample_file' => 'samples/iranology2.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%b4%d9%86%d8%a7%d8%b3%db%8c-2/',
+                'buying_link' => 'https://core.saadifoundation.ir/product/ایران-شناسی-2',
                 'ebuying_link' => 'https://taaghche.com/book/81806',
                 'audio_link' => 'audio_zip/iranology2.zip',
                 'levels' => [
@@ -635,7 +635,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5760047',
                 'index_file' => 'indexes/en1ststep.pdf',
                 'sample_file' => 'samples/en1ststep.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%da%af%d8%a7%d9%85-%d8%a7%d9%88%d9%84-%d9%81%d8%a7%d8%b1%d8%b3%db%8c-%d8%a7%d9%86%da%af%d9%84%db%8c%d8%b3%db%8c',
+                'buying_link' => 'https://core.saadifoundation.ir/product/گام-اول-فارسی-انگلیسی',
                 'ebuying_link' => 'https://taaghche.com/book/77693',
                 'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
@@ -695,7 +695,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5069352',
                 'index_file' => 'indexes/ar1ststep.pdf',
                 'sample_file' => 'samples/ar1ststep.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%da%af%d8%a7%d9%85-%d8%a7%d9%88%d9%84-%d9%81%d8%a7%d8%b1%d8%b3%db%8c-%d8%b9%d8%b1%d8%a8%db%8c',
+                'buying_link' => 'https://core.saadifoundation.ir/product/گام-اول-فارسی-عربی',
                 'ebuying_link' => 'https://taaghche.com/book/56277',
                 'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
@@ -1268,7 +1268,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5760053',
                 'index_file' => 'indexes/tr1ststep.pdf',
                 'sample_file' => 'samples/tr1ststep.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%da%af%d8%a7%d9%85-%d8%a7%d9%88%d9%84-%d9%81%d8%a7%d8%b1%d8%b3%db%8c-%d8%aa%d8%b1%da%a9%db%8c',
+                'buying_link' => 'https://core.saadifoundation.ir/product/گام-اول-فارسی-ترکی',
                 'ebuying_link' => 'https://taaghche.com/book/82369',
                 'audio_link' => 'audio_zip/1ststep.zip',
                 'levels' => [
@@ -1372,7 +1372,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5111813',
                 'index_file' => 'indexes/persianframe1.pdf',
                 'sample_file' => 'samples/persianframe1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%da%86%d8%a7%d8%b1%da%86%d9%88%d8%a8-1/',
+                'buying_link' => 'https://core.saadifoundation.ir/product/چارچوب-1',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/persianframe1.zip',
                 'levels' => [
@@ -1663,7 +1663,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/6550512',
                 'index_file' => 'indexes/shiraz1.pdf',
                 'sample_file' => 'samples/shiraz1.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%b4%db%8c%d8%b1%d8%a7%d8%b2-1',
+                'buying_link' => 'https://core.saadifoundation.ir/product/شیراز-1',
                 'ebuying_link' => 'https://taaghche.com/book/81780',
                 'audio_link' => 'audio_zip/shiraz1.zip',
                 'levels' => [
@@ -2110,7 +2110,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/hidr.pdf',
                 'sample_file' => 'samples/hidr.pdf',
-                'buying_link' => 'https://core.saadifoundation.ir/product/%d8%b3%d9%84%d8%a7%d9%85-%d8%af%da%a9%d8%aa%d8%b1',
+                'buying_link' => 'https://core.saadifoundation.ir/product/سلام-دکتر',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/hidr.zip',
                 'levels' => [
