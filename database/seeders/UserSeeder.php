@@ -436,7 +436,7 @@ class UserSeeder extends Seeder
             ],
             //Mohammad-AbukalamSarkar
             [
-                'name' => 'محمد ابواکلام سرکار',
+                'name' => 'محمد ابوکلام سرکار',
                 'name_en' => 'Mohammad-AbukalamSarkar',
                 'email' => 'mohammad_abukalamsarkar@saadifoundation.ir',
                 'intro' => null,
@@ -640,6 +640,30 @@ class UserSeeder extends Seeder
                 'name' => 'آرمینا سرگیسیان',
                 'name_en' => 'Armina-Sergisian',
                 'email' => 'armina.sergisian@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
+            //Shima-Eslamifakhr
+            [
+                'name' => 'شیما اسلامی‌فخر',
+                'name_en' => 'Shima-Eslamifakhr',
+                'email' => 'shima.eslamifakhr@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
+            //Mahdieh-Abedi
+            [
+                'name' => 'مهدیه عابدی',
+                'name_en' => 'Mahdieh-Abedi',
+                'email' => 'mahdieh.abedi@saadifoundation.ir',
                 'intro' => null,
                 'pic' => null,
                 'resume' => null,
