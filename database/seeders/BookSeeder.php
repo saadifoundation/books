@@ -231,7 +231,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/mina4.pdf',
                 'sample_file' => 'samples/mina4.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/کتاب-مینا-4',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/mina4.zip',
                 'levels' => [
@@ -454,7 +454,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/enjoyreading4.pdf',
                 'sample_file' => 'samples/enjoyreading4.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/لذت-خواندن-4',
                 'ebuying_link' => 'https://taaghche.com/book/81805',
                 'audio_link' => 'audio_zip/enjoyreading4.zip',
                 'levels' => [
@@ -1501,7 +1501,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/4637912',
                 'index_file' => 'indexes/persianinuse1.pdf',
                 'sample_file' => 'samples/persianinuse1.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/آموزش-کاربردی-واژه-1',
                 'ebuying_link' => 'https://taaghche.com/book/82159',
                 'audio_link' => 'audio_zip/persianinuse1.zip',
                 'levels' => [
@@ -1553,7 +1553,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5915035',
                 'index_file' => 'indexes/persianinuse2.pdf',
                 'sample_file' => 'samples/persianinuse2.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/آموزش-کاربردی-واژه-2',
                 'ebuying_link' => 'https://taaghche.com/book/82160',
                 'audio_link' => 'audio_zip/persianinuse2.zip',
                 'levels' => [
@@ -1609,7 +1609,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/5111813',
                 'index_file' => 'indexes/persianinuse3.pdf',
                 'sample_file' => 'samples/persianinuse3.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/آموزش-کاربردی-واژه-3',
                 'ebuying_link' => 'https://taaghche.com/book/82161',
                 'audio_link' => 'audio_zip/persianinuse3.zip',
                 'levels' => [
@@ -1720,7 +1720,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/shiraz2.pdf',
                 'sample_file' => null,
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/کتاب-شیراز-2',
                 'ebuying_link' => null,
                 'audio_link' => 'audio_zip/shiraz2.zip',
                 'levels' => [
@@ -1781,7 +1781,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => null,
                 'sample_file' => null,
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/شیراز-3',
                 'ebuying_link' => null,
                 'audio_link' => null,
                 'levels' => [
@@ -2025,7 +2025,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => null,
                 'index_file' => 'indexes/simplegrammar.pdf',
                 'sample_file' => 'samples/simplegrammar.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/دستور-ساده-زبان-فارسی-ویژه-استادان-و-دا',
                 'ebuying_link' => null,
                 'audio_link' => null,
                 'levels' => [
@@ -2341,7 +2341,7 @@ class BookSeeder extends Seeder
                 'bibliography_link' => 'http://opac.nlai.ir/opac-prod/bibliographic/8493954',
                 'index_file' => 'indexes/simple-techniques.pdf',
                 'sample_file' => 'samples/simple-techniques.pdf',
-                'buying_link' => null,
+                'buying_link' => 'https://core.saadifoundation.ir/product/روشهای-ساده-آموزش-زبان-فارسی-به-غیرف',
                 'ebuying_link' => 'https://taaghche.com/book/141047',
                 'audio_link' => null,
                 'levels' => null,
