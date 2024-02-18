@@ -1783,7 +1783,7 @@ class BookSeeder extends Seeder
                 'sample_file' => 'samples/shiraz3.pdf',
                 'buying_link' => 'https://core.saadifoundation.ir/product/شیراز-3',
                 'ebuying_link' => 'https://taaghche.com/book/195463',
-                'audio_link' => null,
+                'audio_link' => 'audio_zip/shiraz3.zip',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'b2'),
                 ],
