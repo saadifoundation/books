@@ -40,37 +40,37 @@
         <div class="buttons mt-3">
           @if($book->elearning_link !== NULL)
             <a href="{{ $book->elearning_link }}" target="_blank">
-              <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="elearning button" class="w-75">
             </a>
           @endif
           @if($book->bibliography_link !== NULL)
             <a href="{{ $book->bibliography_link }}" target="_blank">
-              <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/02_Bibliography.png') }}" alt="Bibliography button" class="w-75">
             </a>
           @endif
           @if($book->index_file !== NULL)
             <a href="{{ Storage::url($book->index_file) }}" target="_blank">
-              <img src="{{ asset('img/buttons/03_Index.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/03_Index.png') }}" alt="Index button" class="w-75">
             </a>
           @endif
           @if($book->sample_file !== NULL)
             <a href="{{ Storage::url($book->sample_file) }}" target="_blank">
-              <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="Sample button" class="w-75">
             </a>
           @endif
           @if($book->buying_link !== NULL)
             <a href="{{ $book->buying_link }}" target="_blank">
-              <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/05_Buy-Book.png') }}" alt="Buy Book button" class="w-75">
             </a>
           @endif
           @if($book->ebuying_link !== NULL)
             <a href="{{ $book->ebuying_link }}" target="_blank">
-              <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/06_Buy-eBook.png') }}" alt="Buy eBook button" class="w-75">
             </a>
           @endif
           @if($book->audio_link !== NULL)
             <a href="{{ Storage::url($book->audio_link) }}" target="_blank">
-              <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
+              <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="Audio Book button" class="w-75">
             </a>
           @endif
           @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
