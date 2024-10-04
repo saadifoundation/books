@@ -72,7 +72,6 @@
             <a href="{{ Storage::url($book->audio_link) }}" target="_blank">
               <img src="{{ asset('img/buttons/07_Audio-Book.png') }}" alt="" class="w-75">
             </a>
-
           @endif
           @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
             <a href="#" data-toggle="modal" data-target="#teaching-videos-modal">
@@ -141,6 +140,9 @@
               </div>
             </div>
           @endif
+          <a href="https://core.saadifoundation.ir/14391-2" target="_blank">
+            <img src="{{ asset('img/buttons/09_Review.png') }}" alt="Review button" class="w-75">
+          </a>
         </div>
       </div>
 
