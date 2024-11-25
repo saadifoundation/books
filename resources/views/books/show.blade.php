@@ -33,7 +33,7 @@
     <div class="col-md-4">
       <a href="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" target="_blank" download="{{$book->title_abbr}}.jpg" class="cover container-image-with-badge">
           <img src="{{ $book->cover !== null ? Storage::url($book->cover) : asset('img/cover.jpg') }}" alt="{{ $book->title }}" class="w-100 rounded">
-          <span class="badge badge-{{ $book->status->bootstrap_color }} book-status-badge">{{ $book->status->title }}</span>
+          <span class="badge text-bg-{{ $book->status->bootstrap_color }} book-status-badge">{{ $book->status->title }}</span>
       </a>
 
       <div class="border-md-1 text-center">
@@ -74,10 +74,25 @@
             </a>
           @endif
           @if($book->teaching_intro_video !== NULL || $book->teaching_detailed_video !== NULL)
-            <a href="#" data-toggle="modal" data-target="#teaching-videos-modal">
-              <img src="{{ asset('img/buttons/08_Teaching-Videos.png') }}" alt="" class="w-75">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#teaching-videos-modal"
+            >
+              <img
+                src="{{ asset('img/buttons/08_Teaching-Videos.png') }}"
+                alt=""
+                class="w-75"
+              />
             </a>
-            <div class="modal fade" id="teaching-videos-modal" tabindex="-1" role="dialog" aria-labelledby="teaching-videos-modal-label" aria-hidden="true">
+            <div
+              class="modal fade"
+              id="teaching-videos-modal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="teaching-videos-modal-label"
+              aria-hidden="true"
+            >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -86,23 +101,39 @@
                     </h5>
                   </div>
                   <div class="modal-body">
-                    <div id="accordion">
+                    <div class="accordion" id="accordionVideos">
                       @if ($book->teaching_intro_video !== NULL)
                         <div class="card">
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                              <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <button
+                                class="btn btn-block text-center"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                              >
                                 {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت اول') }}
                               </button>
                             </h5>
                           </div>
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div
+                            id="collapseOne"
+                            class="collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionVideos"
+                          >
                             <div class="card-body">
                               <div class="h_iframe-aparat_embed_frame">
-                                <span style="display: block;padding-top: 57%">
-                                </span>
-                                <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_intro_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-                                </iframe>
+                                <span
+                                  style="display: block;padding-top: 57%"
+                                ></span>
+                                <iframe
+                                  src="https://www.aparat.com/video/video/embed/videohash/{{$book->teaching_intro_video}}/vt/frame"
+                                  allowFullScreen="true"
+                                  webkitallowfullscreen="true"
+                                  mozallowfullscreen="true"
+                                ></iframe>
                               </div>
                             </div>
                           </div>
@@ -112,12 +143,23 @@
                         <div class="card">
                           <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                              <button class="btn btn-block text-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت دوم') }}
+                              <button
+                                class="btn btn-block text-center"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                {{ __('ویدئوی روش تدریس') }} - {{ __('قسمت دوم') }}
                               </button>
                             </h5>
                           </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionVideos"
+                          >
                             <div class="card-body">
                               <div class="h_iframe-aparat_embed_frame">
                                 <span style="display: block;padding-top: 57%">
@@ -132,7 +174,11 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
                       {{ __('بازگشت') }}
                     </button>
                   </div>
@@ -154,8 +200,12 @@
           <div class="h_iframe-aparat_embed_frame">
             <span style="display: block;padding-top: 57%">
             </span>
-            <iframe src="https://www.aparat.com/video/video/embed/videohash/{{$book->intro_video}}/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-            </iframe>
+            <iframe
+              src="https://www.aparat.com/video/video/embed/videohash/{{$book->intro_video}}/vt/frame"
+              allowFullScreen="true"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+            ></iframe>
           </div>
           <p class="caption">
             {{ __('ویدئوی معرفی کتاب') }}
@@ -166,7 +216,7 @@
       @if ( $book->tags->isNotEmpty() )
         <div class="labels mb-3 text-right mb-4">
           @foreach($book->tags as $tag)
-            <a class="badge badge-info" href="{{ route('tags.show', $tag) }}">
+            <a class="badge text-bg-info" href="{{ route('tags.show', $tag) }}">
               {{ $tag->title }}
             </a>
           @endforeach
@@ -176,17 +226,17 @@
       <div class="badges mb-3 text-right mb-4">
         @if($book->audio->isNotEmpty())
           <a href="#sounds-row" class="btn btn-primary btn-sm mb-2">
-            {{ __('فایل‌های صوتی کتاب') }} <span class="badge badge-light">{{ $book->audio->count() }}</span>
+            {{ __('فایل‌های صوتی کتاب') }} <span class="badge text-bg-light">{{ $book->audio->count() }}</span>
           </a>
         @endif
         @if($book->users->where('role_group', 'writing')->isNotEmpty())
           <a href="#writers-row" class="btn btn-primary btn-sm mb-2">
-            {{ __('مؤلفان کتاب') }} <span class="badge badge-light">{{ $book->users->where('role_group', 'writing')->count() }}</span>
+            {{ __('مؤلفان کتاب') }} <span class="badge text-bg-light">{{ $book->users->where('role_group', 'writing')->count() }}</span>
           </a>
         @endif
         @if($book->users->whereNotIn('role_group', 'writing')->isNotEmpty())
           <a href="#other-persons-button-row" class="btn btn-primary btn-sm mb-2">
-            {{ __('دیگر همکاران کتاب') }} <span class="badge badge-light">{{ $book->users->whereNotIn('role_group', 'writing')->count() }}</span>
+            {{ __('دیگر همکاران کتاب') }} <span class="badge text-bg-light">{{ $book->users->whereNotIn('role_group', 'writing')->count() }}</span>
           </a>
         @endif
       </div>
@@ -227,17 +277,29 @@
       @endif
     </div>
     <div class="col-12">
-        <div class="accordion" id="accordionLessons">
+        <div class="accordion accordion-flush" id="accordionLessons">
           @foreach ($book->audio->sortBy('group_order')->sortBy('order')->groupBy('group_name') as $audio_group)
             <div class="card">
               <div class="card-header" id="heading{{$loop->index}}">
                 <h2 class="mb-0">
-                  <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse{{$loop->index}}" aria-controls="collapse{{$loop->index}}">
+                  <button
+                    class="btn btn-block text-center"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse{{$loop->index}}"
+                    aria-controls="collapse{{$loop->index}}"
+                    data-bs-parent="#accordionLessons"
+                  >
                     {{ $audio_group[0]->group_name }}
                   </button>
                 </h2>
               </div>
-              <div id="collapse{{$loop->index}}" class="collapse" aria-labelledby="heading{{$loop->index}}" data-parent="#accordionLessons">
+              <div
+                id="collapse{{$loop->index}}"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading{{$loop->index}}"
+                data-bs-parent="#accordionLessons"
+              >
                 <div class="card-body">
                   @foreach ($audio_group as $audio)
                     <h5 class="mb-3">
@@ -279,7 +341,7 @@
               <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.png') }}" alt="{{ $user->name }}" class="w-50 rounded figure-img img-fluid">
               <figcaption class="figure-caption text-center">
                 {{ $user->name }}
-                <span class="badge badge-primary">
+                <span class="badge text-bg-primary">
                   {{ $user->role_title }}
                 </span>
               </figcaption>
@@ -292,7 +354,15 @@
   @if ($book->users->whereNotIn('role_group', 'writing')->isNotEmpty())
     <div class="row text-center mb-4" id="other-persons-button-row">
       <div class="col-12">
-        <a class="btn btn-primary" id="load-more" data-toggle="collapse" href="#other-persons" role="button" aria-expanded="false" aria-controls="other-persons">
+        <a
+          href="#other-persons"
+          id="load-more"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          role="button"
+          aria-expanded="false"
+          aria-controls="other-persons"
+        >
           {{ __('همکاران دیگر') }}
         </a>
       </div>
@@ -311,7 +381,7 @@
                 <img src="{{ $user->pic !== NULL ? Storage::url($user->pic) : asset('/img/person.jpg') }}" alt="" class="w-50 rounded figure-img img-fluid">
                 <figcaption class="figure-caption text-center">
                   {{ $user->name }}
-                  <span class="badge badge-primary">
+                  <span class="badge text-bg-primary">
                     {{ $user->role_title }}
                   </span>
                 </figcaption>
@@ -350,7 +420,7 @@
                           @endforeach
                           @foreach ($book->tags as $tag)
                             <a href="{{ route('tags.show', $tag) }}">
-                              <span class="badge badge-info">
+                              <span class="badge text-bg-info">
                                 {{ $tag->title }}
                               </span>
                             </a>

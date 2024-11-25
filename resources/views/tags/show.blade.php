@@ -27,9 +27,9 @@
           </h2>
           <div class="alert alert-primary" role="alert">
             تاکنون
-            <span class="badge badge-light">{{ $tag->books->count() }}</span>
+            <span class="badge text-bg-light">{{ $tag->books->count() }}</span>
             کتاب با برچسب
-            <span class="badge badge-info">
+            <span class="badge text-bg-info">
                 {{$tag->title}}
             </span>
             در بنیاد سعدی تهیه شده است.
@@ -55,7 +55,7 @@
                           @endforeach
                           @foreach ($book->tags as $tag)
                             <a href="{{ route('tags.show', $tag) }}">
-                              <span class="badge badge-info">
+                              <span class="badge text-bg-info">
                                 {{ $tag->title }}
                               </span>
                             </a>

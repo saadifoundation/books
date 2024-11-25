@@ -24,7 +24,7 @@
     <div class="col-12">
       <div class="badges mb-3 text-right">
         <a href="#books-row" class="btn btn-primary btn-sm mb-3">
-          {{ __('کتاب‌های سطح') }} <span class="badge badge-light">{{$level->books->count() }}</span>
+          {{ __('کتاب‌های سطح') }} <span class="badge text-bg-light">{{$level->books->count() }}</span>
         </a>
       </div>
       <div class="description text-right font-weight-light">
@@ -73,7 +73,7 @@
                       @endforeach
                       @foreach ($book->tags as $tag)
                         <a href="{{ route('tags.show', $tag) }}">
-                          <span class="badge badge-info">
+                          <span class="badge text-bg-info">
                             {{ $tag->title }}
                           </span>
                         </a>
