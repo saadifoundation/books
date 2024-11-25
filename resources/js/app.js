@@ -1,6 +1,5 @@
+import './bootstrap';
 import 'bootstrap';
-import 'jquery';
-import '@popperjs/core';
 
 // Function to pause all audio elements except the one currently playing
 function pauseOtherAudios(currentAudio) {
