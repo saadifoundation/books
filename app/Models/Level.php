@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Level extends Model
 {
@@ -16,7 +17,7 @@ class Level extends Model
         return ($this->order * 15 > 100) ? 100 : $this->order * 15;
     }
 
-    public function books()
+    public function books(): BelongsToMany
     {
         return $this->belongsToMany(Book::class)->withTimestamps();
     }
