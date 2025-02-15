@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Book extends Model
 {
-    public function getRouteKeyName()
+    public function getRouteKeyName(): string
     {
         return 'title_abbr';
     }

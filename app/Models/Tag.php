@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Tag extends Model
 {
-    public function getRouteKeyName()
+    public function getRouteKeyName(): string
     {
         return 'title_abbr';
     }

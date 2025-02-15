@@ -22,7 +22,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function getRouteKeyName()
+    public function getRouteKeyName(): string
     {
         return 'name_en';
     }

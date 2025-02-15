@@ -7,14 +7,18 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Level extends Model
 {
-    public function getRouteKeyName()
+    public function getRouteKeyName(): string
     {
         return 'title_abbr';
     }
 
-    public function getWidthAttribute()
+    public function getWidthAttribute(): int
     {
-        return ($this->order * 15 > 100) ? 100 : $this->order * 15;
+        return (int) (
+            ($this->order * 15 > 100)
+                ? 100
+                : $this->order * 15
+        );
     }
 
     public function books(): BelongsToMany
