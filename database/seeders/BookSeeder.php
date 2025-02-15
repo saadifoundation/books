@@ -2241,6 +2241,7 @@ class BookSeeder extends Seeder
                     'language-learning',
                     'enrichment',
                 ],
+                'is_active' => false,
             ],
             //ttc2
             [
@@ -2413,6 +2414,43 @@ class BookSeeder extends Seeder
                     '4skills',
                 ],
             ],
+            //teachlangskills
+            [
+                'title' => 'آموزش مهارت‌های زبانی: رویکردها و روش‌ها',
+                'title_abbr' => 'teachlangskills',
+                'cover' => 'covers/teachlangskills.jpg',
+                'collection_id' => null,
+                'intro' => <<<'INTRO'
+                Teaching Language Skills: Approaches and Methods Editors: Mohammad Ahmadi Safa & Ahmad Ramezani The present book aims to delineate the approaches and methods of teaching language skills with a special focus on teaching Persian to Speakers of Other Languages (TPSOL). In the process of developing and designing this volume, the MA program of "Teaching Pesrsian to Speakers of Other Languages" and Its syllabi and courses were considered. For the stated purposes, a number of accredited professionals from different universities across the country were invited to write on the theoretical principles of how to teach the four language skills of reading, writing, listening, and speaking and the language components, i.e., vocabulary, grammar, pronunciation, intonation, accent, and stress patterning. Furthermore, in order not to forget the practical aspects of language teaching, the theoretical principles are illustrated with some tasks, exercises, and examples.
+                کتاب حاضر بر آن است تا رویکردها و روشهای آموزش مهارتهای زبانی با تأکید بر آموزش زبان فارسی به غیر فارسی زبانان را تبیین نماید. در طراحی و تدوین این اثر برنامه درسی رشته «آموزش زبان فارسی به غیر فارسی زبانان و سرفصل مصوب درس های روش تدریس مهارتهای زبان فارسی» و «اصول و نظریه های تدریس زبان فارسی به غیر فارسی زبانان» در مقطع کارشناسی ارشد مد نظر قرار گرفته است و با همکاری متخصصانی از دانشگاه های مختلف مباحث نظری حوزه آموزش مهارتهای چهارگانه شنیداری گفتاری خوانداری و نوشتاری و نیز مؤلفه های زبانی شامل واژه، دستور، تلفظ، آهنگ و لهجه با استفاده از منابع معتبر و روز آمد ارائه شده است. همچنین تلاش شده است تا در کنار مباحث نظری با ارائه مثال ها و تمرین هایی بعد عملی آموزش زبان فارسی مورد توجه قرار گیرد
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'under-construction')->id,
+                'intro_video' => null,
+                'teaching_intro_video' => null,
+                'teaching_detailed_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => 'indexes/teachlangskills.pdf',
+                'sample_file' => 'samples/teachlangskills.pdf',
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Mohammad-Ahmadi-Safa'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                    [
+                        'model' => User::firstWhere('name_en', 'Ahmad-Ramezani'),
+                        'role_title' => Role::firstWhere('title_abbr', 'writer'),
+                    ],
+                ],
+                'tags' => [
+                    'how-to-teach',
+                ],
+            ],
+
         ];
         foreach ($books_data as $book_data) {
             $book = new Book;
@@ -2432,6 +2470,7 @@ class BookSeeder extends Seeder
             $book->buying_link = $book_data['buying_link'];
             $book->ebuying_link = $book_data['ebuying_link'];
             $book->audio_link = $book_data['audio_link'];
+            $book->is_active = $book_data['is_active'] ?? true;
             $book->save();
 
             if ($book_data['levels'] !== null) {

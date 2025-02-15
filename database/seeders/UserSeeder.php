@@ -671,6 +671,30 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
+            //Mohammad-Ahmadi-Safa
+            [
+                'name' => 'محمد احمدی صفا',
+                'name_en' => 'Mohammad-Ahmadi-Safa',
+                'email' => 'ahmadisafa@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
+            //Ahmad-Ramezani
+            [
+                'name' => 'احمد رمضانی',
+                'name_en' => 'Ahmad-Ramezani',
+                'email' => 'ahmad_ramezani@saadifoundation.ir',
+                'intro' => null,
+                'pic' => null,
+                'resume' => null,
+                'linkedin_link' => null,
+                'website_link' => null,
+                'orcid_link' => null,
+            ],
         ];
         foreach ($users_data as $user_data) {
             $user = new User;
