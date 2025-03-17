@@ -695,18 +695,6 @@ class UserSeeder extends Seeder
                 'website_link' => null,
                 'orcid_link' => null,
             ],
-            //Test-User
-            [
-                'name' => 'کاربر تست',
-                'name_en' => 'Test-User',
-                'email' => 'test_user@saadifoundation.ir',
-                'intro' => null,
-                'pic' => null,
-                'resume' => null,
-                'linkedin_link' => null,
-                'website_link' => null,
-                'orcid_link' => null,
-            ],
         ];
         foreach ($users_data as $user_data) {
             $user = new User;
