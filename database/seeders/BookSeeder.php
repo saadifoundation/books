@@ -2454,6 +2454,39 @@ class BookSeeder extends Seeder
                     'how-to-teach',
                 ],
             ],
+            //TestBook
+            [
+                'title' => 'کتاب تست',
+                'title_abbr' => 'testBook',
+                'cover' => 'covers/testBook.jpg',
+                'collection_id' => null,
+                'intro' => <<<'INTRO'
+                <div>
+                این یک کتاب تست است
+                </div>
+                INTRO,
+                'status_id' => Status::firstWhere('title_abbr', 'under-press')->id,
+                'intro_video' => null,
+                'teaching_intro_video' => null,
+                'teaching_detailed_video' => null,
+                'elearning_link' => null,
+                'bibliography_link' => null,
+                'index_file' => 'indexes/teachlangskills.pdf',
+                'sample_file' => 'samples/teachlangskills.pdf',
+                'buying_link' => null,
+                'ebuying_link' => null,
+                'audio_link' => null,
+                'levels' => null,
+                'users' => [
+                    [
+                        'model' => User::firstWhere('name_en', 'Test-User'),
+                        'role_title' => Role::firstWhere('title_abbr', 'graphist'),
+                    ],
+                ],
+                'tags' => [
+                    'how-to-teach',
+                ],
+            ],
 
         ];
         foreach ($books_data as $book_data) {
